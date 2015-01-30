@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+				xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+				xmlns:local="clr-namespace:GestureSample.Views;assembly=GestureSample"
+				x:Class="GestureSample.Views.ContentViewMain"
+
+				Title="ContentView Sample"
+		>
+
+	<RelativeLayout>
+		<local:ContentViewXaml
+				RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
+						/>
+
+		<ScrollView
+				RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.35}">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</RelativeLayout>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+					   x:Class="GestureSample.Views.BoxViewXaml"
+			 Title="Xaml">
+
+	<RelativeLayout>
+		<mr:BoxView Color="Red"
+			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}"
+			Tapping="Red_Tapping"
+			Tapped="Red_Tapped"
+			DoubleTapped="Red_DoubleTapped"
+			LongPressing="Red_LongPressing"
+			LongPressed="Red_LongPressed"
+			Pinching="Red_Pinching"
+			Pinched="Red_Pinched"
+			Panning="Red_Panning"
+			Panned="Red_Panned"
+			Swiped="Red_Swiped"
+			Rotating="Red_Rotating"
+			Rotated="Red_Rotated"
+						/>
+
+		<mr:BoxView Color="Green"
+			RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}"
+			TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Green"
+			TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Green"
+			DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Green"
+			LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Green"
+			LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Green"
+			PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Green"
+			PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Green"
+			PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Green"
+			PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Green"
+			SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Green"
+			RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Green"
+			RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Green"
+						/>
+
+		<ScrollView
+				RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</RelativeLayout>
+</ContentPage>
