@@ -71,24 +71,24 @@ namespace GestureSample.Views
 
 				case "Views":
 					var viewsVM = new[] {
-						"ActivityIndicator",		// done
-						"BoxView",					// done
-						"Button",					// done		does not work on Android
-						"DatePicker",				// done		does not work on Android
-						"Editor",					// done		does not work on Android
-						"Entry",					// done		does not work on Android
-						"Image",					// done
-						"Label",					// done
-						"ListView",					// done		does not work on Android
-						"Picker",					// done		does not work on Android
-						"ProgressBar",				// done
-						"SearchBar",				// done
-						"Slider",					// done		does not work on Android
-						"Stepper",					// done
-						"Switch",					// done		does not work on Android
-						"TableView",				// done		does not work on Android
-						"TimePicker",				// done		does not work on Android
-						"WebView",					// done		does not work on Android, iOS
+						"ActivityIndicator",
+						"BoxView",
+						"Button",
+						"DatePicker",
+						"Editor",
+						"Entry",
+						"Image",
+						"Label",
+						"ListView",
+						"Picker",
+						"ProgressBar",
+						"SearchBar",
+						"Slider",
+						"Stepper",
+						"Switch",
+						"TableView",
+						"TimePicker",
+						"WebView",
 					};
 					var viewsPage = new MainPage { Title = "Layouts", BindingContext = viewsVM };
 					await App.MainNavigation.PushAsync(viewsPage);

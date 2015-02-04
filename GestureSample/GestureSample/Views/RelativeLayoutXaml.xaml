@@ -19,39 +19,31 @@
 			PinchingCommand="{Binding PinchingCommand}"
 			PinchedCommand="{Binding PinchedCommand}"
 			RotatingCommand="{Binding RotatingCommand}"
-			RotatedCommand="{Binding RotatedCommand}"
-			>
-		<Frame
-			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
+			RotatedCommand="{Binding RotatedCommand}">
 
-			BackgroundColor="#808080"
-			>
+		<Frame BackgroundColor="#FFFFFF"
 
-			<Frame BackgroundColor="#FFFFFF"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"
 				   
-					VerticalOptions="Center"
-					HorizontalOptions="Center"
+				VerticalOptions="Center"
+				HorizontalOptions="Center"
 
-				    X="{Binding ViewX, Mode=OneWayToSource}"
-				    Y="{Binding ViewY, Mode=OneWayToSource}"
-				    Width="{Binding ViewWidth, Mode=OneWayToSource}"
-				    Height="{Binding ViewHeight, Mode=OneWayToSource}"
-					Scale="{Binding Scale}"
-					Rotation="{Binding Rotation}"
-					TranslationX="{Binding TranslationX}"
-					TranslationY="{Binding TranslationY}"
-					AnchorX="{Binding AnchorX}"
-					AnchorY="{Binding AnchorY}"
+				X="{Binding ViewX, Mode=OneWayToSource}"
+				Y="{Binding ViewY, Mode=OneWayToSource}"
+				Width="{Binding ViewWidth, Mode=OneWayToSource}"
+				Height="{Binding ViewHeight, Mode=OneWayToSource}"
+				Scale="{Binding Scale}"
+				Rotation="{Binding Rotation}"
+				TranslationX="{Binding TranslationX}"
+				TranslationY="{Binding TranslationY}"
+				AnchorX="{Binding AnchorX}"
+				AnchorY="{Binding AnchorY}"
 				   >
-				<Label Text="Label in a Frame"
-					   Font="Large"
-					   TextColor="#000000"
+			<Label Text="Label in a Frame"
+				   Font="Large"
+				   TextColor="#000000"
 				/>
-			</Frame>
-
 		</Frame>
 
 		<ScrollView

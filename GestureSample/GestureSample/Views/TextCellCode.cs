@@ -27,10 +27,11 @@ namespace GestureSample.Views
 				cell.DoubleTapped += (s, e) => { AddText(s, "DoubleTapped " + e.NumberOfTaps + " times"); };
 				cell.LongPressing += (s, e) => { AddText(s, "LongPressing"); };
 				cell.LongPressed += (s, e) => { AddText(s, "LongPressed"); };
+				cell.Panning += (s, e) => { AddText(s, "Panning"); };
+				cell.Panned += (s, e) => { AddText(s, "Panned"); };
+				cell.Swiped += (s, e) => { AddText(s, "Swiped"); };
 				cell.Pinching += (s, e) => { AddText(s, "Pinching"); };
 				cell.Pinched += (s, e) => { AddText(s, "Pinched"); };
-				//cell.Panned += (s, e) => { AddText(s, "Panned"); };
-				cell.Swiped += (s, e) => { AddText(s, "Swiped"); };
 				cell.Rotating += (s, e) => { AddText(s, "Rotating"); };
 				cell.Rotated += (s, e) => { AddText(s, "Rotated"); };
 

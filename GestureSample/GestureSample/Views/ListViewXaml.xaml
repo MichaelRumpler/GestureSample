@@ -17,6 +17,8 @@
 			DoubleTapped="Cell_DoubleTapped"
 			LongPressing="Cell_LongPressing"
 			LongPressed="Cell_LongPressed"
+			Panning="Cell_Panning"
+			Panned="Cell_Panned"
 			Swiped="Cell_Swiped"
 			Pinching="Cell_Pinching"
 			Pinched="Cell_Pinched"

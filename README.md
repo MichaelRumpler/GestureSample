@@ -1,8 +1,10 @@
 # GestureSample #
 
-This is the sample project for **MR.Gestures**. It shows how to use all the features.
+This is the sample project for **MR.Gestures**. It shows all the touch gesture handling possible with that library and Xamarin.Forms.
 
 To find out more about MR.Gestures visit [http://www.mrgestures.com](http://www.mrgestures.com).
+
+## The App ##
 
 The navigation looks similar as the [Xamarin.Forms Control Gallery](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/). There are separate pages for every supported control. I.e. the ContentPage, all Layouts, Views and Cells. The other pages just add functionality to the ContentPage thus gesture handling on them is not needed.
 
@@ -11,7 +13,7 @@ All pages have one or more elements at the top and a logging section at the bott
 Be aware that some of Xamarins renderers need gesture handling too. Depending on the way how they implemented it, the gesture events are sometimes not forwarded to MR.Gestures. On other elements if you try to handle a gesture which the element needs to observe, the element does not work anymore. This depends on how Xamarin implemented their renderers and thus also on the platform.
 Luckily this applies mainly to the views which are too small that gesture handling on them would make sense anyway. But also the ScrollView (Pan must not be observed) and the WebView (all events are contained within it) are affected.
  
-## How GestureSample Works ##
+## The Code ##
 
 The GestureSample project uses basic MVVM only that the examples are so simple that it does not need any models. So there is just a `Views` and `ViewModels` folder.
 
@@ -24,3 +26,7 @@ If you write your views in code, then you should have a look at `BoxViewCode`. T
 In `BoxViewXaml` the view is built in XAML but the event handlers for the red box are methods in the code behind in `BoxViewXaml.xaml.cs`. The green box binds to `Commands` in the view model again, this time shown how this is done in XAML.
 
 The platform dependent projects have been created by the standard "Blank App (Xamarin.Forms Portable)" template. I only added the `LicenseKey` for the GestureSample and set the app name. There were no other changes at all.  
+
+## Contact ##
+
+If you have any questions, suggestions, you find bugs or whatever, you can send an email to michael@mrumpler.at or a tweet [#MRumpler](/https://twitter.com/MRumpler).

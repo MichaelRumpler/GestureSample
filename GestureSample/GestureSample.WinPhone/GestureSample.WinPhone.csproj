@@ -187,7 +187,8 @@
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="MR.Gestures.WinPhone">
+    <Reference Include="MR.Gestures.WinPhone, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\MR.Gestures.1.0.0\lib\WP80\MR.Gestures.WinPhone.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">

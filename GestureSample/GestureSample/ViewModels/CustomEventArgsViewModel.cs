@@ -68,7 +68,9 @@ namespace GestureSample.ViewModels
 
 		protected virtual void OnPanned(PanEventArgs e)
 		{
-			AddText("Panned " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers, moved by " + e.DeltaDistance.X + "/" + e.DeltaDistance.Y + ", total moved by " + e.TotalDistance.X + "/" + e.TotalDistance.Y);
+			AddText("Panned " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers, moved by " + e.DeltaDistance.X + "/" + e.DeltaDistance.Y
+				+ ", total moved by " + e.TotalDistance.X + "/" + e.TotalDistance.Y
+				+ ", velocity " + e.Velocity.X + "/" + e.Velocity.Y);
 		}
 
 		protected virtual void OnSwiped(SwipeEventArgs e)
