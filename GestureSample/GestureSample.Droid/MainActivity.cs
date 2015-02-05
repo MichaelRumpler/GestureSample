@@ -18,7 +18,7 @@ namespace GestureSample.Droid
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
-			MR.Gestures.Android.Settings.LicenceKey = "ALZ9-BPVU-XQ35-CEBG-5ZRR-URJQ-ED5U-TSY8-6THP-3GVU-JW8Z-RZGE-CQW6";			// key for GestureSample
+			MR.Gestures.Android.Settings.LicenseKey = "ALZ9-BPVU-XQ35-CEBG-5ZRR-URJQ-ED5U-TSY8-6THP-3GVU-JW8Z-RZGE-CQW6";			// key for GestureSample
 
 			LoadApplication(new App());
 		}
