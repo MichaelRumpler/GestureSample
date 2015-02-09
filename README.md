@@ -29,4 +29,4 @@ The platform dependent projects have been created by the standard "Blank App (Xa
 
 ## Contact ##
 
-If you have any questions, suggestions, you find bugs or whatever, you can send an email to michael@mrumpler.at or a tweet [#MRumpler](/https://twitter.com/MRumpler).
+If you have any questions, suggestions, you find bugs or whatever, you can send an email to mrgestures@mrumpler.at or a tweet [#MRGestures](https://twitter.com/MRGestures).
