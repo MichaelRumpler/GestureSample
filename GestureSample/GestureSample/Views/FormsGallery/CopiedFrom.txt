@@ -1,0 +1,2 @@
+The classes in this folder are simply copied from https://github.com/xamarin/xamarin-forms-samples.git / FormsGallery/FormsGallery/FormsGallery
+and slightly adopted to use MR.Gestures.

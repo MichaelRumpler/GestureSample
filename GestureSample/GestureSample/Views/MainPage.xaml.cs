@@ -23,6 +23,10 @@ namespace GestureSample.Views
 					await App.MainNavigation.PushAsync(new ContentPageXaml { BindingContext = new ViewModels.TransformImageViewModel() });
 					break;
 
+				case "MasterDetailPage":
+					await App.MainNavigation.PushAsync(new FormsGallery.MasterDetailPageDemoPage());
+					break;
+
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 				case "Layouts":

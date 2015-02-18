@@ -17,6 +17,7 @@ namespace GestureSample
 		{
 			var samplePages = new[] {
 				"ContentPage",
+				"MasterDetailPage",
 				"Layouts",
 				"Views",
 				"Cells",
