@@ -19,6 +19,8 @@
 			DoubleTappedCommand="{Binding DoubleTappedCommand}"
 			LongPressingCommand="{Binding LongPressingCommand}"
 			LongPressedCommand="{Binding LongPressedCommand}"
+			PanningCommand="{Binding PanningCommand}"
+			PannedCommand="{Binding PannedCommand}"
 			SwipedCommand="{Binding SwipedCommand}"
 			PinchingCommand="{Binding PinchingCommand}"
 			PinchedCommand="{Binding PinchedCommand}"

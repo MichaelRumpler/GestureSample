@@ -31,16 +31,20 @@ namespace GestureSample.Views
 
 				case "Layouts":
 					var layoutsVM = new[] {
+						"AbsoluteLayout",
 						"ContentView",
 						"Frame",
-						"ScrollView",
-						"AbsoluteLayout",
 						"Grid",
 						"RelativeLayout",
+						"ScrollView",
 						"StackLayout",
 					};
 					var layoutsPage = new MainPage { Title = "Layouts", BindingContext = layoutsVM };
 					await App.MainNavigation.PushAsync(layoutsPage);
+					break;
+
+				case "AbsoluteLayout":
+					await App.MainNavigation.PushAsync(new AbsoluteLayoutXaml { BindingContext = new ViewModels.MarksViewModel() });
 					break;
 
 				case "ContentView":
@@ -51,20 +55,16 @@ namespace GestureSample.Views
 					await App.MainNavigation.PushAsync(new FrameXaml { BindingContext = new ViewModels.TransformViewModel() });
 					break;
 
-				case "ScrollView":
-					await App.MainNavigation.PushAsync(new ScrollViewXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() });
-					break;
-
-				case "AbsoluteLayout":
-					await App.MainNavigation.PushAsync(new AbsoluteLayoutXaml { BindingContext = new ViewModels.MarksViewModel() });
-					break;
-
 				case "Grid":
 					await App.MainNavigation.PushAsync(new GridXaml { BindingContext = new ViewModels.TicTacToeViewModel() });
 					break;
 
 				case "RelativeLayout":
 					await App.MainNavigation.PushAsync(new RelativeLayoutXaml { BindingContext = new ViewModels.TransformViewModel() });
+					break;
+
+				case "ScrollView":
+					await App.MainNavigation.PushAsync(new ScrollViewXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() });
 					break;
 
 				case "StackLayout":
@@ -107,7 +107,7 @@ namespace GestureSample.Views
 					break;
 
 				case "Button":
-					await App.MainNavigation.PushAsync(new ButtonXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() });
+					await App.MainNavigation.PushAsync(new ButtonXaml { BindingContext = new ViewModels.ButtonViewModel() });
 					break;
 
 				case "DatePicker":

@@ -34,6 +34,9 @@
 					Grid.Row="0" Grid.Column="1"
 					BackgroundColor="#808080"
 
+					Command="{Binding ClickedCommand}"
+					CommandParameter="Button 1"
+
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
 					DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -54,6 +57,9 @@
 					  Grid.Row="1" Grid.Column="1"
 					BackgroundColor="#808080"
 
+					Command="{Binding ClickedCommand}"
+					CommandParameter="Button 2"
+
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
 					DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -73,6 +79,9 @@
 			<mr:Button Text="Button 3"
 					  Grid.Row="2" Grid.Column="1"
 					BackgroundColor="#808080"
+
+					Command="{Binding ClickedCommand}"
+					CommandParameter="Button 3"
 
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
