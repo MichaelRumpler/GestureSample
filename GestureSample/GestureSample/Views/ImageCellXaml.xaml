@@ -7,7 +7,7 @@
 			 x:Name="page">
 
 	<RelativeLayout>
-		<mr:ListView ItemsSource="{Binding Objects}"
+		<mr:ListView ItemsSource="{Binding Objects}" SelectedItem="{Binding Item}"
 			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"

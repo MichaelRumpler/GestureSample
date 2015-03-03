@@ -51,6 +51,17 @@ namespace GestureSample.ViewModels
 			get { return objects; }
 		}
 
+		private TextAndImage item = null;
+		public TextAndImage Item
+		{
+			get { return item; }
+			set
+			{
+				AddText("ListOfObjectsViewModel.Item set to " + (value == null ? "NULL" : value.Text));
+				item = value;
+			}
+		}
+
 		public ListOfObjectsViewModel() : base()
 		{
 		}

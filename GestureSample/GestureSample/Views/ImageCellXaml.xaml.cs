@@ -19,7 +19,10 @@ namespace GestureSample.Views
 
 		void Cell_Tapping(object sender, MR.Gestures.TapEventArgs e)
 		{
-			((TextOnlyViewModel)BindingContext).AddText("ImageCellXaml.Cell_Tapping method called on cell '" + ((ImageCell)sender).Text + "' " + e.NumberOfTaps + " times");
+			var vm = (ListOfObjectsViewModel)BindingContext;
+			var item = (GestureSample.ViewModels.ListOfObjectsViewModel.TextAndImage)((ImageCell)sender).BindingContext;
+			vm.Item = item;
+			vm.AddText("ImageCellXaml.Cell_Tapping method called on cell '" + item.Text + "' " + e.NumberOfTaps + " times");
 		}
 
 		void Cell_Tapped(object sender, MR.Gestures.TapEventArgs e)
