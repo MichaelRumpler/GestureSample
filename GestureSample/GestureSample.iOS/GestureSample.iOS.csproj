@@ -11,7 +11,7 @@
     <RootNamespace>GestureSample.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>GestureSampleiOS</AssemblyName>
-    <NuGetPackageImportStamp>14769cf1</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>581ba97e</NuGetPackageImportStamp>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -96,8 +96,6 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <ITunesArtwork Include="iTunesArtwork" />
-    <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,24 +104,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MR.Gestures, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\MR.Gestures.1.0.5\lib\Xamarin.iOS10\MR.Gestures.dll</HintPath>
+    </Reference>
     <Reference Include="MR.Gestures.iOS, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\MR.Gestures.1.0.5-pre1\lib\Xamarin.iOS10\MR.Gestures.iOS.dll</HintPath>
+      <HintPath>..\..\packages\MR.Gestures.1.0.5\lib\Xamarin.iOS10\MR.Gestures.iOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Forms.Core, Version=1.3.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.5.6335\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform.iOS, Version=1.3.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.5.6335\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=1.3.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.1.3.5.6335\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
@@ -208,14 +210,101 @@
   <ItemGroup>
     <BundleResource Include="Resources\images\X.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo1024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons\MRGestures_Logo80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
   </Target>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Import Project="..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.5.6333-pre1\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.5.6335\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
 </Project>
