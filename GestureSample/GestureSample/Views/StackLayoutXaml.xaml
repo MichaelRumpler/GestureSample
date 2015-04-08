@@ -16,6 +16,8 @@
 
 			BackgroundColor="#808080"
 
+			DownCommand="{Binding DownCommand}"
+			UpCommand="{Binding UpCommand}"
 			TappingCommand="{Binding TappingCommand}"
 			TappedCommand="{Binding TappedCommand}"
 			DoubleTappedCommand="{Binding DoubleTappedCommand}"

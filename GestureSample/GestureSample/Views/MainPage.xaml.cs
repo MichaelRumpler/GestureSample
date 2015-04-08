@@ -23,10 +23,6 @@ namespace GestureSample.Views
 					await App.MainNavigation.PushAsync(new ContentPageXaml { BindingContext = new ViewModels.TransformImageViewModel() });
 					break;
 
-				case "MasterDetailPage":
-					await App.MainNavigation.PushAsync(new FormsGallery.MasterDetailPageDemoPage());
-					break;
-
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 				case "Layouts":
@@ -182,8 +178,6 @@ namespace GestureSample.Views
 					await App.MainNavigation.PushAsync(cellsPage);
 					break;
 
-				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 				case "TextCell":
 					await App.MainNavigation.PushAsync(new TextCellMain { BindingContext = new ViewModels.ListOfStringsViewModel() });
 					break;
@@ -194,6 +188,25 @@ namespace GestureSample.Views
 
 				case "All Cells":
 					await App.MainNavigation.PushAsync(new AllCellsXaml { BindingContext = new ViewModels.AllCellsViewModel() });
+					break;
+
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+				case "Tests":
+					var testsVM = new[] {
+						"MasterDetailPage",
+						"Clear in Handler",
+					};
+					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
+					await App.MainNavigation.PushAsync(testsPage);
+					break;
+
+				case "MasterDetailPage":
+					await App.MainNavigation.PushAsync(new FormsGallery.MasterDetailPageDemoPage());
+					break;
+
+				case "Clear in Handler":
+					await App.MainNavigation.PushAsync(new DisposeInHandlerPage());
 					break;
 
 			}

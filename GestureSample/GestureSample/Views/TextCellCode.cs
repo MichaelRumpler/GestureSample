@@ -22,6 +22,8 @@ namespace GestureSample.Views
 				var cell = new MR.Gestures.TextCell();
 				cell.SetBinding(TextCell.TextProperty, ".");
 
+				cell.Down += (s, e) => { AddText(s, "Down with " + e.TriggeringTouches.Length + " fingers"); };
+				cell.Up += (s, e) => { AddText(s, "Up with " + e.TriggeringTouches.Length + " fingers"); };
 				cell.Tapping += (s, e) => { AddText(s, "Tapping " + e.NumberOfTaps + " times"); };
 				cell.Tapped += (s, e) => { AddText(s, "Tapped " + e.NumberOfTaps + " times"); };
 				cell.DoubleTapped += (s, e) => { AddText(s, "DoubleTapped " + e.NumberOfTaps + " times"); };

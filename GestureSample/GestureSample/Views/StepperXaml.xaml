@@ -24,12 +24,15 @@
 			</Grid.RowDefinitions>
 
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="2*" />
+				<ColumnDefinition Width="2*" />
 				<ColumnDefinition Width="*" />
 			</Grid.ColumnDefinitions>
 
-			<Label Text="Stepper 1" Grid.Row="0" Grid.Column="0" />
+			<StackLayout Grid.Row="0" Grid.Column="0">
+				<Label Text="Stepper 1" />
+				<Label Text="(without Down/Up)" />
+			</StackLayout>
 			<mr:Stepper Value="{Binding Value1}" Minimum="0" Maximum="10" Increment="0.1"
 					Grid.Row="0" Grid.Column="1"
 					BackgroundColor="#808080"
@@ -49,7 +52,10 @@
 				/>
 			<Label Text="{Binding Value1}" Grid.Row="0" Grid.Column="2" />
 
-			<Label Text="Stepper 2" Grid.Row="1" Grid.Column="0" />
+			<StackLayout Grid.Row="1" Grid.Column="0">
+				<Label Text="Stepper 2" />
+				<Label Text="(without Down/Up)" />
+			</StackLayout>
 			<mr:Stepper Value="{Binding Value2}" Minimum="-5" Maximum="5" Increment="1"
 					  Grid.Row="1" Grid.Column="1"
 					BackgroundColor="#808080"
@@ -68,12 +74,17 @@
 					RotatedCommand="{Binding RotatedCommand}"
 				/>
 			<Label Text="{Binding Value2}" Grid.Row="1" Grid.Column="2" />
-			
-			<Label Text="Stepper 3" Grid.Row="2" Grid.Column="0" />
+
+			<StackLayout Grid.Row="2" Grid.Column="0">
+				<Label Text="Stepper 3" />
+				<Label Text="(with Down/Up)" />
+			</StackLayout>
 			<mr:Stepper Value="{Binding Value3}" Minimum="0" Maximum="100" Increment="1"
 					  Grid.Row="2" Grid.Column="1"
 					BackgroundColor="#808080"
 
+					DownCommand="{Binding DownCommand}"
+					UpCommand="{Binding UpCommand}"
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
 					DoubleTappedCommand="{Binding DoubleTappedCommand}"

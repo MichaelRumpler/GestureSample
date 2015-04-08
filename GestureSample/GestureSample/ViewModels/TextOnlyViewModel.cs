@@ -21,6 +21,8 @@ namespace GestureSample.ViewModels
 			}
 		}
 
+		public ICommand DownCommand { get; protected set; }
+		public ICommand UpCommand { get; protected set; }
 		public ICommand TappingCommand { get; protected set; }
 		public ICommand TappedCommand { get; protected set; }
 		public ICommand DoubleTappedCommand { get; protected set; }
@@ -36,6 +38,8 @@ namespace GestureSample.ViewModels
 
 		public TextOnlyViewModel()
 		{
+			DownCommand = new Command<string>(s => AddText("Down " + s));
+			UpCommand = new Command<string>(s => AddText("Up " + s));
 			TappingCommand = new Command<string>(s => AddText("Tapping " + s));
 			TappedCommand = new Command<string>(s => AddText(s + " was tapped once"));
 			DoubleTappedCommand = new Command<string>(s => AddText(s + " was tapped twice "));

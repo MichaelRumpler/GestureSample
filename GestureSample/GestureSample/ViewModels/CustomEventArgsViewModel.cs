@@ -12,6 +12,8 @@ namespace GestureSample.ViewModels
 	{
 		public CustomEventArgsViewModel()
 		{
+			DownCommand = new Command<DownUpEventArgs>(OnDown);
+			UpCommand = new Command<DownUpEventArgs>(OnUp);
 			TappingCommand = new Command<TapEventArgs>(OnTapping);
 			TappedCommand = new Command<TapEventArgs>(OnTapped);
 			DoubleTappedCommand = new Command<TapEventArgs>(OnDoubleTapped);
@@ -26,19 +28,29 @@ namespace GestureSample.ViewModels
 			RotatedCommand = new Command<RotateEventArgs>(OnRotated);
 		}
 
+		protected virtual void OnDown(DownUpEventArgs e)
+		{
+			AddText(DownUpInfo("Down", e));
+		}
+
+		protected virtual void OnUp(DownUpEventArgs e)
+		{
+			AddText(DownUpInfo("Up", e));
+		}
+
 		protected virtual void OnTapping(TapEventArgs e)
 		{
-			AddText(TapInfo("Tapping " + GetElementName(e), e));
+			AddText(TapInfo("Tapping", e));
 		}
 
 		protected virtual void OnTapped(TapEventArgs e)
 		{
-			AddText(TapInfo("Tapped " + GetElementName(e), e));
+			AddText(TapInfo("Tapped", e));
 		}
 
 		protected virtual void OnDoubleTapped(TapEventArgs e)
 		{
-			AddText(TapInfo("DoubleTapped " + GetElementName(e), e));
+			AddText(TapInfo("DoubleTapped", e));
 		}
 
 		protected virtual void OnLongPressing(LongPressEventArgs e)
@@ -97,7 +109,19 @@ namespace GestureSample.ViewModels
 		{
 			StringBuilder sb = new StringBuilder(start);
 
-			sb.AppendFormat(" {0} times with {1} fingers.", e.NumberOfTaps, e.NumberOfTouches);
+			sb.AppendFormat(" {0} {1} times with {2} fingers.", GetElementName(e), e.NumberOfTaps, e.NumberOfTouches);
+			sb.AppendFormat(" ViewPosition: {0}/{1}/{2}/{3}, Touches: ", e.ViewPosition.X, e.ViewPosition.Y, e.ViewPosition.Width, e.ViewPosition.Height);
+			if (e.Touches != null && e.Touches.Length > 0)
+				sb.Append(String.Join(", ", e.Touches.Select(t => t.X + "/" + t.Y)));
+
+			return sb.ToString();
+		}
+
+		private string DownUpInfo(string eventName, DownUpEventArgs e)
+		{
+			StringBuilder sb = new StringBuilder(eventName);
+
+			sb.AppendFormat(" on {0} with fingers {1}.", GetElementName(e), String.Join(", ", e.TriggeringTouches));
 			sb.AppendFormat(" ViewPosition: {0}/{1}/{2}/{3}, Touches: ", e.ViewPosition.X, e.ViewPosition.Y, e.ViewPosition.Width, e.ViewPosition.Height);
 			if (e.Touches != null && e.Touches.Length > 0)
 				sb.Append(String.Join(", ", e.Touches.Select(t => t.X + "/" + t.Y)));
