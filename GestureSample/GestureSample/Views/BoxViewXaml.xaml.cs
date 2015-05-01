@@ -17,6 +17,16 @@ namespace GestureSample.Views
 		}
 
 
+		void Red_Down(object sender, DownUpEventArgs e)
+		{
+			AddText("BoxViewXaml.Red_Down method called with " + e.TriggeringTouches.Length + " fingers");
+		}
+
+		void Red_Up(object sender, DownUpEventArgs e)
+		{
+			AddText("BoxViewXaml.Red_Up method called with " + e.TriggeringTouches.Length + " fingers");
+		}
+
 		void Red_Tapping(object sender, TapEventArgs e)
 		{
 			AddText("BoxViewXaml.Red_Tapping method called with " + e.NumberOfTouches + " fingers");

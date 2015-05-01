@@ -37,6 +37,8 @@
 					Grid.Row="0" Grid.Column="1"
 					BackgroundColor="#808080"
 
+					DownCommand="{Binding DownCommand}"
+					UpCommand="{Binding UpCommand}"
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
 					DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -60,6 +62,8 @@
 					  Grid.Row="1" Grid.Column="1"
 					BackgroundColor="#808080"
 
+					DownCommand="{Binding DownCommand}"
+					UpCommand="{Binding UpCommand}"
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
 					DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -83,6 +87,8 @@
 					  Grid.Row="2" Grid.Column="1"
 					BackgroundColor="#808080"
 
+					DownCommand="{Binding DownCommand}"
+					UpCommand="{Binding UpCommand}"
 					TappingCommand="{Binding TappingCommand}"
 					TappedCommand="{Binding TappedCommand}"
 					DoubleTappedCommand="{Binding DoubleTappedCommand}"

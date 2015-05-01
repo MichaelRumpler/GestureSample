@@ -15,7 +15,8 @@ namespace FormsGallery
             Label header = new Label
             {
                 Text = "MasterDetailPage",
-                Font = Font.SystemFontOfSize(30, FontAttributes.Bold),
+				FontSize = 30,
+				FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center
             };
 

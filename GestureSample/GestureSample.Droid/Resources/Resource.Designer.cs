@@ -26,8 +26,8 @@ namespace GestureSample.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::MR.Gestures.Android.Resource.String.ApplicationName = global::GestureSample.Droid.Resource.String.ApplicationName;
-			global::MR.Gestures.Android.Resource.String.Hello = global::GestureSample.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::GestureSample.Droid.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::GestureSample.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

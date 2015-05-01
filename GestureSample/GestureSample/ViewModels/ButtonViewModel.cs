@@ -21,5 +21,19 @@ namespace GestureSample.ViewModels
 		{
 			AddText("{0} was clicked.", obj);
 		}
+
+		protected override void OnDown(MR.Gestures.DownUpEventArgs e)
+		{
+			base.OnDown(e);
+
+			((Button)e.Sender).BackgroundColor = Color.Yellow;
+		}
+
+		protected override void OnUp(MR.Gestures.DownUpEventArgs e)
+		{
+			base.OnUp(e);
+
+			((Button)e.Sender).BackgroundColor = Color.FromHex("808080");
+		}
 	}
 }

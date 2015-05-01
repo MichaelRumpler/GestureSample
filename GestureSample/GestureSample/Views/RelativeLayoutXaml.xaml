@@ -8,6 +8,8 @@
 	>
 
 	<mr:RelativeLayout
+			DownCommand="{Binding DownCommand}"
+			UpCommand="{Binding UpCommand}"
 			TappingCommand="{Binding TappingCommand}"
 			TappedCommand="{Binding TappedCommand}"
 			DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -25,7 +27,7 @@
 
 				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.33}"
-				   
+
 				VerticalOptions="Center"
 				HorizontalOptions="Center"
 
@@ -39,7 +41,7 @@
 				TranslationY="{Binding TranslationY}"
 				AnchorX="{Binding AnchorX}"
 				AnchorY="{Binding AnchorY}"
-				   >
+				>
 			<Label Text="Label in a Frame"
 				   Font="Large"
 				   TextColor="#000000"

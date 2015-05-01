@@ -17,10 +17,10 @@ namespace GestureSample
 		{
 			var samplePages = new[] {
 				"ContentPage",
-				"MasterDetailPage",
 				"Layouts",
 				"Views",
 				"Cells",
+				"Tests",
 			};
 
 			var mainPage = new MainPage() { Title = "Control Categories", BindingContext = samplePages };

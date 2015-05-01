@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-					   xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
-					   x:Class="GestureSample.Views.BoxViewXaml"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			 x:Class="GestureSample.Views.BoxViewXaml"
 			 Title="Xaml">
 
 	<RelativeLayout>
@@ -11,6 +11,8 @@
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}"
+			Down="Red_Down"
+			Up="Red_Up"
 			Tapping="Red_Tapping"
 			Tapped="Red_Tapped"
 			DoubleTapped="Red_DoubleTapped"
@@ -30,6 +32,8 @@
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5}"
+			DownCommand="{Binding DownCommand}" DownCommandParameter="Green"
+			UpCommand="{Binding UpCommand}" UpCommandParameter="Green"
 			TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Green"
 			TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Green"
 			DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Green"

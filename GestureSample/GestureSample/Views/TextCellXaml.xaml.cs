@@ -17,6 +17,16 @@ namespace GestureSample.Views
 		}
 
 
+		void Cell_Down(object sender, MR.Gestures.DownUpEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText("TextCellXaml.Cell_Down method called on cell '" + ((TextCell)sender).Text + "' with " + e.TriggeringTouches.Length + " fingers");
+		}
+
+		void Cell_Up(object sender, MR.Gestures.DownUpEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText("TextCellXaml.Cell_Up method called on cell '" + ((TextCell)sender).Text + "' with " + e.TriggeringTouches.Length + " fingers");
+		}
+
 		void Cell_Tapping(object sender, MR.Gestures.TapEventArgs e)
 		{
 			((TextOnlyViewModel)BindingContext).AddText("TextCellXaml.Cell_Tapping method called on cell '" + ((TextCell)sender).Text + "' " + e.NumberOfTaps + " times");

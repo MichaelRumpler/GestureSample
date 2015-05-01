@@ -16,6 +16,8 @@ namespace GestureSample.Views
 			this.Title = "Code";
 
 			var box1 = new MR.Gestures.BoxView { Color = Color.Red };
+			box1.Down += (s, e) => { AddText("CodePage: Red Down " + e.TriggeringTouches.Length + " fingers"); };
+			box1.Up += (s, e) => { AddText("CodePage: Red Up " + e.TriggeringTouches.Length + " fingers"); };
 			box1.Tapping += (s, e) => { AddText("CodePage: Red Tapping " + e.NumberOfTaps + " times with " + e.NumberOfTouches + " fingers"); };
 			box1.Tapped += (s, e) => { AddText("CodePage: Red Tapped " + e.NumberOfTaps + " times with " + e.NumberOfTouches + " fingers"); };
 			box1.DoubleTapped += (s, e) => { AddText("CodePage: Red DoubleTapped " + e.NumberOfTaps + " times with " + e.NumberOfTouches + " fingers"); };
@@ -30,6 +32,10 @@ namespace GestureSample.Views
 			box1.Rotated += (s, e) => { AddText("CodePage: Red Rotated"); };
 
 			var box2 = new MR.Gestures.BoxView { Color = Color.Green };
+			box2.SetBinding(MR.Gestures.BoxView.DownCommandProperty, "DownCommand");
+			box2.DownCommandParameter = "Green";
+			box2.SetBinding(MR.Gestures.BoxView.UpCommandProperty, "UpCommand");
+			box2.UpCommandParameter = "Green";
 			box2.SetBinding(MR.Gestures.BoxView.TappingCommandProperty, "TappingCommand");
 			box2.TappingCommandParameter = "Green";
 			box2.SetBinding(MR.Gestures.BoxView.TappedCommandProperty, "TappedCommand");

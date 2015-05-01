@@ -13,6 +13,8 @@
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
 
+			DownCommand="{Binding DownCommand}"
+			UpCommand="{Binding UpCommand}"
 			TappingCommand="{Binding TappingCommand}"
 			TappedCommand="{Binding TappedCommand}"
 			DoubleTappedCommand="{Binding DoubleTappedCommand}"

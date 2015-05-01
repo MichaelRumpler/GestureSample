@@ -17,6 +17,8 @@
 					<mr:TextCell
 						Text="{Binding}"
 
+						Down="Cell_Down"
+						Up="Cell_Up"
 						Tapping="Cell_Tapping"
 						Tapped="Cell_Tapped"
 						DoubleTapped="Cell_DoubleTapped"

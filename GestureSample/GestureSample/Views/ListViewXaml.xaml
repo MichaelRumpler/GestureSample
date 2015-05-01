@@ -12,6 +12,8 @@
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
 
+			Down="Cell_Down"
+			Up="Cell_Up"
 			Tapping="Cell_Tapping"
 			Tapped="Cell_Tapped"
 			DoubleTapped="Cell_DoubleTapped"

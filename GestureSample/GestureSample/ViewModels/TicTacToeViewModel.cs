@@ -10,7 +10,9 @@ namespace GestureSample.ViewModels
 {
 	public class TicTacToeViewModel : CustomEventArgsViewModel
 	{
-		protected readonly string Path = Device.OnPlatform("images/", "", "Resources/images/");
+		protected readonly string Path =
+			Device.OS == TargetPlatform.iOS ? "images/" :
+			Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
 
 		protected char[][] board;
 		protected char next;
@@ -43,8 +45,14 @@ namespace GestureSample.ViewModels
 				return;
 			}
 
-			int x = (int)((e.Touches[0].X - e.ViewPosition.X) * 3 / e.ViewPosition.Width);
-			int y = (int)((e.Touches[0].Y - e.ViewPosition.Y) * 3 / e.ViewPosition.Height);
+			if(e.Touches == null || e.Touches.Length == 0)
+			{
+				AddText("Touch coordinates are missing.");
+				return;
+			}
+
+			int x = (int)(e.Touches[0].X * 3 / e.ViewPosition.Width);
+			int y = (int)(e.Touches[0].Y * 3 / e.ViewPosition.Height);
 
 			if(board[y][x] != ' ')
 			{

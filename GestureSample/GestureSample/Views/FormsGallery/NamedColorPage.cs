@@ -92,7 +92,7 @@ namespace FormsGallery
 		{
 			Label label = new Label
 			{
-				Font = Font.SystemFontOfSize(NamedSize.Large),
+				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
 				XAlign = TextAlignment.End
 			};
 			label.SetBinding(Label.TextProperty,

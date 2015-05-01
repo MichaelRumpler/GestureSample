@@ -10,7 +10,10 @@ namespace GestureSample.ViewModels
 {
 	public class MarksViewModel : TransformViewModel
 	{
-		protected readonly string Path = Device.OnPlatform("images/", "", "Resources/images/");
+		//protected readonly string Path = Device.OnPlatform("images/", "", "Resources/images/");
+		protected readonly string Path =
+			Device.OS == TargetPlatform.iOS ? "images/" :
+			Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
 
 		public string FingerMark	{ get { return Path + "mark_red.png"; } }
 		public string CenterMark	{ get { return Path + "mark_blue.png"; } }
@@ -41,48 +44,45 @@ namespace GestureSample.ViewModels
 		}
 
 
-
 		protected override void OnTapping(MR.Gestures.TapEventArgs e)
 		{
 			base.OnTapping(e);
-
-			if (e.Touches != null && e.Touches.Length > 0)
-			{
-				Finger1 = new Rectangle(e.Touches[0].Subtract(halfMarkSize), autoSize);
-				Finger2 = offScreen;
-				Center = offScreen;
-			}
+			UpdateMarks(e);
 		}
 
 		protected override void OnPanning(MR.Gestures.PanEventArgs e)
 		{
 			base.OnPanning(e);
-
-			if (e.Touches != null && e.Touches.Length > 0)
-			{
-				Finger1 = new Rectangle(e.Touches[0].Subtract(halfMarkSize), autoSize);
-				Finger2 = offScreen;
-				Center = offScreen;
-			}
+			UpdateMarks(e);
 		}
 
 		protected override void OnPinching(MR.Gestures.PinchEventArgs e)
 		{
 			base.OnPinching(e);
-
-			if (e.Touches != null && e.Touches.Length > 0)
-			{
-				Finger1 = new Rectangle(e.Touches[0].Subtract(halfMarkSize), autoSize);
-				Finger2 = new Rectangle(e.Touches[1].Subtract(halfMarkSize), autoSize);
-				Center = new Rectangle(e.Center.Subtract(halfMarkSize), autoSize);
-			}
+			UpdateMarks(e);
 		}
 
 		protected override void OnRotating(MR.Gestures.RotateEventArgs e)
 		{
 			base.OnRotating(e);
+			UpdateMarks(e);
+		}
 
-			if (e.Touches != null && e.Touches.Length > 0)
+		private void UpdateMarks(MR.Gestures.BaseGestureEventArgs e)
+		{
+			if(e.Touches == null || e.Touches.Length == 0)
+			{
+				Finger1 = offScreen;
+				Finger2 = offScreen;
+				Center = offScreen;
+			}
+			else if(e.Touches.Length == 1)
+			{
+				Finger1 = new Rectangle(e.Touches[0].Subtract(halfMarkSize), autoSize);
+				Finger2 = offScreen;
+				Center = offScreen;
+			}
+			else
 			{
 				Finger1 = new Rectangle(e.Touches[0].Subtract(halfMarkSize), autoSize);
 				Finger2 = new Rectangle(e.Touches[1].Subtract(halfMarkSize), autoSize);

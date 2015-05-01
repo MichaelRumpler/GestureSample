@@ -16,6 +16,8 @@
 				<TableRoot>
 					<TableSection Title="Cells for Output">
 						<mr:TextCell Text="TextCell"
+							DownCommand="{Binding DownCommand}"
+							UpCommand="{Binding UpCommand}"
 			 				TappingCommand="{Binding TappingCommand}"
 							TappedCommand="{Binding TappedCommand}"
 							DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -30,6 +32,8 @@
 							RotatedCommand="{Binding RotatedCommand}"
 							/>
 						<mr:ImageCell Text="ImageCell" ImageSource="{Binding Icon1}"
+							DownCommand="{Binding DownCommand}"
+							UpCommand="{Binding UpCommand}"
 			 				TappingCommand="{Binding TappingCommand}"
 							TappedCommand="{Binding TappedCommand}"
 							DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -46,6 +50,8 @@
 					</TableSection>
 					<TableSection Title="Cells for Input">
 						<mr:EntryCell Label="EntryCell" Text="{Binding EntryValue}"
+							DownCommand="{Binding DownCommand}"
+							UpCommand="{Binding UpCommand}"
 			 				TappingCommand="{Binding TappingCommand}"
 							TappedCommand="{Binding TappedCommand}"
 							DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -60,6 +66,8 @@
 							RotatedCommand="{Binding RotatedCommand}"
 									  />
 						<mr:SwitchCell Text="SwitchCell" On="{Binding SwitchValue}"
+							DownCommand="{Binding DownCommand}"
+							UpCommand="{Binding UpCommand}"
 			 				TappingCommand="{Binding TappingCommand}"
 							TappedCommand="{Binding TappedCommand}"
 							DoubleTappedCommand="{Binding DoubleTappedCommand}"
@@ -76,6 +84,8 @@
 					</TableSection>
 					<TableSection Title="Custom Cells">
 						<mr:ViewCell
+							DownCommand="{Binding DownCommand}"
+							UpCommand="{Binding UpCommand}"
 			 				TappingCommand="{Binding TappingCommand}"
 							TappedCommand="{Binding TappedCommand}"
 							DoubleTappedCommand="{Binding DoubleTappedCommand}"
