@@ -4,6 +4,13 @@
 * text=auto
 
 ###############################################################################
+# diff behavior for changelog
+# 
+# Just take both versions one after the other in any order.
+###############################################################################
+Changelog merge=union
+
+###############################################################################
 # Set default behavior for command prompt diff.
 #
 # This is need for earlier builds of msysgit that does not have it on by
