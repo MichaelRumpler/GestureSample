@@ -190,12 +190,12 @@
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="MR.Gestures, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.0\lib\WP80\MR.Gestures.dll</HintPath>
+    <Reference Include="MR.Gestures, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.1\lib\WP80\MR.Gestures.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MR.Gestures.WinPhone, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.0\lib\WP80\MR.Gestures.WinPhone.dll</HintPath>
+    <Reference Include="MR.Gestures.WinPhone, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.1\lib\WP80\MR.Gestures.WinPhone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
