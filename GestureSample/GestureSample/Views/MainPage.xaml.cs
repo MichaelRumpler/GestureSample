@@ -196,6 +196,7 @@ namespace GestureSample.Views
 					var testsVM = new[] {
 						"MasterDetailPage",
 						"Clear in Handler",
+						"Horizontal ScrollView",
 					};
 					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -207,6 +208,10 @@ namespace GestureSample.Views
 
 				case "Clear in Handler":
 					await App.MainNavigation.PushAsync(new DisposeInHandlerPage());
+					break;
+
+				case "Horizontal ScrollView":
+					await App.MainNavigation.PushAsync(new HorizontalScrollViewXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() });
 					break;
 
 			}
