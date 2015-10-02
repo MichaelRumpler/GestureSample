@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GestureSample.Views.Tests;
 using Xamarin.Forms;
 
 namespace GestureSample.Views
@@ -197,6 +198,7 @@ namespace GestureSample.Views
 						"MasterDetailPage",
 						"Clear in Handler",
 						"Horizontal ScrollView",
+						"BigButton",
 					};
 					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -212,6 +214,10 @@ namespace GestureSample.Views
 
 				case "Horizontal ScrollView":
 					await App.MainNavigation.PushAsync(new HorizontalScrollViewXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() });
+					break;
+
+				case "BigButton":
+					await App.MainNavigation.PushAsync(new BigButtonPage());
 					break;
 
 			}
