@@ -149,16 +149,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MR.Gestures, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.3\lib\wpa81\MR.Gestures.dll</HintPath>
+    <Reference Include="MR.Gestures, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.4\lib\wpa81\MR.Gestures.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MR.Gestures.WinRT, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.3\lib\wpa81\MR.Gestures.WinRT.dll</HintPath>
+    <Reference Include="MR.Gestures.WinRT, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.4\lib\wpa81\MR.Gestures.WinRT.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MR.Gestures.WinRT.Phone, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.3\lib\wpa81\MR.Gestures.WinRT.Phone.dll</HintPath>
+    <Reference Include="MR.Gestures.WinRT.Phone, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.4\lib\wpa81\MR.Gestures.WinRT.Phone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -54,12 +54,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Mono.Android" />
-    <Reference Include="MR.Gestures, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.3\lib\MonoAndroid10\MR.Gestures.dll</HintPath>
+    <Reference Include="MR.Gestures, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.4\lib\MonoAndroid10\MR.Gestures.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MR.Gestures.Android, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.3\lib\MonoAndroid10\MR.Gestures.Android.dll</HintPath>
+    <Reference Include="MR.Gestures.Android, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.4\lib\MonoAndroid10\MR.Gestures.Android.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
