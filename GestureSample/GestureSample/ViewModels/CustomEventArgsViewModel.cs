@@ -55,12 +55,12 @@ namespace GestureSample.ViewModels
 
 		protected virtual void OnLongPressing(LongPressEventArgs e)
 		{
-			AddText("Pressing " + GetElementName(e) + " for " + e.Duration + "ms");
+			AddText("Pressing " + GetElementName(e) + " for " + e.Duration + "ms with " + e.NumberOfTouches + " fingers");
 		}
 
 		protected virtual void OnLongPressed(LongPressEventArgs e)
 		{
-			AddText("Pressed " + GetElementName(e) + " for " + e.Duration + "ms");
+			AddText("Pressed " + GetElementName(e) + " for " + e.Duration + "ms with " + e.NumberOfTouches + " fingers");
 		}
 
 		protected virtual void OnPinching(PinchEventArgs e)

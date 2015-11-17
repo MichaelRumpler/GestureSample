@@ -2,11 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
-			 x:Class="GestureSample.Views.ListViewXaml"
-			 Title="RetainElement">
+			 x:Class="GestureSample.Views.ListViewRecycle"
+			 Title="RecycleElement">
 
 	<RelativeLayout>
-		<mr:ListView ItemsSource="{Binding Strings}"
+		<mr:ListView
+			CachingStrategy="RecycleElement"
+			ItemsSource="{Binding Strings}"
 			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"

@@ -9,9 +9,9 @@ using MR.Gestures;
 
 namespace GestureSample.Views
 {
-	public partial class ListViewXaml
+	public partial class ListViewRecycle
 	{
-		public ListViewXaml()
+		public ListViewRecycle()
 		{
 			InitializeComponent();
 		}

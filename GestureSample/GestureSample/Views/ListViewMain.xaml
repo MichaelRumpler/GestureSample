@@ -3,14 +3,13 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:v="clr-namespace:GestureSample.Views;assembly=GestureSample"
-    x:Class="GestureSample.Views.TextCellMain"
-	Title="TextCell Sample">
+    x:Class="GestureSample.Views.ListViewMain"
+	Title="ListView Sample">
 
 	<TabbedPage.Children>
 
-		<v:TextCellCode />
-		<v:TextCellXaml />
-		<v:TextCellRecycle />
+		<v:ListViewXaml />
+		<v:ListViewRecycle />
 
 	</TabbedPage.Children>
 

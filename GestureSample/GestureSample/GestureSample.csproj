@@ -14,7 +14,7 @@
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <NuGetPackageImportStamp>47a5e9ba</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>8b2de9cc</NuGetPackageImportStamp>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
@@ -39,6 +39,7 @@
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AllCellsViewModel.cs" />
+    <Compile Include="ViewModels\ButtonViewModel.cs" />
     <Compile Include="ViewModels\CustomEventArgsViewModel.cs" />
     <Compile Include="ViewModels\ListOfObjectsViewModel.cs" />
     <Compile Include="ViewModels\ListOfStringsViewModel.cs" />
@@ -46,7 +47,6 @@
     <Compile Include="ViewModels\ObservableObject.cs" />
     <Compile Include="ViewModels\PickerViewModel.cs" />
     <Compile Include="ViewModels\ProgressBarViewModel.cs" />
-    <Compile Include="ViewModels\ButtonViewModel.cs" />
     <Compile Include="ViewModels\SearchBarViewModel.cs" />
     <Compile Include="ViewModels\TextOnlyViewModel.cs" />
     <Compile Include="ViewModels\ThreeBooleansViewModel.cs" />
@@ -76,6 +76,8 @@
     <Compile Include="Views\ButtonXaml.xaml.cs">
       <DependentUpon>ButtonXaml.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DisposeInHandlerContentView.cs" />
+    <Compile Include="Views\DisposeInHandlerPage.cs" />
     <Compile Include="Views\ContentPageXaml.xaml.cs">
       <DependentUpon>ContentPageXaml.xaml</DependentUpon>
     </Compile>
@@ -88,8 +90,6 @@
     <Compile Include="Views\DatePickerXaml.xaml.cs">
       <DependentUpon>DatePickerXaml.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\DisposeInHandlerContentView.cs" />
-    <Compile Include="Views\DisposeInHandlerPage.cs" />
     <Compile Include="Views\EditorXaml.xaml.cs">
       <DependentUpon>EditorXaml.xaml</DependentUpon>
     </Compile>
@@ -106,6 +106,9 @@
     <Compile Include="Views\GridXaml.xaml.cs">
       <DependentUpon>GridXaml.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\HorizontalScrollViewXaml.xaml.cs">
+      <DependentUpon>HorizontalScrollViewXaml.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ImageCellCode.cs" />
     <Compile Include="Views\ImageCellMain.xaml.cs">
       <DependentUpon>ImageCellMain.xaml</DependentUpon>
@@ -118,6 +121,9 @@
     </Compile>
     <Compile Include="Views\LabelXaml.xaml.cs">
       <DependentUpon>LabelXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ListViewRecycle.xaml.cs">
+      <DependentUpon>ListViewRecycle.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ListViewXaml.xaml.cs">
       <DependentUpon>ListViewXaml.xaml</DependentUpon>
@@ -133,9 +139,6 @@
     </Compile>
     <Compile Include="Views\RelativeLayoutXaml.xaml.cs">
       <DependentUpon>RelativeLayoutXaml.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HorizontalScrollViewXaml.xaml.cs">
-      <DependentUpon>HorizontalScrollViewXaml.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ScrollViewXaml.xaml.cs">
       <DependentUpon>ScrollViewXaml.xaml</DependentUpon>
@@ -160,9 +163,18 @@
     </Compile>
     <Compile Include="Views\Tests\BigButton.cs" />
     <Compile Include="Views\Tests\BigButtonPage.cs" />
+    <Compile Include="Views\Tests\KeyValueCell.cs" />
+    <Compile Include="Views\Tests\MRKeyValueCell.cs" />
+    <Compile Include="Views\Tests\SimpleViewCellsPage.cs" />
     <Compile Include="Views\TextCellCode.cs" />
+    <Compile Include="Views\ListViewMain.xaml.cs">
+      <DependentUpon>ListViewMain.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\TextCellMain.xaml.cs">
       <DependentUpon>TextCellMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TextCellRecycle.xaml.cs">
+      <DependentUpon>TextCellRecycle.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TextCellXaml.xaml.cs">
       <DependentUpon>TextCellXaml.xaml</DependentUpon>
@@ -316,20 +328,26 @@
     <Content Include="Views\FormsGallery\CopiedFrom.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MR.Gestures, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.2.4\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\MR.Gestures.dll</HintPath>
+    <EmbeddedResource Include="Views\HorizontalScrollViewXaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MR.Gestures, Version=1.2.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.2.5\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\MR.Gestures.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.5.0.6447\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.5.0.6447\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.1.5.0.6447\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -337,7 +355,19 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\HorizontalScrollViewXaml.xaml">
+    <EmbeddedResource Include="Views\ListViewMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ListViewRecycle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TextCellRecycle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -348,10 +378,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
   </Target>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Import Project="..\..\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.5.0.6447\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.5.2.6478-pre3\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

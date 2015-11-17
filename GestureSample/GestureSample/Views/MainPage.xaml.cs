@@ -128,7 +128,7 @@ namespace GestureSample.Views
 					break;
 
 				case "ListView":
-					await App.MainNavigation.PushAsync(new ListViewXaml { BindingContext = new ViewModels.ListOfStringsViewModel() });
+					await App.MainNavigation.PushAsync(new ListViewMain { BindingContext = new ViewModels.ListOfStringsViewModel() });
 					break;
 
 				case "Picker":
@@ -199,6 +199,7 @@ namespace GestureSample.Views
 						"Clear in Handler",
 						"Horizontal ScrollView",
 						"BigButton",
+						"ViewCells",
 					};
 					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -218,6 +219,10 @@ namespace GestureSample.Views
 
 				case "BigButton":
 					await App.MainNavigation.PushAsync(new BigButtonPage());
+					break;
+
+				case "ViewCells":
+					await App.MainNavigation.PushAsync(new SimpleViewCellsPage());
 					break;
 
 			}

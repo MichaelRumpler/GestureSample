@@ -2,34 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
-			 x:Class="GestureSample.Views.ListViewXaml"
-			 Title="RetainElement">
+			 x:Class="GestureSample.Views.TextCellRecycle"
+			 Title="RecycleElement">
 
 	<RelativeLayout>
-		<mr:ListView ItemsSource="{Binding Strings}"
+		<mr:ListView
+			CachingStrategy="RecycleElement"
+			ItemsSource="{Binding Strings}"
 			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
-			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
-
-			Down="Cell_Down"
-			Up="Cell_Up"
-			Tapping="Cell_Tapping"
-			Tapped="Cell_Tapped"
-			DoubleTapped="Cell_DoubleTapped"
-			LongPressing="Cell_LongPressing"
-			LongPressed="Cell_LongPressed"
-			Panning="Cell_Panning"
-			Panned="Cell_Panned"
-			Swiped="Cell_Swiped"
-			Pinching="Cell_Pinching"
-			Pinched="Cell_Pinched"
-			Rotating="Cell_Rotating"
-			Rotated="Cell_Rotated"
-			>
+			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
 			<ListView.ItemTemplate>
 				<DataTemplate>
-					<TextCell Text="{Binding}" />
+					<mr:TextCell
+						Text="{Binding}"
+
+						Down="Cell_Down"
+						Up="Cell_Up"
+						Tapping="Cell_Tapping"
+						Tapped="Cell_Tapped"
+						DoubleTapped="Cell_DoubleTapped"
+						LongPressing="Cell_LongPressing"
+						LongPressed="Cell_LongPressed"
+						Panning="Cell_Panning"
+						Panned="Cell_Panned"
+						Swiped="Cell_Swiped"
+						Pinching="Cell_Pinching"
+						Pinched="Cell_Pinched"
+						Rotating="Cell_Rotating"
+						Rotated="Cell_Rotated"
+								  />
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</mr:ListView>
