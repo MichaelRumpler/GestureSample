@@ -7,12 +7,14 @@
 
 	<RelativeLayout>
 		<mr:ListView
-			CachingStrategy="RecycleElement"
 			ItemsSource="{Binding Strings}"
 			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+			<x:Arguments>
+				<ListViewCachingStrategy>RecycleElement</ListViewCachingStrategy>
+			</x:Arguments>
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<mr:TextCell

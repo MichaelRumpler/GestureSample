@@ -7,7 +7,6 @@
 
 	<RelativeLayout>
 		<mr:ListView
-			CachingStrategy="RecycleElement"
 			ItemsSource="{Binding Strings}"
 			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
@@ -29,6 +28,10 @@
 			Rotating="Cell_Rotating"
 			Rotated="Cell_Rotated"
 			>
+			<x:Arguments>
+				<ListViewCachingStrategy>RecycleElement</ListViewCachingStrategy>
+			</x:Arguments>
+
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<TextCell Text="{Binding}" />
