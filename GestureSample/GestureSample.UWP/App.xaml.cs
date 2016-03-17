@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -61,7 +62,11 @@ namespace GestureSample.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-				Xamarin.Forms.Forms.Init(e);
+				var otherAssemblies = new[] {
+					typeof(MR.Gestures.ContentPage).GetTypeInfo().Assembly,
+					typeof(MR.Gestures.UWP.Renderers.PageRenderer).GetTypeInfo().Assembly,
+				};
+				Xamarin.Forms.Forms.Init(e, otherAssemblies);
 
 				MR.Gestures.UWP.Settings.LicenseKey = "ALZ9-BPVU-XQ35-CEBG-5ZRR-URJQ-ED5U-TSY8-6THP-3GVU-JW8Z-RZGE-CQW6";           // key for GestureSample
 

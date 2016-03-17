@@ -232,7 +232,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -1580,7 +1580,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -1868,7 +1868,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -3263,7 +3263,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -3537,7 +3537,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -4918,7 +4918,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -5211,7 +5211,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -6606,7 +6606,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -6880,7 +6880,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -8261,7 +8261,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -8554,7 +8554,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -9949,7 +9949,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -10223,7 +10223,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.0": {
+      "MR.Gestures/1.3.2": {
         "dependencies": {
           "Xamarin.Forms": "[2.0.0.6482, )"
         },
@@ -11604,7 +11604,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.1.6492-pre1": {
+      "Xamarin.Forms/2.1.0.6529": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -12324,8 +12324,8 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "MR.Gestures/1.3.0": {
-      "sha512": "tin+G+CD3jAITWuuwXJAAtH3PYxAzunQMAJKjpO1+CDYVaaMc/0ID0OWYsenKl/MpvPAxqpBbwg3TTyU9jzKrw==",
+    "MR.Gestures/1.3.2": {
+      "sha512": "FXZvZnifRm9W+y3YsC5gPcJ9EOK9pxXww0tP98PNLhXpEA88U1lmg4iACf38sZrpeFFq6rqg0ZjCCFTzWk2EvQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -12361,7 +12361,7 @@
         "lib/Xamarin.iOS10/MR.Gestures.iOS.XML",
         "lib/Xamarin.iOS10/MR.Gestures.XML",
         "MR.Gestures.nuspec",
-        "package/services/metadata/core-properties/7ca8be41b31d4a7293a5fbcd693d0f71.psmdcp"
+        "package/services/metadata/core-properties/1cf33c20fcb34bba9efee9148d3289d2.psmdcp"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -15059,8 +15059,8 @@
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
-    "Xamarin.Forms/2.0.1.6492-pre1": {
-      "sha512": "S6yI7Sw5zd6qNAuqBiivYDpsgarngQmuljejxXbM7u3i4QBo2GBfzsKRqaMfVliIiRfxhlwHm8JF2ROoodnBRQ==",
+    "Xamarin.Forms/2.1.0.6529": {
+      "sha512": "TJkPXQk1HyHqmMEuFn+3DSEb/9yQKND45Qwt8Jz8BHI1Kh4nAMLnXlgp/akPmyXDdqCcK1m7E9mSpe2kA6Od+g==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -15101,7 +15101,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBox.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
@@ -15115,10 +15115,10 @@
         "lib/win81/Xamarin.Forms.Platform.WinRT.pri",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet.dll",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
-        "lib/win81/Xamarin.Forms.Platform.WinRT/FormsTextBox.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT/PageControl.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT/StepperControl.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT/Xamarin.Forms.Platform.WinRT.xr.xml",
@@ -15142,7 +15142,6 @@
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/SearchBox.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/Xamarin.Forms.Platform.WinRT.Phone.xr.xml",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.pri",
-        "lib/wpa81/Xamarin.Forms.Platform.WinRT/FormsTextBox.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT/PageControl.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT/StepperControl.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT/Xamarin.Forms.Platform.WinRT.xr.xml",
@@ -15154,7 +15153,7 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
-        "package/services/metadata/core-properties/6f10ef328dc4439e9cd758ee8ce4b6b3.psmdcp",
+        "package/services/metadata/core-properties/97610f62c25d40b9ab8a50c19c33b4bf.psmdcp",
         "tools/init.ps1",
         "tools/Xamarin.Forms.Core.Design.dll",
         "tools/Xamarin.Forms.Xaml.Design.dll",
@@ -15168,8 +15167,8 @@
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.0.0",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
-      "MR.Gestures >= 1.3.0",
-      "Xamarin.Forms >= 2.0.1.6492-pre1"
+      "MR.Gestures >= 1.3.2",
+      "Xamarin.Forms >= 2.1.0.6529"
     ],
     "UAP,Version=v10.0": []
   }
