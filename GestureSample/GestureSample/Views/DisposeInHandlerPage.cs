@@ -18,7 +18,9 @@ namespace GestureSample.Views
 
 			Log = new Label();
 			var syncLbl = new MR.Gestures.Label { Text = "Clear synchronously", HorizontalOptions = LayoutOptions.Start, BackgroundColor = Color.Silver };
+#pragma warning disable CS4014
 			syncLbl.Tapping += (s, e) => { Log.Text = "Sync clear from outside"; cv.ClearContent(); };
+#pragma warning restore CS4014
 			var asyncLbl = new MR.Gestures.Label { Text = "Clear asynchronously", HorizontalOptions = LayoutOptions.CenterAndExpand, BackgroundColor = Color.Silver };
 			asyncLbl.Tapping += async (s, e) => { Log.Text = "Async clear from outside"; await cv.ClearContent(); };
 			var fillLbl = new MR.Gestures.Label { Text = "Set Content", HorizontalOptions = LayoutOptions.End, BackgroundColor = Color.Silver };

@@ -25,7 +25,7 @@ namespace GestureSample.Views.Tests
                     new Label
                     {
                         Text = title,
-                        XAlign = TextAlignment.Center,
+						HorizontalTextAlignment = TextAlignment.Center,
                         FontSize = 10,
                         TextColor = Color.Black
                     }

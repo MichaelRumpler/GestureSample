@@ -93,7 +93,7 @@ namespace FormsGallery
 			Label label = new Label
 			{
 				FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-				XAlign = TextAlignment.End
+				HorizontalTextAlignment = TextAlignment.End
 			};
 			label.SetBinding(Label.TextProperty,
 				new Binding(source, BindingMode.OneWay, null, null, fmt));

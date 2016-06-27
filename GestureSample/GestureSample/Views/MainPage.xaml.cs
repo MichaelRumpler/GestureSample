@@ -199,7 +199,8 @@ namespace GestureSample.Views
 						"Clear in Handler",
 						"Horizontal ScrollView",
 						"BigButton",
-						"ViewCells",
+                        "ViewCells",
+                        "Custom ListView",
 					};
 					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -225,7 +226,11 @@ namespace GestureSample.Views
 					await App.MainNavigation.PushAsync(new SimpleViewCellsPage());
 					break;
 
-			}
-		}
+                case "Custom ListView":
+                    await App.MainNavigation.PushAsync(new CustomListViewPage { BindingContext = new ViewModels.ListOfStringsViewModel() });
+                    break;
+
+            }
+        }
 	}
 }
