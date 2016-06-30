@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    			   xmlns:local="clr-namespace:GestureSample.Views.Tests;assembly=GestureSample"
+             x:Class="GestureSample.Views.Tests.CustomListViewPage"
+             Title="Custom ListView">
+
+  <RelativeLayout>
+    <local:CustomListView ItemsSource="{Binding Strings}"
+			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+
+			Down="Cell_Down"
+			Up="Cell_Up"
+			Tapping="Cell_Tapping"
+			Tapped="Cell_Tapped"
+			DoubleTapped="Cell_DoubleTapped"
+			LongPressing="Cell_LongPressing"
+			LongPressed="Cell_LongPressed"
+			Panning="Cell_Panning"
+			Panned="Cell_Panned"
+			Swiped="Cell_Swiped"
+			Pinching="Cell_Pinching"
+			Pinched="Cell_Pinched"
+			Rotating="Cell_Rotating"
+			Rotated="Cell_Rotated"
+			>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding}" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </local:CustomListView>
+
+    <ScrollView
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+      <Label Text="{Binding Text}" />
+    </ScrollView>
+  </RelativeLayout>
+</ContentPage>
