@@ -157,3 +157,4 @@ $RECYCLE.BIN/
 *.DotSettings
 
 *.userprefs
+/rm_bin_obj.bat
