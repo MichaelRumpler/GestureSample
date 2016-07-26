@@ -7,13 +7,13 @@
 			 >
 
 	<RelativeLayout>
-		<mr:ScrollView
+		<ScrollView
 			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
-			
-			DownCommand="{Binding DownCommand}"
+			>
+			<!--DownCommand="{Binding DownCommand}"
 			UpCommand="{Binding UpCommand}"
 			TappingCommand="{Binding TappingCommand}"
 			TappedCommand="{Binding TappedCommand}"
@@ -27,7 +27,7 @@
 			PinchedCommand="{Binding PinchedCommand}"
 			RotatingCommand="{Binding RotatingCommand}"
 			RotatedCommand="{Binding RotatedCommand}"
-			>
+			>-->
 
 
 
@@ -35,15 +35,9 @@
 				<Image Source="Flusi1" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
 				<Image Source="Flusi2" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
 				<Image Source="Flusi3" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
-				<Image Source="Flusi1" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
-				<Image Source="Flusi2" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
-				<Image Source="Flusi3" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
-				<Image Source="Flusi1" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
-				<Image Source="Flusi2" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
-				<Image Source="Flusi3" HorizontalOptions="FillAndExpand" Aspect="AspectFill" />
 			</StackLayout>
 
-		</mr:ScrollView>
+		</ScrollView>
 
 		<ScrollView
 				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
