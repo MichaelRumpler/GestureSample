@@ -201,6 +201,7 @@ namespace GestureSample.Views
 						"BigButton",
                         "ViewCells",
                         "Custom ListView",
+						"ScrollView with Images",
 					};
 					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -230,7 +231,11 @@ namespace GestureSample.Views
                     await App.MainNavigation.PushAsync(new CustomListViewPage { BindingContext = new ViewModels.ListOfStringsViewModel() });
                     break;
 
-            }
-        }
+				case "ScrollView with Images":
+					await App.MainNavigation.PushAsync(new ScrollViewWithImages { BindingContext = new ViewModels.CustomEventArgsViewModel() });
+					break;
+
+			}
+		}
 	}
 }
