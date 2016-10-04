@@ -13,6 +13,10 @@
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
 
+			ItemTapped="ListView_ItemTapped"
+			ItemSelected="ListView_ItemSelected"
+			SelectedItem="{Binding SelectedItem}"
+
 			Down="Cell_Down"
 			Up="Cell_Up"
 			Tapping="Cell_Tapping"

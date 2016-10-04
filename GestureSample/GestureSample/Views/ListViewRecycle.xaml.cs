@@ -17,6 +17,16 @@ namespace GestureSample.Views
 		}
 
 
+		private void ListView_ItemTapped(object sender, Xamarin.Forms.ItemTappedEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText($"ListView_ItemTapped method called. Tapped item = '{e.Item}'");
+		}
+
+		private void ListView_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText($"ListView_ItemSelected method called. SelectedItem = '{e.SelectedItem}'");
+		}
+
 		void Cell_Down(object sender, MR.Gestures.DownUpEventArgs e)
 		{
 			((TextOnlyViewModel)BindingContext).AddText("Cell_Down method called with " + e.TriggeringTouches.Length + " fingers");

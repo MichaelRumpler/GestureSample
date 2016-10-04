@@ -60,6 +60,17 @@ namespace GestureSample.ViewModels
 			}
 		}
 
+		private string selectedItem = null;
+		public string SelectedItem
+		{
+			get { return selectedItem; }
+			set
+			{
+				AddText($"SelectedItem changed in VM from '{selectedItem}' to '{value}'");
+				selectedItem = value;
+			}
+		}
+
 		public ListOfStringsViewModel() : base()
 		{
 		}
