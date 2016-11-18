@@ -55,64 +55,66 @@ namespace GestureSample.ViewModels
 
 		protected virtual void OnLongPressing(LongPressEventArgs e)
 		{
-			AddText("Pressing " + GetElementName(e) + " for " + e.Duration + "ms with " + e.NumberOfTouches + " fingers");
+			AddText(LongPressInfo("Pressing", e));
 		}
 
 		protected virtual void OnLongPressed(LongPressEventArgs e)
 		{
-			AddText("Pressed " + GetElementName(e) + " for " + e.Duration + "ms with " + e.NumberOfTouches + " fingers");
+			AddText(LongPressInfo("Pressed", e));
 		}
 
 		protected virtual void OnPinching(PinchEventArgs e)
 		{
-			AddText("Pinching " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers, scale=" + e.DeltaScale + ", Center =" + e.Center.X + "/" + e.Center.Y);
+			AddText(PinchInfo("Pinching", e));
 		}
 
 		protected virtual void OnPinched(PinchEventArgs e)
 		{
-			AddText("Pinched " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers, scale=" + e.DeltaScale + ", Center =" + e.Center.X + "/" + e.Center.Y);
+			AddText(PinchInfo("Pinched", e));
 		}
 
 		protected virtual void OnPanning(PanEventArgs e)
 		{
-			AddText("Panning " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers, moved by " + e.DeltaDistance.X + "/" + e.DeltaDistance.Y + ", total moved by " + e.TotalDistance.X + "/" + e.TotalDistance.Y);
+			AddText(PanInfo("Panning", e));
 		}
 
 		protected virtual void OnPanned(PanEventArgs e)
 		{
-			AddText("Panned " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers, moved by " + e.DeltaDistance.X + "/" + e.DeltaDistance.Y
-				+ ", total moved by " + e.TotalDistance.X + "/" + e.TotalDistance.Y
-				+ ", velocity " + e.Velocity.X + "/" + e.Velocity.Y);
+			AddText(PanInfo("Panned", e));
 		}
 
 		protected virtual void OnSwiped(SwipeEventArgs e)
 		{
-			AddText("Swiped " + e.Direction + " " + GetElementName(e) + " with " + e.NumberOfTouches + " fingers");
+			AddText(PanInfo("Swiped " + e.Direction, e));
 		}
 
 		protected virtual void OnRotating(RotateEventArgs e)
 		{
-			AddText("Rotating " + GetElementName(e) + ", DeltaAngle = " + e.DeltaAngle + ", TotalAngle = " + e.TotalAngle + ", Center =" + e.Center.X + "/" + e.Center.Y);
+			AddText(RotateInfo("Rotating", e));
 		}
 
 		protected virtual void OnRotated(RotateEventArgs e)
 		{
-			AddText("Rotated " + GetElementName(e) + ", DeltaAngle = " + e.DeltaAngle + ", TotalAngle = " + e.TotalAngle + ", Center =" + e.Center.X + "/" + e.Center.Y);
+			AddText(RotateInfo("Rotated", e));
 		}
 
-		protected string GetElementName(BaseGestureEventArgs e)
+		private string TapInfo(string eventName, TapEventArgs e)
 		{
-			return e.Sender.GetType().Name + " " + ((Element)e.Sender).Id;
+			StringBuilder sb = new StringBuilder(eventName);
+
+			sb.Append($" {GetElementName(e)} {e.NumberOfTaps} times with {e.NumberOfTouches} fingers.");
+			sb.Append($" ViewPosition: {e.ViewPosition.X:F}/{e.ViewPosition.Y:F}/{e.ViewPosition.Width:F}/{e.ViewPosition.Height:F}");
+			AddTouches(sb, e);
+
+			return sb.ToString();
 		}
 
-		private string TapInfo(string start, TapEventArgs e)
+		private string LongPressInfo(string eventName, LongPressEventArgs e)
 		{
-			StringBuilder sb = new StringBuilder(start);
+			StringBuilder sb = new StringBuilder(eventName);
 
-			sb.AppendFormat(" {0} {1} times with {2} fingers.", GetElementName(e), e.NumberOfTaps, e.NumberOfTouches);
-			sb.AppendFormat(" ViewPosition: {0}/{1}/{2}/{3}, Touches: ", e.ViewPosition.X, e.ViewPosition.Y, e.ViewPosition.Width, e.ViewPosition.Height);
-			if (e.Touches != null && e.Touches.Length > 0)
-				sb.Append(String.Join(", ", e.Touches.Select(t => t.X + "/" + t.Y)));
+			sb.Append($" {GetElementName(e)} for {e.Duration}ms with {e.NumberOfTouches} fingers");
+			AddTouches(sb, e);
 
 			return sb.ToString();
 		}
@@ -121,12 +123,63 @@ namespace GestureSample.ViewModels
 		{
 			StringBuilder sb = new StringBuilder(eventName);
 
-			sb.AppendFormat(" on {0} with fingers {1}.", GetElementName(e), String.Join(", ", e.TriggeringTouches));
-			sb.AppendFormat(" ViewPosition: {0}/{1}/{2}/{3}, Touches: ", e.ViewPosition.X, e.ViewPosition.Y, e.ViewPosition.Width, e.ViewPosition.Height);
-			if (e.Touches != null && e.Touches.Length > 0)
-				sb.Append(String.Join(", ", e.Touches.Select(t => t.X + "/" + t.Y)));
+			sb.Append($" on {GetElementName(e)} with fingers {String.Join(", ", e.TriggeringTouches)}.");
+			sb.Append($" ViewPosition: {e.ViewPosition.X:F}/{e.ViewPosition.Y:F}/{e.ViewPosition.Width:F}/{e.ViewPosition.Height:F}");
+			AddTouches(sb, e);
 
 			return sb.ToString();
+		}
+
+		private string PanInfo(string eventName, PanEventArgs e)
+		{
+			StringBuilder sb = new StringBuilder(eventName);
+
+			sb.Append($" {GetElementName(e)} with {e.NumberOfTouches} fingers");
+			sb.Append($", DeltaDistance = {e.DeltaDistance.X:F}/{e.DeltaDistance.Y:F}");
+			sb.Append($", TotalDistance = {e.TotalDistance.X:F}/{e.TotalDistance.Y:F}");
+			sb.Append($", Velocity = {e.Velocity.X:F}/{e.Velocity.Y:F}");
+			AddTouches(sb, e);
+
+			return sb.ToString();
+		}
+
+		private string RotateInfo(string eventName, RotateEventArgs e)
+		{
+			StringBuilder sb = new StringBuilder(eventName);
+
+			sb.Append($" {GetElementName(e)}");
+			sb.Append($", DeltaAngle = {e.DeltaAngle:F}");
+			sb.Append($", TotalAngle = {e.TotalAngle:F}");
+			sb.Append($", Center =  {e.Center.X:F}/{e.Center.Y:F}");
+			AddTouches(sb, e);
+
+			return sb.ToString();
+		}
+
+		private string PinchInfo(string eventName, PinchEventArgs e)
+		{
+			StringBuilder sb = new StringBuilder(eventName);
+
+			sb.Append($" {GetElementName(e)} with {e.NumberOfTouches} fingers");
+			sb.Append($", DeltaScale = {e.DeltaScale:F}");
+			sb.Append($", Center =  {e.Center.X:F}/{e.Center.Y:F}");
+			AddTouches(sb, e);
+
+			return sb.ToString();
+		}
+
+		protected string GetElementName(BaseGestureEventArgs e)
+		{
+			return e.Sender.GetType().Name + " " + ((Element)e.Sender).Id;
+		}
+
+		private void AddTouches(StringBuilder sb, BaseGestureEventArgs e)
+		{
+			sb.Append(", Touches: ");
+			if (e.Touches != null && e.Touches.Length > 0)
+				sb.Append(string.Join(", ", e.Touches.Select(t => $"{t.X:F}/{t.Y:F}")));
+			else
+				sb.Append("empty");
 		}
 	}
 }

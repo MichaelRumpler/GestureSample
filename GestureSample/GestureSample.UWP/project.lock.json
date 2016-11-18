@@ -286,7 +286,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -1832,7 +1832,7 @@
           }
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -2124,7 +2124,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -3530,7 +3530,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -3808,7 +3808,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -5192,7 +5192,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -5490,7 +5490,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -6896,7 +6896,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -7174,7 +7174,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -8558,7 +8558,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -8856,7 +8856,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -10262,7 +10262,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -10540,7 +10540,7 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MR.Gestures/1.3.5": {
+      "MR.Gestures/1.4.0": {
         "dependencies": {
           "Xamarin.Forms": "2.0.0.6482"
         },
@@ -11924,7 +11924,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.1.111-pre2": {
+      "Xamarin.Forms/2.3.2.127": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -12644,11 +12644,12 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "MR.Gestures/1.3.5": {
-      "sha512": "HV91K41+H3d1lvGaaIDnKZJAEcO1umL0SyfEoGoX9KFxVRXsvMmTmyMXw/z2LBrpsT5e9cfPyxcFap1e1ppcyw==",
+    "MR.Gestures/1.4.0": {
+      "sha512": "4o9n4GIGQSWb4kKhVUm7ZNSB4AtVzOPynqzpGunSRu9yVv3f9ybSvDwIIL2jT5gTH59gQvFGeo2Sy/s65uxF5A==",
       "type": "package",
+      "path": "MR.Gestures/1.4.0",
       "files": [
-        "MR.Gestures.1.3.5.nupkg.sha512",
+        "MR.Gestures.1.4.0.nupkg.sha512",
         "MR.Gestures.nuspec",
         "lib/MonoAndroid10/MR.Gestures.Android.XML",
         "lib/MonoAndroid10/MR.Gestures.Android.dll",
@@ -15377,11 +15378,12 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "Xamarin.Forms/2.3.1.111-pre2": {
-      "sha512": "gdrcZ1mrZ7ie4YMM9cskyWrM4Z1PbtJYy3djpvikECMeawOMSxU5qJG2XPu8a1eOESjK4KZorqKV85JFLTlD/Q==",
+    "Xamarin.Forms/2.3.2.127": {
+      "sha512": "NYH2p6Z2QGrRZpRXSiLqtapqlsx11pkViEIjDUQFDvsMCZbvsipDXOWjV9sXTrruXTdkNZ24Nsw0lEG0jVRMjA==",
       "type": "package",
+      "path": "Xamarin.Forms/2.3.2.127",
       "files": [
-        "Xamarin.Forms.2.3.1.111-pre2.nupkg.sha512",
+        "Xamarin.Forms.2.3.2.127.nupkg.sha512",
         "Xamarin.Forms.nuspec",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.Decompiler.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.CSharp.dll",
@@ -15533,6 +15535,7 @@
         "lib/uap10.0/Xamarin.Forms.Core.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
@@ -15583,12 +15586,12 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "MR.Gestures >= 1.3.5",
+      "MR.Gestures >= 1.4.0",
       "Microsoft.ApplicationInsights >= 1.0.0",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.0.0",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
-      "Xamarin.Forms >= 2.3.1.111-pre2"
+      "Xamarin.Forms >= 2.3.2.127"
     ],
     "UAP,Version=v10.0": []
   }

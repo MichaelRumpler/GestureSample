@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+             x:Class="GestureSample.Views.Tests.InputTransparent"
+			 Title="InputTransparent">
+
+	<RelativeLayout>
+		<Grid
+			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<mr:Frame
+				Grid.Row="0" Grid.Column="0"
+
+				DownCommand="{Binding DownCommand}" DownCommandParameter="Top Left Outer Frame"
+				UpCommand="{Binding UpCommand}" UpCommandParameter="Top Left Outer Frame"
+				TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Top Left Outer Frame"
+				TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Top Left Outer Frame"
+				DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Top Left Outer Frame"
+				LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Top Left Outer Frame"
+				LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Top Left Outer Frame"
+				PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Top Left Outer Frame"
+				PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Top Left Outer Frame"
+				PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Top Left Outer Frame"
+				PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Top Left Outer Frame"
+				SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Top Left Outer Frame"
+				RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Top Left Outer Frame"
+				RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Top Left Outer Frame">
+
+				<mr:Frame
+					BackgroundColor="#FFFFFF"
+					
+					DownCommand="{Binding DownCommand}" DownCommandParameter="Top Left Inner Frame"
+					UpCommand="{Binding UpCommand}" UpCommandParameter="Top Left Inner Frame"
+					TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Top Left Inner Frame"
+					TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Top Left Inner Frame"
+					DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Top Left Inner Frame"
+					LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Top Left Inner Frame"
+					LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Top Left Inner Frame"
+					PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Top Left Inner Frame"
+					PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Top Left Inner Frame"
+					PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Top Left Inner Frame"
+					PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Top Left Inner Frame"
+					SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Top Left Inner Frame"
+					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Top Left Inner Frame"
+					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Top Left Inner Frame">
+
+					<Label Text="Top Left" Font="Large" TextColor="#000000" />
+				</mr:Frame>
+			</mr:Frame>
+
+			<mr:Frame
+				Grid.Row="0" Grid.Column="1"
+				InputTransparent="true"
+
+				DownCommand="{Binding DownCommand}" DownCommandParameter="Top Right Outer Frame"
+				UpCommand="{Binding UpCommand}" UpCommandParameter="Top Right Outer Frame"
+				TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Top Right Outer Frame"
+				TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Top Right Outer Frame"
+				DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Top Right Outer Frame"
+				LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Top Right Outer Frame"
+				LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Top Right Outer Frame"
+				PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Top Right Outer Frame"
+				PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Top Right Outer Frame"
+				PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Top Right Outer Frame"
+				PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Top Right Outer Frame"
+				SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Top Right Outer Frame"
+				RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Top Right Outer Frame"
+				RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Top Right Outer Frame">
+
+				<mr:Frame
+					BackgroundColor="#C0C0C0"
+
+					DownCommand="{Binding DownCommand}" DownCommandParameter="Top Right Inner Frame"
+					UpCommand="{Binding UpCommand}" UpCommandParameter="Top Right Inner Frame"
+					TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Top Right Inner Frame"
+					TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Top Right Inner Frame"
+					DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Top Right Inner Frame"
+					LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Top Right Inner Frame"
+					LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Top Right Inner Frame"
+					PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Top Right Inner Frame"
+					PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Top Right Inner Frame"
+					PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Top Right Inner Frame"
+					PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Top Right Inner Frame"
+					SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Top Right Inner Frame"
+					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Top Right Inner Frame"
+					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Top Right Inner Frame">
+
+					<Label Text="Top Right" Font="Large" TextColor="#000000" />
+				</mr:Frame>
+			</mr:Frame>
+
+			<mr:Frame
+				Grid.Row="1" Grid.Column="0"
+
+				DownCommand="{Binding DownCommand}" DownCommandParameter="Bottom Left Outer Frame"
+				UpCommand="{Binding UpCommand}" UpCommandParameter="Bottom Left Outer Frame"
+				TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Bottom Left Outer Frame"
+				TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Bottom Left Outer Frame"
+				DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Bottom Left Outer Frame"
+				LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Bottom Left Outer Frame"
+				LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Bottom Left Outer Frame"
+				PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Bottom Left Outer Frame"
+				PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Bottom Left Outer Frame"
+				PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Bottom Left Outer Frame"
+				PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Bottom Left Outer Frame"
+				SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Bottom Left Outer Frame"
+				RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Bottom Left Outer Frame"
+				RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Bottom Left Outer Frame">
+
+				<mr:Frame
+					BackgroundColor="#C0C0C0"
+					InputTransparent="true"
+
+					DownCommand="{Binding DownCommand}" DownCommandParameter="Bottom Left Inner Frame"
+					UpCommand="{Binding UpCommand}" UpCommandParameter="Bottom Left Inner Frame"
+					TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Bottom Left Inner Frame"
+					TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Bottom Left Inner Frame"
+					DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Bottom Left Inner Frame"
+					LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Bottom Left Inner Frame"
+					LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Bottom Left Inner Frame"
+					PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Bottom Left Inner Frame"
+					PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Bottom Left Inner Frame"
+					PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Bottom Left Inner Frame"
+					PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Bottom Left Inner Frame"
+					SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Bottom Left Inner Frame"
+					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Bottom Left Inner Frame"
+					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Bottom Left Inner Frame">
+
+					<Label Text="Bottom Left" Font="Large" TextColor="#000000" />
+				</mr:Frame>
+			</mr:Frame>
+
+			<mr:Frame
+				Grid.Row="1" Grid.Column="1"
+				InputTransparent="true"
+
+				DownCommand="{Binding DownCommand}" DownCommandParameter="Bottom Right Outer Frame"
+				UpCommand="{Binding UpCommand}" UpCommandParameter="Bottom Right Outer Frame"
+				TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Bottom Right Outer Frame"
+				TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Bottom Right Outer Frame"
+				DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Bottom Right Outer Frame"
+				LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Bottom Right Outer Frame"
+				LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Bottom Right Outer Frame"
+				PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Bottom Right Outer Frame"
+				PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Bottom Right Outer Frame"
+				PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Bottom Right Outer Frame"
+				PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Bottom Right Outer Frame"
+				SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Bottom Right Outer Frame"
+				RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Bottom Right Outer Frame"
+				RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Bottom Right Outer Frame">
+
+				<mr:Frame
+					BackgroundColor="#808080"
+					InputTransparent="true"
+
+					DownCommand="{Binding DownCommand}" DownCommandParameter="Bottom Right Inner Frame"
+					UpCommand="{Binding UpCommand}" UpCommandParameter="Bottom Right Inner Frame"
+					TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Bottom Right Inner Frame"
+					TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Bottom Right Inner Frame"
+					DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Bottom Right Inner Frame"
+					LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Bottom Right Inner Frame"
+					LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Bottom Right Inner Frame"
+					PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Bottom Right Inner Frame"
+					PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Bottom Right Inner Frame"
+					PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Bottom Right Inner Frame"
+					PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Bottom Right Inner Frame"
+					SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Bottom Right Inner Frame"
+					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Bottom Right Inner Frame"
+					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Bottom Right Inner Frame">
+
+					<Label Text="Bottom Right" Font="Large" TextColor="#000000" />
+				</mr:Frame>
+			</mr:Frame>
+
+		</Grid>
+
+		<ScrollView
+				RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.35}">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</RelativeLayout>
+</ContentPage>
