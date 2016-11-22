@@ -67,6 +67,18 @@
     <Compile Include="Views\AllCellsXaml.xaml.cs">
       <DependentUpon>AllCellsXaml.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AppCompat\AppCompatFrameXaml.xaml.cs">
+      <DependentUpon>AppCompatFrameXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppCompat\AppCompatSwitchXaml.xaml.cs">
+      <DependentUpon>AppCompatSwitchXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppCompat\AppCompatPickerXaml.xaml.cs">
+      <DependentUpon>AppCompatPickerXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppCompat\AppCompatButtonXaml.xaml.cs">
+      <DependentUpon>AppCompatButtonXaml.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\BoxViewCode.cs" />
     <Compile Include="Views\BoxViewMain.xaml.cs">
       <DependentUpon>BoxViewMain.xaml</DependentUpon>
@@ -376,7 +388,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Tests\InputTransparent.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
@@ -400,6 +412,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatButtonXaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatFrameXaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatPickerXaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatSwitchXaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

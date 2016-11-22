@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GestureSample.Views.Tests;
 using Xamarin.Forms;
+using GestureSample.Views.AppCompat;
 
 namespace GestureSample.Views
 {
@@ -189,6 +190,35 @@ namespace GestureSample.Views
 
 				case "All Cells":
 					await App.MainNavigation.PushAsync(new AllCellsXaml { BindingContext = new ViewModels.AllCellsViewModel() });
+					break;
+
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+				case "AppCompat":
+					var appCompatVM = new[] {
+						"AppCompat Button",
+						"AppCompat Frame",
+						"AppCompat Picker",
+						"AppCompat Switch",
+					};
+					var appCompatPage = new MainPage { Title = "AppCompat", BindingContext = appCompatVM };
+					await App.MainNavigation.PushAsync(appCompatPage);
+					break;
+
+				case "AppCompat Button":
+					await App.MainNavigation.PushAsync(new AppCompatButtonXaml { BindingContext = new ViewModels.ButtonViewModel() });
+					break;
+
+				case "AppCompat Frame":
+					await App.MainNavigation.PushAsync(new AppCompatFrameXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() });
+					break;
+
+				case "AppCompat Picker":
+					await App.MainNavigation.PushAsync(new AppCompatPickerXaml { BindingContext = new ViewModels.PickerViewModel() });
+					break;
+
+				case "AppCompat Switch":
+					await App.MainNavigation.PushAsync(new AppCompatSwitchXaml { BindingContext = new ViewModels.ThreeBooleansViewModel() });
 					break;
 
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -20,6 +20,7 @@ namespace GestureSample
 				"Layouts",
 				"Views",
 				"Cells",
+				"AppCompat",
 				"Tests",
 			};
 

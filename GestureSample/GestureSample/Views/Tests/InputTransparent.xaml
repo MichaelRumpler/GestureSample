@@ -58,7 +58,7 @@
 					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Top Left Inner Frame"
 					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Top Left Inner Frame">
 
-					<Label Text="Top Left" Font="Large" TextColor="#000000" />
+					<Label Text="Non InputTransparent" Font="Large" TextColor="#000000" />
 				</mr:Frame>
 			</mr:Frame>
 
@@ -99,7 +99,7 @@
 					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Top Right Inner Frame"
 					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Top Right Inner Frame">
 
-					<Label Text="Top Right" Font="Large" TextColor="#000000" />
+					<Label Text="Outer InputTransparent, inner not" Font="Large" TextColor="#000000" />
 				</mr:Frame>
 			</mr:Frame>
 
@@ -140,7 +140,7 @@
 					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Bottom Left Inner Frame"
 					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Bottom Left Inner Frame">
 
-					<Label Text="Bottom Left" Font="Large" TextColor="#000000" />
+					<Label Text="Inner InputTransparent, outer not" Font="Large" TextColor="#000000" />
 				</mr:Frame>
 			</mr:Frame>
 
@@ -182,7 +182,7 @@
 					RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Bottom Right Inner Frame"
 					RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Bottom Right Inner Frame">
 
-					<Label Text="Bottom Right" Font="Large" TextColor="#000000" />
+					<Label Text="Both Frames InputTransparent" Font="Large" TextColor="#000000" />
 				</mr:Frame>
 			</mr:Frame>
 
