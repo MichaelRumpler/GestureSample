@@ -188,6 +188,9 @@
     <Compile Include="Views\Tests\ScrollViewWithImages.xaml.cs">
       <DependentUpon>ScrollViewWithImages.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Tests\SimpleLongPress.xaml.cs">
+      <DependentUpon>SimpleLongPress.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Tests\SimpleViewCellsPage.cs" />
     <Compile Include="Views\TextCellCode.cs" />
     <Compile Include="Views\ListViewMain.xaml.cs">
@@ -428,6 +431,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AppCompat\AppCompatSwitchXaml.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Tests\SimpleLongPress.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

@@ -233,6 +233,7 @@ namespace GestureSample.Views
                         "Custom ListView",
 						"ScrollView with Images",
 						"InputTransparent",
+						"Simple LongPress",
 					};
 					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -268,6 +269,10 @@ namespace GestureSample.Views
 
 				case "InputTransparent":
 					await App.MainNavigation.PushAsync(new InputTransparent { BindingContext = new ViewModels.TextOnlyViewModel() });
+					break;
+
+				case "Simple LongPress":
+					await App.MainNavigation.PushAsync(new SimpleLongPress());
 					break;
 
 			}
