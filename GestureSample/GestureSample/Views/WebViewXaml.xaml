@@ -12,7 +12,7 @@
 			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
 			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
 
-			Source="http://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/views/"
+			Source="https://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/views/"
 			
 			DownCommand="{Binding DownCommand}"
 			UpCommand="{Binding UpCommand}"

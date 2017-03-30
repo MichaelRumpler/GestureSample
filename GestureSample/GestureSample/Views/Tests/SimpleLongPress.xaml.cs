@@ -18,7 +18,7 @@ namespace GestureSample.Views.Tests
 
 		private void Box_LongPressing(object sender, MR.Gestures.LongPressEventArgs e)
 		{
-			DisplayAlert("Example", e.Duration.ToString(), "OK");
+			DisplayAlert("Example", e.Duration.ToString(), "OK");       // in LongPressing Duration is always 0, it only has a value in LongPressed
 		}
 	}
 }

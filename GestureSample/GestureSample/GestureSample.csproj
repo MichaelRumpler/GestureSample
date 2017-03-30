@@ -185,6 +185,9 @@
     </Compile>
     <Compile Include="Views\Tests\KeyValueCell.cs" />
     <Compile Include="Views\Tests\MRKeyValueCell.cs" />
+    <Compile Include="Views\Tests\PageAndListView.xaml.cs">
+      <DependentUpon>PageAndListView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Tests\ScrollViewWithImages.xaml.cs">
       <DependentUpon>ScrollViewWithImages.xaml</DependentUpon>
     </Compile>
@@ -224,6 +227,22 @@
     <EmbeddedResource Include="Views\AllCellsXaml.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatButtonXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatFrameXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatPickerXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AppCompat\AppCompatSwitchXaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\BoxViewMain.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -396,8 +415,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MR.Gestures, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.4.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\MR.Gestures.dll</HintPath>
+    <Reference Include="MR.Gestures, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.4.2\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\MR.Gestures.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -417,20 +436,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\AppCompat\AppCompatButtonXaml.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\AppCompat\AppCompatFrameXaml.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\AppCompat\AppCompatPickerXaml.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\AppCompat\AppCompatSwitchXaml.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <EmbeddedResource Include="Views\Tests\PageAndListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

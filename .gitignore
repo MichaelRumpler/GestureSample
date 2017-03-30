@@ -159,3 +159,5 @@ $RECYCLE.BIN/
 *.userprefs
 /rm_bin_obj.bat
 *.bak
+project.lock.json
+project.lock.json

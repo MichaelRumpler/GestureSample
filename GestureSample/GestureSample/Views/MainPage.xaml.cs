@@ -37,7 +37,7 @@ namespace GestureSample.Views
 						"ScrollView",
 						"StackLayout",
 					};
-					var layoutsPage = new MainPage { Title = "Layouts", BindingContext = layoutsVM };
+					var layoutsPage = new MainPage { Title = item, BindingContext = layoutsVM };
 					await App.MainNavigation.PushAsync(layoutsPage);
 					break;
 
@@ -92,7 +92,7 @@ namespace GestureSample.Views
 						"TimePicker",
 						"WebView",
 					};
-					var viewsPage = new MainPage { Title = "Layouts", BindingContext = viewsVM };
+					var viewsPage = new MainPage { Title = item, BindingContext = viewsVM };
 					await App.MainNavigation.PushAsync(viewsPage);
 					break;
 
@@ -176,7 +176,7 @@ namespace GestureSample.Views
 						"ImageCell",
 						"All Cells",
 					};
-					var cellsPage = new MainPage { Title = "Cells", BindingContext = cellsVM };
+					var cellsPage = new MainPage { Title = item, BindingContext = cellsVM };
 					await App.MainNavigation.PushAsync(cellsPage);
 					break;
 
@@ -201,7 +201,7 @@ namespace GestureSample.Views
 						"AppCompat Picker",
 						"AppCompat Switch",
 					};
-					var appCompatPage = new MainPage { Title = "AppCompat", BindingContext = appCompatVM };
+					var appCompatPage = new MainPage { Title = item, BindingContext = appCompatVM };
 					await App.MainNavigation.PushAsync(appCompatPage);
 					break;
 
@@ -234,8 +234,9 @@ namespace GestureSample.Views
 						"ScrollView with Images",
 						"InputTransparent",
 						"Simple LongPress",
+						"Page and ListView",
 					};
-					var testsPage = new MainPage { Title = "Tests", BindingContext = testsVM };
+					var testsPage = new MainPage { Title = item, BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
 					break;
 
@@ -273,6 +274,10 @@ namespace GestureSample.Views
 
 				case "Simple LongPress":
 					await App.MainNavigation.PushAsync(new SimpleLongPress());
+					break;
+
+				case "Page and ListView":
+					await App.MainNavigation.PushAsync(new PageAndListView { BindingContext = new ViewModels.ListOfStringsViewModel() });
 					break;
 
 			}
