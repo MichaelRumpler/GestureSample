@@ -9,11 +9,6 @@ namespace GestureSample.ViewModels
 {
 	public class AllCellsViewModel : CustomEventArgsViewModel
 	{
-		//protected readonly string ImagePath = Device.OnPlatform("images/", "", "Resources/images/");
-		protected readonly string ImagePath =
-			Device.OS == TargetPlatform.iOS ? "images/" :
-			Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
-
 		public string Icon1 { get { return ImagePath + "Pic1.png"; } }
 		public string Icon2 { get { return ImagePath + "Pic2.png"; } }
 		public string Icon3 { get { return ImagePath + "Pic3.png"; } }

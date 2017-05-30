@@ -13,9 +13,9 @@ namespace GestureSample.Views.Tests
 		{
 			var cmd = new Command(OnButtonClick);
 			var image = "Resources/images/Border";
-			if(Device.OS == TargetPlatform.iOS)
+			if(Device.RuntimePlatform == Device.iOS)
 				image = "images/Border";
-			if (Device.OS == TargetPlatform.Android)
+			if (Device.RuntimePlatform == Device.Android)
 				image = "Border";
 			Content = new BigButton("TTTTouch me", image, cmd)
 			{

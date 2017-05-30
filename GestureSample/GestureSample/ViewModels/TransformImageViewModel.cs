@@ -10,17 +10,12 @@ namespace GestureSample.ViewModels
 {
 	public class TransformImageViewModel : TransformViewModel
 	{
-		//protected readonly string Path = Device.OnPlatform("images/", "", "Resources/images/");
-		protected readonly string Path =
-			Device.OS == TargetPlatform.iOS ? "images/" :
-			Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
-
 		protected string[] images = new[] { "Flusi1.jpg", "Flusi2.jpg", "Flusi3.jpg" };
 		//protected string[] images = new[] { "Pic1.png", "Pic2.png", "Pic3.png", "Pic4.png" };
 		protected int currentImage = 0;
 		public string ImageSource
 		{
-			get { return Path + images[currentImage]; }
+			get { return ImagePath + images[currentImage]; }
 		}
 
 		protected override void OnSwiped(MR.Gestures.SwipeEventArgs e)

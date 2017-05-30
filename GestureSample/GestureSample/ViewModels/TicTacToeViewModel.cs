@@ -10,10 +10,6 @@ namespace GestureSample.ViewModels
 {
 	public class TicTacToeViewModel : CustomEventArgsViewModel
 	{
-		protected readonly string Path =
-			Device.OS == TargetPlatform.iOS ? "images/" :
-			Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
-
 		protected char[][] board;
 		protected char next;
 		protected int signsOnBoard;
@@ -155,8 +151,8 @@ namespace GestureSample.ViewModels
 
 		private string ValueToImage(char value)
 		{
-			if (value == 'X') return Path + "X.png";
-			if (value == 'O') return Path + "O.png";
+			if (value == 'X') return ImagePath + "X.png";
+			if (value == 'O') return ImagePath + "O.png";
 			return "";
 		}
 	}

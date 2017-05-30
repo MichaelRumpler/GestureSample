@@ -64,11 +64,11 @@ namespace GestureSample.ViewModels
 		{
 			base.OnPanning(e);
 
-			if (Device.OS == TargetPlatform.WinPhone)
+			if (Device.RuntimePlatform == Device.WinPhone)
 			{
 				TranslationX += e.DeltaDistance.X * Scale;		// unfortunately this has to be specified differently on WinPhone
 				TranslationY += e.DeltaDistance.Y * Scale;		// another bug in Xamarin Forms IMHO
-			}
+			}													// TODO: remove when WinPhone has been obsoleted
 			else
 			{
 				TranslationX += e.DeltaDistance.X;

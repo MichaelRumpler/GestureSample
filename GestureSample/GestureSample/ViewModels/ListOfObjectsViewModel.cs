@@ -11,18 +11,13 @@ namespace GestureSample.ViewModels
 	{
 		public class TextAndImage
 		{
-			//readonly string Path = Device.OnPlatform("images/", "", "Resources/images/");
-			protected readonly string Path =
-				Device.OS == TargetPlatform.iOS ? "images/" :
-				Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
-
 			public string Text { get; set; }
 			public string Image { get; set; }
 
 			public TextAndImage(string text, string image)
 			{
 				Text = text;
-				Image = Path + image;
+				Image = ImagePath + image;
 			}
 		}
 

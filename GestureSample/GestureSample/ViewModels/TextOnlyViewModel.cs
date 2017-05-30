@@ -11,6 +11,11 @@ namespace GestureSample.ViewModels
 {
 	public class TextOnlyViewModel : ObservableObject
 	{
+		//protected readonly string ImagePath = Device.OnPlatform("images/", "", "Resources/images/");
+		protected static readonly string ImagePath =
+			Device.RuntimePlatform == Device.iOS ? "images/" :
+			Device.RuntimePlatform == Device.Android ? "" : "Resources/images/";
+
 		private string text = "Initialized";
 		public string Text
 		{

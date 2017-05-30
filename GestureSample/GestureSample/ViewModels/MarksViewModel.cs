@@ -10,13 +10,8 @@ namespace GestureSample.ViewModels
 {
 	public class MarksViewModel : TransformViewModel
 	{
-		//protected readonly string Path = Device.OnPlatform("images/", "", "Resources/images/");
-		protected readonly string Path =
-			Device.OS == TargetPlatform.iOS ? "images/" :
-			Device.OS == TargetPlatform.Android ? "" : "Resources/images/";
-
-		public string FingerMark	{ get { return Path + "mark_red.png"; } }
-		public string CenterMark	{ get { return Path + "mark_blue.png"; } }
+		public string FingerMark	{ get { return ImagePath + "mark_red.png"; } }
+		public string CenterMark	{ get { return ImagePath + "mark_blue.png"; } }
 
 		protected static readonly Point halfMarkSize = new Point(32, 32);
 		protected static readonly Size autoSize = new Size(Xamarin.Forms.AbsoluteLayout.AutoSize, Xamarin.Forms.AbsoluteLayout.AutoSize);
