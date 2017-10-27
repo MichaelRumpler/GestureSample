@@ -235,7 +235,7 @@ namespace GestureSample.Views
 						"InputTransparent",
 						"Simple LongPress",
 						"Page and ListView",
-						"Custom Button (no MR components)",
+						"Custom Button",
 					};
 					var testsPage = new MainPage { Title = item, BindingContext = testsVM };
 					await App.MainNavigation.PushAsync(testsPage);
@@ -281,8 +281,8 @@ namespace GestureSample.Views
 					await App.MainNavigation.PushAsync(new PageAndListView { BindingContext = new ViewModels.ListOfStringsViewModel() });
 					break;
 
-				case "Custom Button (no MR components)":
-					await App.MainNavigation.PushAsync(new CustomButtonPage());
+				case "Custom Button":
+					await App.MainNavigation.PushAsync(new CustomButtonPage() { BindingContext = new ViewModels.ButtonViewModel() });
 					break;
 
 			}

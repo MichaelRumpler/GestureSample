@@ -16,11 +16,5 @@ namespace GestureSample.Views.Tests
 		{
 			InitializeComponent();
 		}
-
-		private void Button_Clicked(object sender, EventArgs args)
-		{
-			var btn = (CustomButton)sender;
-			Log.Text = $"'{btn.Text}' was clicked";
-		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿namespace GestureSample.Views.Tests
 {
-	public class CustomButton : Xamarin.Forms.Button
+	public class CustomButton : MR.Gestures.Button
 	{
 	}
 }
