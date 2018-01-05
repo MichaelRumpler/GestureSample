@@ -2,9 +2,9 @@
   "supports": {},
   "dependencies": {
     "Microsoft.NETCore.Portable.Compatibility": "1.0.2",
-    "MR.Gestures": "1.5.0",
+    "MR.Gestures": "1.5.2",
     "NETStandard.Library": "1.6.0",
-    "Xamarin.Forms": "2.4.0.280"
+    "Xamarin.Forms": "2.5.0.121934"
   },
   "frameworks": {
     "netstandard1.0": {

@@ -123,7 +123,8 @@ namespace GestureSample.ViewModels
 		{
 			StringBuilder sb = new StringBuilder(eventName);
 
-			sb.Append($" on {GetElementName(e)} with finger(s) {String.Join(", ", e.TriggeringTouches.Select(n => $"#{n}"))}.");
+			if(e.TriggeringTouches != null)
+				sb.Append($" on {GetElementName(e)} with finger(s) {String.Join(", ", e.TriggeringTouches.Select(n => $"#{n}"))}.");
 			sb.Append($" ViewPosition: {e.ViewPosition.X:F}/{e.ViewPosition.Y:F}/{e.ViewPosition.Width:F}/{e.ViewPosition.Height:F}");
 			AddTouches(sb, e);
 

@@ -4,8 +4,8 @@
     "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
     "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-    "MR.Gestures": "1.5.0",
-    "Xamarin.Forms": "2.4.0.280"
+    "MR.Gestures": "1.5.2",
+    "Xamarin.Forms": "2.5.0.121934"
   },
   "frameworks": {
     "uap10.0": {}
