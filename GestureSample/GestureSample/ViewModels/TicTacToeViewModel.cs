@@ -50,6 +50,9 @@ namespace GestureSample.ViewModels
 			int x = (int)(e.Touches[0].X * 3 / e.ViewPosition.Width);
 			int y = (int)(e.Touches[0].Y * 3 / e.ViewPosition.Height);
 
+			if (Device.RuntimePlatform == Device.macOS)		// stupid Mac has 0/0 in the LOWER left corner
+				y = 2 - y;									// so I need to have a reference to XF and platform specific code in the VM
+			
 			if(board[y][x] != ' ')
 			{
 				AddText("Field {0}/{1} is already filled.", x, y);
