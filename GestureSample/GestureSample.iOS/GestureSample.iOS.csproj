@@ -117,12 +117,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MR.Gestures, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.5.2\lib\Xamarin.iOS10\MR.Gestures.dll</HintPath>
+    <Reference Include="MR.Gestures, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.5.3\lib\Xamarin.iOS10\MR.Gestures.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MR.Gestures.iOS, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.1.5.2\lib\Xamarin.iOS10\MR.Gestures.iOS.dll</HintPath>
+    <Reference Include="MR.Gestures.iOS, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.1.5.3\lib\Xamarin.iOS10\MR.Gestures.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
