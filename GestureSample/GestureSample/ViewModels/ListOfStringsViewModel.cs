@@ -9,7 +9,7 @@ namespace GestureSample.ViewModels
 {
 	public class ListOfStringsViewModel : TextOnlyViewModel
 	{
-		public readonly string[] strings = new[] {
+		public static readonly string[] Numbers = new[] {
 			"One",
 			"Two",
 			"Three",
@@ -52,13 +52,7 @@ namespace GestureSample.ViewModels
 			"Fourty",
 		};
 
-		public string[] Strings
-		{
-			get
-			{
-				return strings;
-			}
-		}
+		public string[] Strings => Numbers;
 
 		private string selectedItem = null;
 		public string SelectedItem

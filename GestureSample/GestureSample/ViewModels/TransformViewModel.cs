@@ -64,16 +64,8 @@ namespace GestureSample.ViewModels
 		{
 			base.OnPanning(e);
 
-			if (Device.RuntimePlatform == Device.WinPhone)
-			{
-				TranslationX += e.DeltaDistance.X * Scale;		// unfortunately this has to be specified differently on WinPhone
-				TranslationY += e.DeltaDistance.Y * Scale;		// another bug in Xamarin Forms IMHO
-			}													// TODO: remove when WinPhone has been obsoleted
-			else
-			{
-				TranslationX += e.DeltaDistance.X;
-				TranslationY += e.DeltaDistance.Y;
-			}
+			TranslationX += e.DeltaDistance.X;
+			TranslationY += e.DeltaDistance.Y;
 		}
 		protected override void OnPinching(MR.Gestures.PinchEventArgs e)
 		{

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -15,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
+[assembly: Xamarin.Forms.Xaml.XamlCompilation(Xamarin.Forms.Xaml.XamlCompilationOptions.Skip)]
 
 namespace GestureSample.UWP
 {
@@ -29,10 +30,7 @@ namespace GestureSample.UWP
         /// </summary>
         public App()
         {
-			Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
-				Microsoft.ApplicationInsights.WindowsCollectors.Metadata |
-				Microsoft.ApplicationInsights.WindowsCollectors.Session);
-			this.InitializeComponent();
+            this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
 
@@ -44,12 +42,6 @@ namespace GestureSample.UWP
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 
-#if DEBUG
-            if (System.Diagnostics.Debugger.IsAttached)
-            {
-                this.DebugSettings.EnableFrameRateCounter = true;
-            }
-#endif
 
             Frame rootFrame = Window.Current.Content as Frame;
 
@@ -63,14 +55,14 @@ namespace GestureSample.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 				var otherAssemblies = new[] {
-					typeof(MR.Gestures.ContentPage).GetTypeInfo().Assembly,
-					typeof(MR.Gestures.UWP.Renderers.PageRenderer).GetTypeInfo().Assembly,
+					typeof(MR.Gestures.ContentPage).Assembly,
+					typeof(MR.Gestures.UWP.Renderers.PageRenderer).Assembly,
 				};
 				Xamarin.Forms.Forms.Init(e, otherAssemblies);
 
 				MR.Gestures.UWP.Settings.LicenseKey = "ALZ9-BPVU-XQ35-CEBG-5ZRR-URJQ-ED5U-TSY8-6THP-3GVU-JW8Z-RZGE-CQW6";           // key for GestureSample
 
-				if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
                     //TODO: Load state from previously suspended application
                 }

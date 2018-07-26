@@ -105,6 +105,8 @@ namespace GestureSample.ViewModels
 			sb.Append($" {GetElementName(e)} {e.NumberOfTaps} times with {e.NumberOfTouches} fingers.");
 			sb.Append($" ViewPosition: {e.ViewPosition.X:F}/{e.ViewPosition.Y:F}/{e.ViewPosition.Width:F}/{e.ViewPosition.Height:F}");
 			AddTouches(sb, e);
+			if (e.Cancelled)
+				sb.Append(", Cancelled=true");
 
 			return sb.ToString();
 		}
@@ -115,6 +117,8 @@ namespace GestureSample.ViewModels
 
 			sb.Append($" {GetElementName(e)} for {e.Duration}ms with {e.NumberOfTouches} fingers");
 			AddTouches(sb, e);
+			if (e.Cancelled)
+				sb.Append(", Cancelled=true");
 
 			return sb.ToString();
 		}
@@ -127,6 +131,8 @@ namespace GestureSample.ViewModels
 				sb.Append($" on {GetElementName(e)} with finger(s) {String.Join(", ", e.TriggeringTouches.Select(n => $"#{n}"))}.");
 			sb.Append($" ViewPosition: {e.ViewPosition.X:F}/{e.ViewPosition.Y:F}/{e.ViewPosition.Width:F}/{e.ViewPosition.Height:F}");
 			AddTouches(sb, e);
+			if (e.Cancelled)
+				sb.Append(", Cancelled=true");
 
 			return sb.ToString();
 		}
@@ -140,6 +146,8 @@ namespace GestureSample.ViewModels
 			sb.Append($", TotalDistance = {e.TotalDistance.X:F}/{e.TotalDistance.Y:F}");
 			sb.Append($", Velocity = {e.Velocity.X:F}/{e.Velocity.Y:F}");
 			AddTouches(sb, e);
+			if (e.Cancelled)
+				sb.Append(", Cancelled=true");
 
 			return sb.ToString();
 		}
@@ -153,6 +161,8 @@ namespace GestureSample.ViewModels
 			sb.Append($", TotalAngle = {e.TotalAngle:F}");
 			sb.Append($", Center =  {e.Center.X:F}/{e.Center.Y:F}");
 			AddTouches(sb, e);
+			if (e.Cancelled)
+				sb.Append(", Cancelled=true");
 
 			return sb.ToString();
 		}
@@ -163,8 +173,11 @@ namespace GestureSample.ViewModels
 
 			sb.Append($" {GetElementName(e)} with {e.NumberOfTouches} fingers");
 			sb.Append($", DeltaScale = {e.DeltaScale:F}");
+			sb.Append($", TotalScale = {e.TotalScale:F}");
 			sb.Append($", Center =  {e.Center.X:F}/{e.Center.Y:F}");
 			AddTouches(sb, e);
+			if (e.Cancelled)
+				sb.Append(", Cancelled=true");
 
 			return sb.ToString();
 		}

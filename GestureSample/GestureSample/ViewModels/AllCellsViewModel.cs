@@ -26,16 +26,5 @@ namespace GestureSample.ViewModels
 				SetProperty(ref switchValue, value);
 			}
 		}
-
-		protected override void OnTapped(MR.Gestures.TapEventArgs e)
-		{
-			base.OnTapped(e);
-
-			var sc = e.Sender as MR.Gestures.SwitchCell;
-			if(sc != null)
-			{
-				SwitchValue = !SwitchValue;
-			}
-		}
 	}
 }
