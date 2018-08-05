@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="MR.Gestures - Touch gesture handling for Xamarin.Forms mobile apps">
+	<meta name="author" content="Michael Rumpler">
+
+    <title>MR.Gestures - Handle all the touch gestures in your Xamarin.Forms mobile apps</title>
+
+    <link href="/css/site.css" rel="stylesheet"/>
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+    <script src="/scripts/modernizr.js"></script>
+
+
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">MR.Gestures</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a href="#Overview">Overview</a>
+						</li>
+						<li>
+							<a href="#Buy">Buy</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#Events">Events</a></li>
+								<li><a href="#EventArgs">EventArgs</a></li>
+								<li><a href="#Compatibility">Compatibility</a></li>
+								<li><a href="#ReleaseNotes">Release Notes</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#FAQs">FAQs</a>
+						</li>
+						<li>
+							<a href="#Contact">Contact</a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<div class="mainHeader">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-lg-2 hidden-xs">
+					<img src="/images/MRGestures_Logo128.png" />
+				</div>
+				<h1 class="col-sm-9 col-lg-10">
+					MR.Gestures
+					<small>Handle all the touch gestures in your Xamarin.Forms mobile apps</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<nav class="col-sm-3 col-lg-2 hidden-xs bs-docs-sidebar">
+				<ul id="sidebar" class="nav nav-stacked">
+					<li class="active">
+						<a href="#Overview">Overview</a>
+					</li>
+					<li>
+						<a href="#GettingStarted">Getting Started</a>
+					</li>
+					<li>
+						<a href="#CodeSamples">Code Samples</a>
+						<ul class="nav nav-stacked">
+							<li><a href="#EventsXAML">Event handlers in XAML</a></li>
+							<li><a href="#EventsCode">Event handlers in Code</a></li>
+							<li><a href="#CommandsXAML">Commands in XAML</a></li>
+							<li><a href="#CommandsCode">Commands in Code</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#Buy">Buy</a>
+					</li>
+					<li>
+						<a href="#Documentation">Documentation</a>
+						<ul class="nav nav-stacked">
+							<li><a href="#Events">Events</a></li>
+							<li><a href="#EventArgs">EventArgs</a></li>
+							<li><a href="#Compatibility">Compatibility</a></li>
+							<li><a href="#ReleaseNotes">Release Notes</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#FAQs">FAQs</a>
+					</li>
+					<li>
+						<a href="#Contact">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="col-sm-9 col-lg-10">
+				
+
+<section>
+	<h2 id="Overview">Overview</h2>
+
+	<p>
+		Xamarin Forms is great if you want to develop apps for different mobile platforms. But when it comes to touch gestures, it is still very limited.<br />
+		For more than a year they only had the TapGestureRecognizer. Although they did add some others lately, they still don't provide all information which you need.
+		Furthermore the API which they use has been copied from iOS and is not what a .NET developer would expect.
+	</p>
+
+	<p>
+		MR.Gestures tries to close that gap.
+	</p>
+	
+	<p>
+		It adds <code>Down</code>, <code>Up</code>, <code>Tapping</code>, <code>Tapped</code>, <code>DoubleTapped</code>, <code>LongPressing</code>, <code>LongPressed</code>, <code>Panning</code>, <code>Panned</code>, <code>Swiped</code>, <code>Pinching</code>, <code>Pinched</code>, <code>Rotating</code> and <code>Rotated</code>
+		events to each and every layout, cell and view and to the <code>ContentPage</code>.
+		These events will be raised when the user performs the corresponding touch gesture on the element.
+	</p>
+
+	<p>
+		In the <code>EventArgs</code> passed to the handlers you can see exactly what happened.
+	</p>
+
+	<p>
+		You can work with the touch gestures completely from the .NET Standard / PCL project. The platform specific code is all done in MR.Gestures.
+	</p>
+</section>
+
+
+<section>
+	<h2 id="GettingStarted">Getting Started</h2>
+
+	<p>
+		If you just want to see how it works, then download the free <a href="https://github.com/MichaelRumpler/GestureSample">GestureSample app from GitHub</a>.
+		In this app you can see how all the elements use all events. You can change the code however you like, add break points and see what it does.
+		You will find all the examples from here in the GestureSample and many more.
+	</p>
+
+	<p>To add MR.Gestures to your own app just follow these simple steps:</p>
+
+	<ul class="task-list">
+		<li><a href="#InstallWithNuget">Install MR.Gestures with NuGet</a></li>
+		<li><a href="#Buy">Obtain a license key</a></li>
+		<li><a href="#HowToConfigureTheLicenseKey">Configure the license key(s) in each platform specific project</a></li>
+	</ul>
+
+	<p>And now you can use the new elements from the namespace <code>MR.Gestures</code>.</p>
+</section>
+
+
+<section>
+	<h2 id="CodeSamples">Code Samples</h2>
+
+	<p>All the elements which are usually in the <code>Xamarin.Forms</code> namespace can also be found in MR.Gestures. But those have additional event handlers and command properties.</p>
+
+	<p>Adding the event handlers works the same way as in standard Xamarin Forms or WPF controls in both XAML and code.</p>
+
+	<h3 id="EventsXAML">Event Handlers in XAML</h3>
+
+	<p>To add the event handler in XAML you have to:</p>
+	<ol class="task-list">
+		<li>Add the namespace MR.Gestures from the dll</li>
+		<li>Use the element from that namespace instead of Xamarin.Forms</li>
+		<li>Add the handlers for the gestures you want to listen to</li>
+	</ol>
+	<p><img src="/images/xaml.png" alt="Sample XAML" /></p>
+
+	<p>Here on <code>LongPressed</code> the method <code>Red_LongPressed</code> should be called. The method must be defined in the code behind file like this</p>
+
+	<div class="highlight highlight-csharp">
+		<pre>    <span class="pl-st">void</span> Red_LongPressed(<span class="pl-st">object</span> sender, MR.Gestures.LongPressEventArgs e)
+    {
+        Console.WriteLine(<span class="pl-s1"><span class="pl-pds">"</span>BoxViewXaml.Red_LongPressed method called<span class="pl-pds">"</span></span>);
+    }
+</pre>
+	</div>
+
+	<h3 id="EventsCode">Event Handlers in Code</h3>
+
+	<p>Of course you can do the same in code. Either with a lambda expression</p>
+
+	<div class="highlight highlight-csharp">
+		<pre>        <span class="pl-k">var</span> box1 = <span class="pl-s">new</span> MR.Gestures.BoxView { Color = Color.Red };
+        box1.LongPressed += (s, e) =&gt; { Console.WriteLine(<span class="pl-s1"><span class="pl-pds">"</span>Code: Red LongPressed<span class="pl-pds">"</span></span>); };</pre>
+	</div>
+
+	<p>or by assigning the method as a handler.</p>
+
+	<div class="highlight highlight-csharp"><pre>        box1.LongPressed += Red_LongPressed;</pre></div>
+
+	<h3 id="CommandsXAML">Commands in XAML</h3>
+
+	<p>But IMHO if you want to write clean MVVM, then the view should be in XAML and the code behind empty. So instead of the event handlers you can also use commands in your view model and bind them to the respective properties.</p>
+
+	<div class="highlight highlight-xml">
+		<pre>    &lt;<span class="pl-ent">mr</span><span class="pl-ent">:</span><span class="pl-ent">BoxView</span> <span class="pl-e">Color</span>=<span class="pl-s1"><span class="pl-pds">"</span>Green<span class="pl-pds">"</span></span>
+		<span class="pl-e">LongPressedCommand</span>=<span class="pl-s1"><span class="pl-pds">"</span>{Binding LongPressedCommand}<span class="pl-pds">"</span></span>
+		<span class="pl-e">LongPressedCommandParameter</span>=<span class="pl-s1"><span class="pl-pds">"</span>Green<span class="pl-pds">"</span></span></pre>
+	</div>
+
+	<p>The properties for the commands are called like the events, just with <code>Command</code> appended. You can also define a parameter passed to the command with the <code>..CommandParameter</code> properties. If you suppress the <code>CommandParameter</code>, then the respective event args are passed to your command. In this case a <code>MR.Gestures.LongPressEventArgs</code> object.</p>
+
+	<p>For the <code>Tapped</code>, <code>DoubleTapped</code> and <code>LongPressed</code> events you may not need the event args and defining a <code>CommandParameter</code> could make sense. But for the more complicated events you will always need the event args or you won't know what happened. E.g. it does not help to just know that an element has been swiped unless you also know in which direction. The <code>Direction</code> is contained in the <code>SwipeEventArgs</code>.</p>
+
+	<h3 id="CommandsCode">Commands in Code</h3>
+
+	<p>You can bind the commands in code too.</p>
+
+	<div class="highlight highlight-csharp">
+		<pre>        <span class="pl-k">var</span> box2 = <span class="pl-s">new</span> MR.Gestures.BoxView { Color = Color.Green };
+        box2.SetBinding(MR.Gestures.BoxView.LongPressedCommandProperty, <span class="pl-s1"><span class="pl-pds">"</span>LongPressedCommand<span class="pl-pds">"</span></span>);
+        box2.LongPressedCommandParameter = <span class="pl-s1"><span class="pl-pds">"</span>Green<span class="pl-pds">"</span></span>;</pre>
+	</div>
+
+	<hr>
+
+	<p>The syntax for binding in code is a bit complicated, therefore my favorite is using commands in XAML. You will also see this, when you look through the code in GestureSample. Although there are samples in all these categories, most of them are written in XAML and bound to commands.</p>
+</section>
+
+<section>
+	<h2 id="Buy">Buy</h2>
+
+	<p>
+		MR.Gestures is licensed per app name.
+		I.e. if your app has the same name on all platforms, you only need one license key.
+		If you have different versions of your app with different names (e.g. different languages, customized for different clients or free and pro), then you need a separate key for each version.
+	</p>
+	<p>You can use it for as many developers on as many computers as you like.</p>
+
+	<p>The price for one license is EUR 40,00 (+VAT).</p>
+
+	<p>The payment process will be handled by MyCommerce. You will be forwarded to their site when you click the Buy button.</p>
+
+	<form>
+		<div class="form-group">
+			<label class="control-label">
+                Please enter the exact name of your app. This is case dependent including whitespaces.
+                See the <a href="#HowToConfigureAppName">FAQs</a> on how to configure it.</label>
+			<div class="row">
+				<div class="input-group col-sm-8 col-lg-6">
+					<input type="text" class="form-control" id="appName" placeholder="App Name">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" id="buyBtn">Buy</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<p>Once you purchased a license, instructions how to configure it will be displayed on the MyCommerce page. These instructions can also be found in the email they will send you and in the <a href="#HowToConfigureTheLicenseKey">FAQs</a>.</p>
+
+	<p>If you forget to configure the license key properly, then all the events will still be raised, but the properties of the <code>EventArgs</code> will be empty. That may be enough for the tap and long press events, but not for the more complicated ones.</p>
+
+</section>
+
+<section>
+	<h2 id="Documentation">Documentation</h2>
+
+	<h3 id="Events">Events</h3>
+
+	<p>You can handle fourteen different events with MR.Gestures.</p>
+
+	<div class="table-responsive">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>Event</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Down</td>
+					<td>One or more fingers came down onto the touch screen.</td>
+				</tr>
+				<tr>
+					<td>Up</td>
+					<td>One or more fingers were lifted from the screen.</td>
+				</tr>
+				<tr>
+					<td>Tapping</td>
+					<td>A finger came down and up again but it is not sure yet if this may become a multi tap.</td>
+				</tr>
+				<tr>
+					<td>Tapped</td>
+					<td>There was no second tap within 250ms so this was a single tap gesture.</td>
+				</tr>
+				<tr>
+					<td>DoubleTapped</td>
+					<td>There have been two Tapping events within 250ms and no more came.</td>
+				</tr>
+				<tr>
+					<td>LongPressing</td>
+					<td>A finger came down on the screen and did not move. The finger is still down.</td>
+				</tr>
+				<tr>
+					<td>LongPressed</td>
+					<td>The finger was released and the gesture is finished.</td>
+				</tr>
+				<tr>
+					<td>Panning</td>
+					<td>A finger came down and is moving on the screen.<br />This is also called a dragging gesture.</td>
+				</tr>
+				<tr>
+					<td>Panned</td>
+					<td>The finger left the screen while it was moved slowly or not at all.</td>
+				</tr>
+				<tr>
+					<td>Swiped</td>
+					<td>The finger left the screen while it was moved fast.<br />On Android and Windows Phone this is also called a flick.</td>
+				</tr>
+				<tr>
+					<td>Pinching</td>
+					<td>Two fingers hit the screen and are moving towards or away from each other.</td>
+				</tr>
+				<tr>
+					<td>Pinched</td>
+					<td>The fingers left the screen.</td>
+				</tr>
+				<tr>
+					<td>Rotating</td>
+					<td>Two fingers hit the screen and are rotating on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rotated</td>
+					<td>The fingers left the screen.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<p>The -ing event is raised when at least one finger is on the screen and a gesture is in progress. The -ed event is raised, when the gesture is finished and all fingers left the screen.</p>
+
+	<h3 id="EventArgs">EventArgs</h3>
+
+	<p>Your event handlers will receive one of seven different <code>EventArgs</code> objects with all the detailed information what happened.</p>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#DownUpEventArgsProperties" aria-expanded="false" aria-controls="DownUpEventArgsProperties">DownUpEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">Down and Up</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="DownUpEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>int[]</td>
+					<td>TriggeringTouches</td>
+					<td>The indexes of the fingers which were lowered/raised. Their locations are in <code>Touches</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen (and in <code>Up</code> the last position before they were lifted).</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#TapEventArgsProperties" aria-expanded="false" aria-controls="TapEventArgsProperties">TapEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">Tapping, Tapped and DoubleTapped</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="TapEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTaps</td>
+					<td>The number of taps in a short period of time (~250ms).</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#LongPressEventArgsProperties" aria-expanded="false" aria-controls="LongPressEventArgsProperties">LongPressEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">LongPressing and LongPressed</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="LongPressEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>long</td>
+					<td>Duration</td>
+					<td>Duration of long press in milliseconds.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTaps</td>
+					<td>The number of taps in a short period of time (~250ms).</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#PanEventArgsProperties" aria-expanded="false" aria-controls="PanEventArgsProperties">PanEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">Panning and Panned</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="PanEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Point</td>
+					<td>DeltaDistance</td>
+					<td>The distance in X/Y that the finger was moved since this event was raised the last time.</td>
+				</tr>
+				<tr>
+					<td>Point</td>
+					<td>TotalDistance</td>
+					<td>The distance in X/Y that the finger was moved since the pan gesture began.</td>
+				</tr>
+				<tr>
+					<td>Point</td>
+					<td>Velocity</td>
+					<td>The velocity of the finger in X/Y.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#SwipeEventArgsProperties" aria-expanded="false" aria-controls="SwipeEventArgsProperties">SwipeEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">Swiped</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="SwipeEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Direction</td>
+					<td>Direction</td>
+					<td>The direction in which the finger moved when it was lifted from the screen. This is one of <code>Left</code>, <code>Right</code>, <code>Up</code>, <code>Down</code> or <code>NotClear</code>.</td>
+				</tr>
+				<tr>
+					<td>Point</td>
+					<td>DeltaDistance</td>
+					<td>The distance in X/Y that the finger was moved since the last <code>Panning</code> event.</td>
+				</tr>
+				<tr>
+					<td>Point</td>
+					<td>TotalDistance</td>
+					<td>The distance in X/Y that the finger was moved since the pan gesture began.</td>
+				</tr>
+				<tr>
+					<td>Point</td>
+					<td>Velocity</td>
+					<td>The velocity of the finger in X/Y.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#PinchEventArgsProperties" aria-expanded="false" aria-controls="PinchEventArgsProperties">PinchEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">Pinching and Pinched</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="PinchEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Point</td>
+					<td>Center</td>
+					<td>The center of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>double</td>
+					<td>DeltaScale</td>
+					<td>The relative distance between the two fingers on the screen compared to the last time this event was raised.</td>
+				</tr>
+				<tr>
+					<td>double</td>
+					<td>Distance</td>
+					<td>The distance between the first two fingers.</td>
+				</tr>
+				<tr>
+					<td>double</td>
+					<td>TotalScale</td>
+					<td>The relative distance between the two fingers on the screen compared to when the gesture started.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<div class="row">
+				<div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#RotateEventArgsProperties" aria-expanded="false" aria-controls="RotateEventArgsProperties">RotateEventArgs</a></div>
+				<div class="col-xs-6">Raised by <span class="details">Rotating and Rotated</span></div>
+			</div>
+		</div>
+		<!-- Table -->
+		<table class="table table-condensed collapse" id="RotateEventArgsProperties">
+			<thead>
+				<tr>
+					<th>Type</th>
+					<th>Property</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>double</td>
+					<td>Angle</td>
+					<td>The angle a line from the first to the second finger currently has on the screen.</td>
+				</tr>
+				<tr>
+					<td>Point</td>
+					<td>Center</td>
+					<td>The center of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>double</td>
+					<td>DeltaAngle</td>
+					<td>The angle the fingers were rotated on the screen compared to the last time this event was raised.</td>
+				</tr>
+				<tr>
+					<td>double</td>
+					<td>TotalAngle</td>
+					<td>The angle the fingers were rotated on the screen compared to the start of the gesture.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Cancelled</td>
+					<td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+				</tr>
+				<tr>
+					<td>bool</td>
+					<td>Handled</td>
+					<td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+				</tr>
+				<tr>
+					<td>int</td>
+					<td>NumberOfTouches</td>
+					<td>The number of fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>IGestureAwareControl</td>
+					<td>Sender</td>
+					<td>The element which raised this event.</td>
+				</tr>
+				<tr>
+					<td>Point[]</td>
+					<td>Touches</td>
+					<td>Returns the position of the fingers on the screen.</td>
+				</tr>
+				<tr>
+					<td>Rectangle</td>
+					<td>ViewPosition</td>
+					<td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<h3 id="Compatibility">Compatibility</h3>
+
+	<p>
+		Some elements need to listen to some touch gestures themselves to work properly. Depending on the exact implementation by Xamarin and the native platforms, these events may be consumed.<br>
+		Some of the views are simply too small to be touched. Therefore the gestures are also not forwarded to us.
+	</p>
+    <p>
+        <b>WPF:</b><br />
+        When I tested the GestureSample with WPF the same happened again as on macOS; I found a bunch of very serious bugs.
+        I filed them, they were acknowledged, but nothing happened ever since.<br />
+
+        The bug which you see at once in the GestureSample is <a href="https://github.com/xamarin/Xamarin.Forms/issues/3271">#3271</a>.
+        The transformations from TranslationX/Y, Scale and Rotation are applied in the wrong order.
+        So when you rotate an element by 90° and change TranslationX, then the element is moved vertically instead of horizontaly.
+        Also when you set Scale to 2 and TranslationX to 100, it will be moved by 200.
+        I'll see if I can fix this bug in Xamarin.Forms itself. It is no bug of MR.Gestures but it results in the GestureSample acting strange.
+    </p>
+    <p>
+        <b>MacOS:</b><br />
+        Apple still has no multi touch displays for macOS, so I made the touch gestures on the Mac to work as I would expect them to.
+        If you think anything is awkward or doesn't behave as you would expect, please let me know.<br />
+
+        Down, Up, Tapping, Tapped, DoubleTapped, LongPressing, LongPressed, Panning, Panned and Swiped can be triggered with the mouse.
+        For Pinching, Pinched, Rotating and Rotated you need a Trackpad and two or more fingers.
+        Panning, Panned and Swiped can also be triggered with the Trackpad with two or more fingers.<br />
+
+        As the Trackpad has coordinates of its own which are not related to the touched view at all,
+        the Points in Touches work a bit different then on the other platforms / using the mouse.
+        When I returned the coordinates of the Trackpad (which is recommended by Apple), the values were very small for Pan gestures.
+        So I added <code>MR.Gestures.MacOS.Settings.TrackpadCoordinateRatio</code> and multiply all coordinates by that setting.
+        The default is 5/5, but you can change it however you want to get bigger or smaller values for the Touches.<br />
+
+        Apple also doesn't use the same coordinate system in MacOS as every other computer on earth.
+        They have the 0/0 point at the LOWER left.
+        So keep this in mind when you work with the view, touch or other coordinates.
+        Most likely you'll have to do some different logic on the Mac than on the other platforms.
+        Fortunately this is consistent with <code>Xamarin.Forms.VisualElement.TranslationY</code> and other Y coordinates.<br />
+        This also means that angles are counter clock wise instead of clock wise on every other platform.<br />
+
+        There's also a bug in Xamarin.Forms.MacOS. Their PageRenderer and ScrollViewRenderer don't have virtual methods
+        OnElementChanged and OnElementPropertyChanged to override. Therefore I cannot hook into those elements' touch handlers.
+        I submitted a <a href="https://github.com/xamarin/Xamarin.Forms/pull/1187" target="_blank">PR</a> to Xamarin in October 2017
+        and they merged it into master, but almost 10 months later it is still not included in XF 3.1.
+    </p>
+
+	<p>Here are all the elements and how they work in detail on each platform:</p>
+
+	<div class="table-responsive">
+		<table class="table table-striped table-hover compatibility center">
+			<thead>
+                <tr>
+                    <th>Element</th>
+                    <th>iOS</th>
+                    <th>Android</th>
+                    <th>UWP</th>
+                    <th>WPF</th>
+                    <th>MacOS</th>
+                </tr>
+			</thead>
+            <tbody>
+                <tr>
+                    <td>ContentPage</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>AbsoluteLayout</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>ContentView</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="The events are only raised, if they occur on a containing element."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Frame</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Grid</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="To be tested"><img src="/images/NotSupported_Red.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>RelativeLayout</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="The events are only raised, if they occur on a containing element."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>ScrollView</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Everything works with the mouse. With fingers the ScrollView consumes Pan, Swipe, Pinch and Rotate."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Gestures with the left mouse button are consumed. Left and middle buttons and touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Xamarins ScrollViewRenderer still doesn't have a virtual OnElementChanged method I can hook into."><img src="/images/NotSupported_Red.png" /></td>
+                </tr>
+                <tr>
+                    <td>StackLayout</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>TabbedPage</td>
+                    <td title="Switching between pages is not possible, tap, long press and pan gestures stop working after tapping the current page."><img src="/images/NotSupported_Red.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Everything works with the mouse. With fingers the TabbedPage consumes Pan, Swipe, Pinch and Rotate."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="The gesture functionality would disable the TabbedPage functionality."><img src="/images/NotSupported_Red.png" /></td>
+                </tr>
+                <tr>
+                    <td>ActivityIndicator</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>BoxView</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Button</td>
+                    <td title="Xamarins Clicked event does not work. Tapping and Tapped only work once, DoubleTapped doesn't work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Gestures with the left mouse button and Down/Up with touch are consumed. The rest works."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="The Xamarin Clicked event does not work anymore."><img src="/images/Supported_Yellow.png" /></td>
+                </tr>
+                <tr>
+                    <td>DatePicker</td>
+                    <td title="Tapping, Tapped and DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Elements beneath an open DatePicker also raise the gestures."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse clicks on the DatePicker are consumed. Clicks beside it and touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Editor</td>
+                    <td title="Tapping, Tapped and DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Tap only works with touch, but not with the mouse."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Entry</td>
+                    <td title="Tapping, Tapped and DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Tap only works with touch, but not with the mouse."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Label</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>ListView</td>
+                    <td title="RetainElement: Xamarins ItemTapped/ItemSelected don't work. RecycleElement: Tapping/Tapped/DoubleTapped don't work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Pan and Swipe are only raised with the mouse. With a finger, these gestures are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Picker</td>
+                    <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Elements beneath an open Picker also raise the gestures."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="The gesture functionality would disable the Picker functionality."><img src="/images/NotSupported_Red.png" /></td>
+                </tr>
+                <tr>
+                    <td>ProgressBar</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>SearchBar</td>
+                    <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Tap does not work with the mouse."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>Slider</td>
+                    <td title="Touch gestures work, but the Slider doesn't."><img src="/images/NotSupported_Red.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Tap does not work with the mouse."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events directly on the Slider are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="The gesture functionality would disable the Slider functionality."><img src="/images/NotSupported_Red.png" /></td>
+                </tr>
+                <tr>
+                    <td>Stepper</td>
+                    <td title="Touch gestures work, but the Stepper doesn't."><img src="/images/NotSupported_Red.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Tap does not work with the mouse on the Stepper, it does work on its padding."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events on enabled elements are consumed, disabled elements and touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="The gesture functionality would disable the Stepper functionality."><img src="/images/NotSupported_Red.png" /></td>
+                </tr>
+                <tr>
+                    <td>Switch</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Tap does not work with the mouse on the Switch, it does work on its padding."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Touch gestures work, but the Switch doesn't."><img src="/images/NotSupported_Red.png" /></td>
+                </tr>
+                <tr>
+                    <td>TableView</td>
+                    <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Pan and Swipe are only raised with the mouse. With a finger, these gestures are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events on contained elements are consumed, everything else works."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>TimePicker</td>
+                    <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Elements beneath an open TimePicker also raise the gestures."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="Mouse events are consumed, touches work."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>WebView</td>
+                    <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="Everything is consumed."><img src="/images/NotSupported_Red.png" /></td>
+                    <td title="Everything is consumed."><img src="/images/NotSupported_Red.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                </tr>
+                <tr>
+                    <td>EntryCell</td>
+                    <td title="Tapping/Tapped/DoubleTapped on the Entry part of the cell are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="A mouse click is consumed and not raised as Tap."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="To be tested"><img src="/images/NotSupported_Red.png" /></td>
+                    <td title="Multitouch gestures don't work, single touch only around the text. Entry doesn't work."><img src="/images/Supported_Yellow.png" /></td>
+                </tr>
+                <tr>
+                    <td>ImageCell</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="To be tested"><img src="/images/NotSupported_Red.png" /></td>
+                    <td title="Multitouch gestures don't work."><img src="/images/Supported_Yellow.png" /></td>
+                </tr>
+                <tr>
+                    <td>SwitchCell</td>
+                    <td title="Tapping/Tapped/DoubleTapped on the Switch part of the cell are consumed."><img src="/images/Supported_Yellow.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="A mouse click is consumed by the Switch, it is raised on the rest of the Cell or when tapping."><img src="/images/Supported_Yellow.png" /></td>
+                    <td title="To be tested"><img src="/images/NotSupported_Red.png" /></td>
+                    <td title="Multitouch gestures don't work, single touch only around the text. Switch only works when not within a MR.TableView."><img src="/images/Supported_Yellow.png" /></td>
+                </tr>
+                <tr>
+                    <td>TextCell</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="To be tested"><img src="/images/NotSupported_Red.png" /></td>
+                    <td title="Multitouch gestures don't work, single touch only around the text."><img src="/images/Supported_Yellow.png" /></td>
+                </tr>
+                <tr>
+                    <td>ViewCell</td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td><img src="/images/Supported_Green.png" /></td>
+                    <td title="To be tested"><img src="/images/NotSupported_Red.png" /></td>
+                    <td title="Multitouch gestures don't work."><img src="/images/Supported_Yellow.png" /></td>
+                </tr>
+            </tbody>
+		</table>
+	</div>
+
+	<div class="table-responsive key">
+		<table class="table table-condensed">
+			<tbody>
+				<tr>
+					<td><img src="/images/Supported_Green.png" /></td>
+					<td>All events are fully supported.</td>
+				</tr>
+				<tr>
+					<td><img src="/images/Supported_Yellow.png" /></td>
+					<td>Some events do not work fully. <span class="hidden-xs hidden-sm">Hover for details.</span></td>
+				</tr>
+				<tr>
+					<td><img src="/images/NotSupported_Red.png" /></td>
+					<td>No events are raised. <span class="hidden-xs hidden-sm">Hover for details.</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<h3 id="ReleaseNotes">Release Notes</h3>
+
+	<div class="table-responsive">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>Version</th>
+					<th>Changes</th>
+				</tr>
+			</thead>
+            <tbody>
+                <tr>
+                    <td>2.0.0</td>
+                    <td>
+                        <b>support for WPF</b><br />
+                        <b>build for .NET Standard 2.0</b><br />
+                        updated to Xamarin.Forms 3.0<br />
+                        remove support for Windows Phone Silverlight, Windows Phone Runtime and Windows Runtime<br />
+                        one multi targeting dll per platform<br />
+                        added TabbedPage<br />
+                        if a touch point is moved after LongPressing, LongPressed is canceled<br />
+                        [iOS] rotate and pinch gestures with more than two fingers<br />
+                        [Android] defaults to AppCompat, change renderers, adds Legacy* controls and made AppCompat* obsolete<br />
+                        [Android] if Velocity = 0/0 in Panned event, use Velocity of last Panning event<br />
+                        [macOS] ContentPage is now supported (ScrollView is still missing the PR I submitted eight months ago)<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.5.4</td>
+                    <td>
+                        [Android, iOS + Mac] fix ViewPosition coordinates.<br />
+                        [UWP] LongPressed was only raised when also watching LongPressing.<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.5.3</td>
+                    <td>
+                        [Android] revert to old code to retrieve the app name, no changes to AndroidManifest needed.<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.5.2</td>
+                    <td>
+                        [Android] use new constructors for the Android renderes introduced in XF 2.5, fixes a bug when using a MR.Gestures.Frame.<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.5.0</td>
+                    <td>
+                        <b>support for MacOS</b><br />
+                        <b>.NET Standard 1.0</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.4.3-pre1</td>
+                    <td>
+                        [Android] use fast renderers introduced by Xamarin in XF 2.3.5<br />
+                        [Android] fix "InvalidOperationException: Collection was modified" in LongPress event
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.4.2.2</td>
+                    <td>
+                        [Android] fix "InvalidOperationException: Collection was modified" in LongPress event
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.4.2</td>
+                    <td>
+                        [iOS] fixes selection of a Cell on a ContentPage handling Tapped
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.4.1</td>
+                    <td>
+                        [Android] fix: NullReferenceException when swiping<br />
+                        [Android] fix: EventArgs are empty if Panned is handled, but not Panning<br />
+                        [iOS] fix: after short pan gestures, Tapped is raised too<br />
+                        [iOS] fix: a short pan may be called without Touches (UIPanGestureRecognizer.NumberOfTouches == 0)
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.4.0</td>
+                    <td>
+                        SwipeEventArgs is a PanEventArgs and therefore also contains DeltaDistance, TotalDistance and Velocity<br />
+                        Add controls for AppCompat (MR.Gestures.AppCompat*)<br />
+                        No events are raised if InputTransparent == true (on iOS there are also no events if any container has InputTransparent)<br />
+                        [iOS] The Panned and Swiped events contain the last Touches before the finger was raised<br />
+                        [Windows] The LongPressed event contain the last Touches before the finger was raised
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.5</td>
+                    <td>
+                        Fixes a bug with LongPressing/LongPressed on some Android devices.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.4</td>
+                    <td>
+                        Added an internal constructor which Mono Droid needs to instantiate Java objects.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.3</td>
+                    <td>
+                        Worked around an issue when a NullReferenceException was thrown when I read a dependency property.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.2</td>
+                    <td>
+                        Worked around an issue when the renderers' Dispose method was called after Element was set to null.<br />
+                        Removed debug messages
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.1</td>
+                    <td>
+                        Raises Up with Cancelled = true when a finger is dragged off an element<br />
+                        Fix NullReferenceException on iOS
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.0</td>
+                    <td>
+                        Fix a bug with Tapping/Tapped on Android
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.3.0-pre1</td>
+                    <td>
+                        <strong>Add support for Universal Windows Platform</strong><br />
+                        Updated to Xamarin.Forms 2.0
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.2.5</td>
+                    <td>
+                        Support for multiple fingers in Tapping, Tapped, DoubleTapped, LongPressing and LongPressed on Android.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.2.4</td>
+                    <td>
+                        Reset panning gesture on swipe<br />
+                        [WinRT] fix a bug with elements on TabbedPage / CarouselPage<br />
+                        [WinRT] try/catch around calls to Windows.UI.Input.GestureRecognizer
+                    </td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.2.3</td>
+                    <td>Updated to Xamarin.Forms 1.5.0.6446</td>
+                </tr>
+                <tr>
+                    <td>1.2.2</td>
+                    <td>
+                        Fixes a bug where the gestures were not properly reset if you handled Panning but not Panned, Pinching without Pinched or Rotating without Rotated.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.2.1</td>
+                    <td>
+                        Fixes a bug on Android. A <code>ScrollView</code> with <code>Orientation="Horizontal"</code> did not scroll.
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.2.0</td>
+                    <td>
+                        <strong>Much better compatibility with Windows Runtime</strong><br />
+                        Update XF to 1.4.3.6374 and get rid of Xamarin.Forms.Windows<br />
+                        Refactor renderers so that custom renderers can now be written on all platforms without having to inherit from mine
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.2.0-pre1</td>
+                    <td>
+                        <strong>Add support for WinPhone 8.1 and Windows Store</strong><br />
+                        Drop support for 32 bit iOS apps<br />
+                        Two finger pan simultaneously with pinch and rotate on all platforms<br />
+                        Introduce gesture throttling on all platforms with <code>MR.Gestures.Settings.MinimumDelta*</code> properties<br />
+                        Add <code>Center</code> to all <code>EventArgs</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.1.0</td>
+                    <td>
+                        <strong>Add the Down and Up events</strong><br />
+                        [Android] Fix a NullReferenceException if a control is disposed in its asynchronous gesture handler
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.0.8</td>
+                    <td>
+                        <strong>[Android] handle all touch events on all elements additionally to Xamarins handlers</strong><br />
+                        [Android] better resource management (not so big memory leaks when Xamarin does not dispose of elements)<br />
+                        [Android] use DisplayMetrics.Density instead of hardcoded 2 for calculating ViewPosition, Touches and PanEventArgs.DeltaDistance<br />
+                        [Android] don't start pan when lifting one finger after multi touch gesture
+                    </td>
+                </tr>
+                <tr>
+                    <td>1.0.7</td>
+                    <td>Fixed a bug where events on Cells on Android phones were raised too often.</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.6</td>
+                    <td>Updated to Xamarin.Forms 1.4.0.6341</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.6-pre1</td>
+                    <td>Updated to Xamarin.Forms 1.4.0.6336-pre1</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.5</td>
+                    <td>Updated to Xamarin.Forms 1.3.5.6335</td>
+                </tr>
+                <tr>
+                    <td>1.0.5-pre1</td>
+                    <td>
+                        <strong>iOS compatibility much better</strong><br />
+                        WinPhone memory leaks fixed with <code>NavigationPage</code><br />
+                        added <code>Settings.MsUntilTapped</code>
+                    </td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.4</td>
+                    <td>Updated to Xamarin.Forms 1.3.4.6332</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.4-pre4</td>
+                    <td>Updated to Xamarin.Forms 1.3.4.6331-pre4</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.3</td>
+                    <td>Updated to Xamarin.Forms 1.3.3.6323</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.2</td>
+                    <td>Updated to Xamarin.Forms 1.3.2.6316</td>
+                </tr>
+                <tr class="unimportant">
+                    <td>1.0.1</td>
+                    <td>Updated to Xamarin.Forms 1.3.1.6296</td>
+                </tr>
+                <tr>
+                    <td>1.0.0</td>
+                    <td><strong>Initial version</strong> for Xamarin.Forms 1.3.0.6292</td>
+                </tr>
+            </tbody>
+		</table>
+	</div>
+
+</section>
+
+<section>
+    <h2 id="FAQs">FAQ</h2>
+
+    <h3 id="HowToConfigureTheLicenseKey">How do I configure my license key?</h3>
+
+    <p>
+        As your app name can be different on each platform, the license key must be configured in all platform specific projects.
+        The best place for it is in each project between the calls to <code>Xamarin.Forms.Forms.Init(...)</code> and <code>LoadApplication(new App())</code>.
+    </p>
+
+    <h5>Android</h5>
+    <p>In your Android project open <code>MainActivity.cs</code> and in the <code>OnCreate</code> method after the call to <code>global::Xamarin.Forms.Forms.Init(...)</code> add the following line:</p>
+
+<pre><code>MR.Gestures.Android.Settings.LicenseKey = "&lt;your license key&gt;";
+</code></pre>
+
+    <h5>iOS</h5>
+    <p>In the iOS project this has to be done in <code>AppDelegate.cs</code>, in the <code>FinishedLaunching</code> method. Add this line:</p>
+
+<pre><code>MR.Gestures.iOS.Settings.LicenseKey = "&lt;your license key&gt;";
+</code></pre>
+
+    <h5>Windows Phone 8.0 Silverlight</h5>
+    <p>In the Windows Phone 8.0 project that line has to be added to <code>MainPage.xaml.cs</code>:</p>
+
+<pre><code>	global::Xamarin.Forms.Forms.Init();
+	MR.Gestures.WinPhone.Settings.LicenseKey = "&lt;your license key&gt;";
+</code></pre>
+
+    <h5>Windows Runtime</h5>
+    <p>In the Windows (Phone) 8.1 Runtime projects the right place is in <code>App.xaml.cs</code> in the <code>OnLaunched</code> method:</p>
+
+<pre><code>                Xamarin.Forms.Forms.Init(e);
+                MR.Gestures.WinRT.Settings.LicenseKey = "&lt;your license key&gt;";
+                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+</code></pre>
+
+    <h5>Universal Windows Platform</h5>
+    <p>
+        UWP is very similar to Windows Runtime. Therefore here you also add the code to the <code>OnLaunched</code> method in <code>App.xaml.cs</code>.<br />
+        For the .NET Native compilation you also have to tell Xamarin.Forms, which assemblies it should scan for custom controls and renderers.
+        Therefore you also have to change the call to <code>Forms.Init</code> slightly:
+    </p>
+
+<pre><code>                rootFrame.NavigationFailed += OnNavigationFailed;
+
+                var otherAssemblies = new[] {
+                    typeof(MR.Gestures.ContentPage).GetTypeInfo().Assembly,
+                    typeof(MR.Gestures.UWP.Renderers.PageRenderer).GetTypeInfo().Assembly,
+                };
+                Xamarin.Forms.Forms.Init(e, otherAssemblies);
+
+                MR.Gestures.UWP.Settings.LicenseKey = "&lt;your license key&gt;";
+
+                if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
+</code></pre>
+
+    <h5>MacOS</h5>
+    <p>In the MacOS project, <code>Forms.Init</code> is called from <code>AppDelegate.DidFinishLaunching</code> and that's also where you set the <code>LicenseKey</code>:</p>
+
+<pre><code>	Forms.Init();
+	MR.Gestures.MacOS.Settings.LicenseKey = "&lt;your license key&gt;";
+	LoadApplication(new App());
+</code></pre>
+
+    <h3 id="HowToConfigureAppName">How do I configure my app name?</h3>
+
+    <p>The name of the app has to be configured differently on each platform.</p>
+
+    <h5>Android</h5>
+
+    <p>In the Android project open MainActivity.cs. The <code>MainActivity</code> class should have a <code>Activity</code> attribute. The <code>Label</code> parameter is the app name.</p>
+
+    <p>If you configured your activity manually in the Properties / AndroidManifest.xml file, then you need to change the <code>android:label</code> attribute there.</p>
+
+    <h5>iOS</h5>
+
+    <p>In Visual Studio open the iOS project properties and go to the "iOS Application" tab. There you'll find the "Application name". If you don't have a "iOS application" tab, then open the info.plist. The app name is in the CFBundleDisplayName or CFBundleName setting.</p>
+    <p>In Xamarin Studio the "Application name" is the very first textbox when you open the info.plist file.</p>
+
+    <h5>Windows Phone 8.0 Silverlight</h5>
+
+    <p>In the Windows Phone 8.0 project open Properties / WMAppManifest.xml and on the "Application UI" tab change the "Display Name". You should also change the "Tile Title". This is the name which will be shown if you add the app to the start page.</p>
+
+    <h5>Universal Windows Platform and Windows Runtime</h5>
+
+    <p>
+        On these platforms you need to open the Package.appxmanifest file in your platform project.
+        On the "Application" tab change the "Display Name" and on the "Packaging" tab the "Package display name".
+    </p>
+
+    <h5>MacOS</h5>
+
+    <p>In Visual Studio for Mac open the MacOS project options and go to General / Main Settings. You need to set the "Name".</p>
+
+    <h3 id="InstallWithNuget">How do I install MR.Gestures?</h3>
+
+    <p>You can install it with NuGet. In Visual Studio for Windows the easiest way is to right click your solution and choose "Manage NuGet Packages for Solution...", then search for MR.Gestures and install it to all projects which use XF at once.</p>
+    <p>On the Mac you need to install the package for each project separately.</p>
+
+    <h3 id="TrialVersion">Is there a trial version available?</h3>
+
+    <p>I already released the GestureSample app with complete source code on <a href="https://github.com/MichaelRumpler/GestureSample">GitHub</a>. That app shows how to use MR.Gestures with each and every available Element.</p>
+    <p>If you want to try it in your own app or the final name of your app has not been decided yet, you can simply call your app <i>GestureSample</i> and use the LicenseKey from that app.</p>
+
+    <h3 id="EmptyEventArgs">My event handler is called, but some event arg properties are not set.</h3>
+
+    <p>You did not set the <code>LicenseKey</code> properly or it does not match your app name. Please check if you set the correct <code>LicenseKey</code> in all platform specific projects and that your app name matches the key.</p>
+
+    <h3 id="NotRaised">The <code>Tapped</code> and <code>DoubleTapped</code> events are not raised</h3>
+
+    <p>Please check if you set the <code>LicenseKey</code> properly. Without <code>LicenseKey</code> the <code>NumberOfTaps</code> will always be 0. <code>Tapped</code> will only be raised if <code>NumberOfTaps</code> is 1 and <code>DoubleTapped</code> only if it is 2.</p>
+
+    <h3 id="License">What's the license agreement of MR.Gestures?</h3>
+
+    <p>
+        MR.Gestures is a pet project for me. It is very cheap and I don't earn a lot.
+        I definitely don't earn enough to hire a lawyer to write an official license agreement and I'm not a lawyer myself.
+        Whatever I could write by my own would not hold before a court anyway, so I didn't want to do it.
+        However, some people still ask for a license agreement so here is something that may at least satisfy your procurement.
+    </p>
+    <p>
+        I wrote MR.Gestures myself and I hold all rights on it.<br />
+        It is a library to be included in others apps, so Yes, I grant the right to use MR.Gestures in your own app, no matter if it's commercial or free.<br />
+        I do not grant the right to tamper with the library in any way, disassemble or resell the whole or only parts of it.
+    </p>
+    <p>
+        MR.Gestures is licensed per app name.
+        I.e. if your app has the same name on all platforms, you only need one license key.
+        If you have different versions of your app with different names (e.g. different languages, customized for different clients/environments or free and pro), then you need a separate key for each version.
+    </p>
+    <p>You can use it for as many developers on as many computers as you like.</p>
+
+    <h3 id="MultiTouchGestures">I want to swipe with two fingers. How can I handle that gesture?</h3>
+
+    <p>The native standard gesture recognizers only work with the standard amount of fingers. I.e. two fingers for pinch and rotate and one for the others.</p>
+    <p>I managed to get some gestures on some platforms running with more fingers, but this is not consistent over all platforms.</p>
+    <p>In the future I may use a different API which is nearer to the wire. But this is a very big change so I'm not sure if I'll do that yet.</p>
+
+    <h3 id="Container">I try to move/zoom/rotate an element, but it jumps on the screen.</h3>
+
+    <p>
+        The <code>Touches</code> coordinates in the <code>EventArgs</code> are always relative to the <code>View</code> which handles the event.
+        If you manipulate the <code>TranslationX</code>, <code>TranslationY</code>, <code>Scale</code> or <code>Rotation(X/Y)</code> properties during a gesture,
+        then the <code>Touches</code> and <code>Delta*</code> values cannot be calculated anymore.
+    </p>
+    <p>So you always have to listen to the events of a container element and manipulate those properties of a child.</p>
+
+    <p>So instead of</p>
+    <div class="highlight highlight-xml">
+        <pre>        &lt;<span class="pl-ent">mr</span><span class="pl-ent">:</span><span class="pl-ent">Image</span>
+        <span class="pl-e">PanningCommand</span>=<span class="pl-s"><span class="pl-pds">"</span>{Binding PanningCommand}<span class="pl-pds">"</span></span>
+        <span class="pl-e">TranslationX</span>=<span class="pl-s"><span class="pl-pds">"</span>{Binding TranslationX}<span class="pl-pds">"</span></span>
+        <span class="pl-e">TranslationY</span>=<span class="pl-s"><span class="pl-pds">"</span>{Binding TranslationY}<span class="pl-pds">"</span></span> /&gt;</pre>
+    </div>
+
+    <p>you should write</p>
+    <div class="highlight highlight-xml">
+        <pre>        &lt;<span class="pl-ent">mr</span><span class="pl-ent">:</span><span class="pl-ent">ContentView</span> <span class="pl-e">PanningCommand</span>=<span class="pl-s"><span class="pl-pds">"</span>{Binding PanningCommand}<span class="pl-pds">"</span></span>&gt;
+            &lt;<span class="pl-ent">Image</span>
+        <span class="pl-e">TranslationX</span>=<span class="pl-s"><span class="pl-pds">"</span>{Binding TranslationX}<span class="pl-pds">"</span></span>
+        <span class="pl-e">TranslationY</span>=<span class="pl-s"><span class="pl-pds">"</span>{Binding TranslationY}<span class="pl-pds">"</span></span> /&gt;
+        &lt;/<span class="pl-ent">mr</span><span class="pl-ent">:</span><span class="pl-ent">ContentView</span>&gt;</pre>
+    </div>
+
+    <h3 id="WPCells">The gestures do not work on cells on Windows.</h3>
+
+    <p>Xamarins Windows renderers (Silverlight, Runtime and UWP) for cells do not provide anything I can hook into to add my functionality. So I had to add that functionality to the renderers for <code>MR.Gestures.ListView</code> and <code>MR.Gestures.TableView</code>.</p>
+    <p>So if you want to listen to touch gestures on cells, the containing <code>ListView</code> or <code>TableView</code> must also be used from <code>MR.Gestures</code> even if you don't add any gesture listeners on that element itself.</p>
+
+    <h3 id="CouldNotLoad">I get &quot;Could not load file or assembly 'MR.Gestures'&quot; or &quot;Could not load type MR.Gestures...&quot;.</h3>
+
+    <p>Please check your references. The portable project needs to reference MR.Gestures. The platform specific projects need references to MR.Gestures.<i>platform</i>.</p>
+    <p>Please also check, if you set your <code>Settings.LicenseKey</code> like it is described <a href="#HowToConfigureTheLicenseKey">below</a>. If this is not set, then the linker may strip it out of your executable.</p>
+
+    <h3 id="Data">What data do you have from me and what do you do with it?</h3>
+
+    <p>I don't collect any data from people who are not my customers. I also don't send newsletters, so there's no need to unsubscribe anything.</p>
+    <p>
+        If you buy a MR.Gestures license, then my distributor will collect all data which they need to process the payment.
+        Once the payment is done, I receive an email with your contacts (technical and payment), app name and issued license key. I do not receive your credit card number or any other sensitive information.
+        I keep this data for future reference in case anybody needs support from me.
+        Also if you send me any emails yourself, I will keep those emails for future reference.
+        You can request the deletion of these emails, but if I can't find your data, then you're no customer of mine and I may be slower with support requests.
+    </p>
+    <p>There is no cookie banner on this page, because it does not use any cookies at all.</p>
+
+</section>
+
+
+<section id="Contact">
+	<h2>Contact</h2>
+
+	<p>My name is Michael Rumpler and I'm a freelance developer located in Austria. I started with C# in 2004. Although I also coded a lot in JavaScript, Java and some others, C# is my language of choice.</p>
+	<p>If you have any questions, suggestions, you find bugs or whatever, then please read this page again. If you can't find anything about your problem here, than search in the thread in the Xamarin forum I linked below.</p>
+    <p>If you still can't find anything, then you can contact me in various ways:</p>
+	<ul>
+		<li>post to the <a href="https://forums.xamarin.com/discussion/32956/mr-gestures-handles-all-touch-gestures#latest" target="_blank">Xamarin Forum</a></li>
+		<li>send an email to <a href="mailto:mrgestures@mrumpler.at">mrgestures@mrumpler.at</a></li>
+		<li>or a tweet <a href="https://twitter.com/MRGestures">@MRGestures</a>.</li>
+	</ul>
+
+    <h5>Imprint</h5>
+    <p>
+        Michael Rumpler<br />
+        Trauttmansdorffstrasse 15<br />
+        A-2544 Leobersdorf<br />
+        Austria
+    </p>
+    <p>VAT ID: ATU55244603</p>
+</section>
+
+
+				<hr />
+				<footer>
+					<p>&copy; 2018 - Michael Rumpler</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<script src="/scripts/jquery.js"></script>
+
+	<script src="/scripts/bootstrap.js"></script>
+
+	<script src="/scripts/site.js"></script>
+
+	
+</body>
+</html>
