@@ -1,0 +1,251 @@
+<h3 id="ReleaseNotes">Release Notes</h3>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Version</th>
+                <th>Changes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2.0.0</td>
+                <td>
+                    <b>support for WPF</b><br />
+                    <b>built for .NET Standard 2.0</b><br />
+                    updated to Xamarin.Forms 3.0<br />
+                    remove support for Windows Phone Silverlight, Windows Phone Runtime and Windows Runtime<br />
+                    one multi targeting dll per platform<br />
+                    added TabbedPage<br />
+                    if a touch point is moved after LongPressing, LongPressed is canceled<br />
+                    [iOS] rotate and pinch gestures with more than two fingers<br />
+                    [Android] defaults to AppCompat, change renderers, adds Legacy* controls and made AppCompat* obsolete<br />
+                    [Android] if Velocity = 0/0 in Panned event, use Velocity of last Panning event<br />
+                    [macOS] ContentPage is now supported (ScrollView is still missing the PR I submitted eight months ago)<br />
+                </td>
+            </tr>
+            <tr>
+                <td>1.5.4</td>
+                <td>
+                    [Android, iOS + Mac] fix ViewPosition coordinates.<br />
+                    [UWP] LongPressed was only raised when also watching LongPressing.<br />
+                </td>
+            </tr>
+            <tr>
+                <td>1.5.3</td>
+                <td>
+                    [Android] revert to old code to retrieve the app name, no changes to AndroidManifest needed.<br />
+                </td>
+            </tr>
+            <tr>
+                <td>1.5.2</td>
+                <td>
+                    [Android] use new constructors for the Android renderes introduced in XF 2.5, fixes a bug when using a MR.Gestures.Frame.<br />
+                </td>
+            </tr>
+            <tr>
+                <td>1.5.0</td>
+                <td>
+                    <b>support for MacOS</b><br />
+                    <b>.NET Standard 1.0</b>
+                </td>
+            </tr>
+            <tr>
+                <td>1.4.3-pre1</td>
+                <td>
+                    [Android] use fast renderers introduced by Xamarin in XF 2.3.5<br />
+                    [Android] fix "InvalidOperationException: Collection was modified" in LongPress event
+                </td>
+            </tr>
+            <tr>
+                <td>1.4.2.2</td>
+                <td>
+                    [Android] fix "InvalidOperationException: Collection was modified" in LongPress event
+                </td>
+            </tr>
+            <tr>
+                <td>1.4.2</td>
+                <td>
+                    [iOS] fixes selection of a Cell on a ContentPage handling Tapped
+                </td>
+            </tr>
+            <tr>
+                <td>1.4.1</td>
+                <td>
+                    [Android] fix: NullReferenceException when swiping<br />
+                    [Android] fix: EventArgs are empty if Panned is handled, but not Panning<br />
+                    [iOS] fix: after short pan gestures, Tapped is raised too<br />
+                    [iOS] fix: a short pan may be called without Touches (UIPanGestureRecognizer.NumberOfTouches == 0)
+                </td>
+            </tr>
+            <tr>
+                <td>1.4.0</td>
+                <td>
+                    SwipeEventArgs is a PanEventArgs and therefore also contains DeltaDistance, TotalDistance and Velocity<br />
+                    Add controls for AppCompat (MR.Gestures.AppCompat*)<br />
+                    No events are raised if InputTransparent == true (on iOS there are also no events if any container has InputTransparent)<br />
+                    [iOS] The Panned and Swiped events contain the last Touches before the finger was raised<br />
+                    [Windows] The LongPressed event contain the last Touches before the finger was raised
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.5</td>
+                <td>
+                    Fixes a bug with LongPressing/LongPressed on some Android devices.
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.4</td>
+                <td>
+                    Added an internal constructor which Mono Droid needs to instantiate Java objects.
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.3</td>
+                <td>
+                    Worked around an issue when a NullReferenceException was thrown when I read a dependency property.
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.2</td>
+                <td>
+                    Worked around an issue when the renderers' Dispose method was called after Element was set to null.<br />
+                    Removed debug messages
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.1</td>
+                <td>
+                    Raises Up with Cancelled = true when a finger is dragged off an element<br />
+                    Fix NullReferenceException on iOS
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.0</td>
+                <td>
+                    Fix a bug with Tapping/Tapped on Android
+                </td>
+            </tr>
+            <tr>
+                <td>1.3.0-pre1</td>
+                <td>
+                    <strong>Add support for Universal Windows Platform</strong><br />
+                    Updated to Xamarin.Forms 2.0
+                </td>
+            </tr>
+            <tr>
+                <td>1.2.5</td>
+                <td>
+                    Support for multiple fingers in Tapping, Tapped, DoubleTapped, LongPressing and LongPressed on Android.
+                </td>
+            </tr>
+            <tr>
+                <td>1.2.4</td>
+                <td>
+                    Reset panning gesture on swipe<br />
+                    [WinRT] fix a bug with elements on TabbedPage / CarouselPage<br />
+                    [WinRT] try/catch around calls to Windows.UI.Input.GestureRecognizer
+                </td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.2.3</td>
+                <td>Updated to Xamarin.Forms 1.5.0.6446</td>
+            </tr>
+            <tr>
+                <td>1.2.2</td>
+                <td>
+                    Fixes a bug where the gestures were not properly reset if you handled Panning but not Panned, Pinching without Pinched or Rotating without Rotated.
+                </td>
+            </tr>
+            <tr>
+                <td>1.2.1</td>
+                <td>
+                    Fixes a bug on Android. A <code>ScrollView</code> with <code>Orientation="Horizontal"</code> did not scroll.
+                </td>
+            </tr>
+            <tr>
+                <td>1.2.0</td>
+                <td>
+                    <strong>Much better compatibility with Windows Runtime</strong><br />
+                    Update XF to 1.4.3.6374 and get rid of Xamarin.Forms.Windows<br />
+                    Refactor renderers so that custom renderers can now be written on all platforms without having to inherit from mine
+                </td>
+            </tr>
+            <tr>
+                <td>1.2.0-pre1</td>
+                <td>
+                    <strong>Add support for WinPhone 8.1 and Windows Store</strong><br />
+                    Drop support for 32 bit iOS apps<br />
+                    Two finger pan simultaneously with pinch and rotate on all platforms<br />
+                    Introduce gesture throttling on all platforms with <code>MR.Gestures.Settings.MinimumDelta*</code> properties<br />
+                    Add <code>Center</code> to all <code>EventArgs</code>
+                </td>
+            </tr>
+            <tr>
+                <td>1.1.0</td>
+                <td>
+                    <strong>Add the Down and Up events</strong><br />
+                    [Android] Fix a NullReferenceException if a control is disposed in its asynchronous gesture handler
+                </td>
+            </tr>
+            <tr>
+                <td>1.0.8</td>
+                <td>
+                    <strong>[Android] handle all touch events on all elements additionally to Xamarins handlers</strong><br />
+                    [Android] better resource management (not so big memory leaks when Xamarin does not dispose of elements)<br />
+                    [Android] use DisplayMetrics.Density instead of hardcoded 2 for calculating ViewPosition, Touches and PanEventArgs.DeltaDistance<br />
+                    [Android] don't start pan when lifting one finger after multi touch gesture
+                </td>
+            </tr>
+            <tr>
+                <td>1.0.7</td>
+                <td>Fixed a bug where events on Cells on Android phones were raised too often.</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.6</td>
+                <td>Updated to Xamarin.Forms 1.4.0.6341</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.6-pre1</td>
+                <td>Updated to Xamarin.Forms 1.4.0.6336-pre1</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.5</td>
+                <td>Updated to Xamarin.Forms 1.3.5.6335</td>
+            </tr>
+            <tr>
+                <td>1.0.5-pre1</td>
+                <td>
+                    <strong>iOS compatibility much better</strong><br />
+                    WinPhone memory leaks fixed with <code>NavigationPage</code><br />
+                    added <code>Settings.MsUntilTapped</code>
+                </td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.4</td>
+                <td>Updated to Xamarin.Forms 1.3.4.6332</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.4-pre4</td>
+                <td>Updated to Xamarin.Forms 1.3.4.6331-pre4</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.3</td>
+                <td>Updated to Xamarin.Forms 1.3.3.6323</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.2</td>
+                <td>Updated to Xamarin.Forms 1.3.2.6316</td>
+            </tr>
+            <tr class="unimportant">
+                <td>1.0.1</td>
+                <td>Updated to Xamarin.Forms 1.3.1.6296</td>
+            </tr>
+            <tr>
+                <td>1.0.0</td>
+                <td><strong>Initial version</strong> for Xamarin.Forms 1.3.0.6292</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

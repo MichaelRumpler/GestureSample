@@ -1,0 +1,115 @@
+body {
+    /*padding-top: 20px;*/
+    padding-bottom: 20px;
+    position: relative;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+body.navbarFixedTop	{ padding-top: 50px; }
+header .navbar      { border-radius: 0; margin-bottom: 0; }
+.mainHeader			{ background-color: #EEEEEE; padding: 30px 0; }
+h1 small            { display: block; padding-top: 20px; }
+h2                  { margin-top: 60px; }
+h2#Overview			{ margin-top: 20px; }
+h5                  { font-weight: bold; }
+h2 a, h3 a			{ color: #000000; }
+
+.form-group .row	{ margin-left: 0; margin-right: 0; }
+.control-label      { margin-bottom: 10px; }
+
+.details			{ padding: 0 30px; }
+.compatibility th	{ vertical-align: middle !important; text-align: center; width: 12%; }      /* 5 platforms */
+.compatibility th:first-child	{ text-align: left; width: 40%; }                               /* 1 label */
+.compatibility td	{ vertical-align: middle !important; text-align: center; width: 12%; }
+.compatibility td:first-child	{ text-align: left; width: 40%; }
+.compatibility img	{ width: 24px; height: 24px; }
+@media (min-width: 768px) {
+	.compatibility img	{ width: 32px; height: 32px; }
+}
+
+.table-responsive.key		{ border: none; }
+.key td				{ border-top: none !important; vertical-align: middle !important; }
+.key td:first-child	{ width: 10%; }
+
+#sidebar            { width: 180px; margin-top: 0; }
+#sidebar.affix      { top: 15px; }
+
+/***    Start of sidebar    ***/
+.fixed                                      { position: fixed; }
+
+/* sidebar */
+.bs-docs-sidebar                            { padding-left: 20px; margin-top: 20px; margin-bottom: 20px; }
+
+/* all links */
+.bs-docs-sidebar .nav>li>a                  { color: #999; border-left: 2px solid transparent; padding: 4px 5px 4px 20px; font-size: 13px; font-weight: 400; }
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a             { padding-top: 1px; padding-bottom: 1px; padding-left: 30px; font-size: 12px; }
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus            { color: #563d7c; text-decoration: none; background-color: transparent; border-left-color: #563d7c; }
+
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a       { font-weight: 700; }
+
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, 
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a  { font-weight: 500; }
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav              { display: none;            }
+
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav        { display: block; }
+
+/***    End of sidebar    ***/
+
+.tablabel   { display: inline-block; width: 60px; }
+.tabvalue   { display: inline-block; width: 200px; }
+
+.unimportant	{ color: #CCCCCC; }
+
+.panel-content	{ padding: 0 20px; }
+
+/* syntax highlighting */
+/* XAML */
+.language-xml .nt { color: #A31515; font-weight: bold; }     /* xaml tag */
+.language-xml .na { color: #FF0000; }    /*  xaml attribute  */
+.language-xml .s { color: #0000FF; }     /* xaml attribute value */
+.language-xml .c { color: #008000; }     /* comments */
+
+/* CS */
+.language-cs .n { color: #000000; }      /* name */
+.language-cs .nf { color: #000000; }     /* method name */
+.language-cs .p { color: #000000; }      /* punctuation =+.{}; */
+.language-cs .kt { color: #0000FF; font-weight: bold; }     /* keyword var  */
+.language-cs .k { color: #0000FF; font-weight: bold; }     /* keyword new  */
+.language-cs .s { color: #A31515; }      /* strings */
+.language-cs .c1 { color: #008000; }     /* one line comments */
+.language-cs .cm { color: #008000; }     /* multiline comments */
+
+code.highlighter-rouge {
+    margin: 0 0;
+    padding: 0 0;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+}

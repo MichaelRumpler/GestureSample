@@ -1,0 +1,534 @@
+<h2 id="Documentation">Documentation</h2>
+
+<h3 id="Events">Events</h3>
+
+<p>You can handle fourteen different events with MR.Gestures.</p>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Down</td>
+                <td>One or more fingers came down onto the touch screen.</td>
+            </tr>
+            <tr>
+                <td>Up</td>
+                <td>One or more fingers were lifted from the screen.</td>
+            </tr>
+            <tr>
+                <td>Tapping</td>
+                <td>A finger came down and up again but it is not sure yet if this may become a multi tap.</td>
+            </tr>
+            <tr>
+                <td>Tapped</td>
+                <td>There was no second tap within 250ms so this was a single tap gesture.</td>
+            </tr>
+            <tr>
+                <td>DoubleTapped</td>
+                <td>There have been two Tapping events within 250ms and no more came.</td>
+            </tr>
+            <tr>
+                <td>LongPressing</td>
+                <td>A finger came down on the screen and did not move. The finger is still down.</td>
+            </tr>
+            <tr>
+                <td>LongPressed</td>
+                <td>The finger was released and the gesture is finished.</td>
+            </tr>
+            <tr>
+                <td>Panning</td>
+                <td>A finger came down and is moving on the screen.<br />This is also called a dragging gesture.</td>
+            </tr>
+            <tr>
+                <td>Panned</td>
+                <td>The finger left the screen while it was moved slowly or not at all.</td>
+            </tr>
+            <tr>
+                <td>Swiped</td>
+                <td>The finger left the screen while it was moved fast.<br />On Android and Windows Phone this is also called a flick.</td>
+            </tr>
+            <tr>
+                <td>Pinching</td>
+                <td>Two fingers hit the screen and are moving towards or away from each other.</td>
+            </tr>
+            <tr>
+                <td>Pinched</td>
+                <td>The fingers left the screen.</td>
+            </tr>
+            <tr>
+                <td>Rotating</td>
+                <td>Two fingers hit the screen and are rotating on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rotated</td>
+                <td>The fingers left the screen.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p>The -ing event is raised when at least one finger is on the screen and a gesture is in progress. The -ed event is raised, when the gesture is finished and all fingers left the screen.</p>
+
+<h3 id="EventArgs">EventArgs</h3>
+
+<p>
+    Your event handlers will receive one of seven different <code>EventArgs</code> objects with all the detailed information what happened.<br />
+    Click on the class names to see all its properties.
+</p>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#DownUpEventArgsProperties" aria-expanded="false" aria-controls="DownUpEventArgsProperties">DownUpEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">Down and Up</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="DownUpEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>int[]</td>
+                <td>TriggeringTouches</td>
+                <td>The indexes of the fingers which were lowered/raised. Their locations are in <code>Touches</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen (and in <code>Up</code> the last position before they were lifted).</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#TapEventArgsProperties" aria-expanded="false" aria-controls="TapEventArgsProperties">TapEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">Tapping, Tapped and DoubleTapped</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="TapEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTaps</td>
+                <td>The number of taps in a short period of time (~250ms).</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#LongPressEventArgsProperties" aria-expanded="false" aria-controls="LongPressEventArgsProperties">LongPressEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">LongPressing and LongPressed</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="LongPressEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>long</td>
+                <td>Duration</td>
+                <td>Duration of long press in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTaps</td>
+                <td>The number of taps in a short period of time (~250ms).</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#PanEventArgsProperties" aria-expanded="false" aria-controls="PanEventArgsProperties">PanEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">Panning and Panned</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="PanEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Point</td>
+                <td>DeltaDistance</td>
+                <td>The distance in X/Y that the finger was moved since this event was raised the last time.</td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td>TotalDistance</td>
+                <td>The distance in X/Y that the finger was moved since the pan gesture began.</td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td>Velocity</td>
+                <td>The velocity of the finger in X/Y.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#SwipeEventArgsProperties" aria-expanded="false" aria-controls="SwipeEventArgsProperties">SwipeEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">Swiped</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="SwipeEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Direction</td>
+                <td>Direction</td>
+                <td>The direction in which the finger moved when it was lifted from the screen. This is one of <code>Left</code>, <code>Right</code>, <code>Up</code>, <code>Down</code> or <code>NotClear</code>.</td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td>DeltaDistance</td>
+                <td>The distance in X/Y that the finger was moved since the last <code>Panning</code> event.</td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td>TotalDistance</td>
+                <td>The distance in X/Y that the finger was moved since the pan gesture began.</td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td>Velocity</td>
+                <td>The velocity of the finger in X/Y.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#PinchEventArgsProperties" aria-expanded="false" aria-controls="PinchEventArgsProperties">PinchEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">Pinching and Pinched</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="PinchEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Point</td>
+                <td>Center</td>
+                <td>The center of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>DeltaScale</td>
+                <td>The relative distance between the two fingers on the screen compared to the last time this event was raised.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Distance</td>
+                <td>The distance between the first two fingers.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>TotalScale</td>
+                <td>The relative distance between the two fingers on the screen compared to when the gesture started.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-6 panel-title"><a data-toggle="collapse" href="#RotateEventArgsProperties" aria-expanded="false" aria-controls="RotateEventArgsProperties">RotateEventArgs</a></div>
+            <div class="col-xs-6">Raised by <span class="details">Rotating and Rotated</span></div>
+        </div>
+    </div>
+    <!-- Table -->
+    <table class="table table-condensed collapse" id="RotateEventArgsProperties">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Property</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>double</td>
+                <td>Angle</td>
+                <td>The angle a line from the first to the second finger currently has on the screen.</td>
+            </tr>
+            <tr>
+                <td>Point</td>
+                <td>Center</td>
+                <td>The center of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>DeltaAngle</td>
+                <td>The angle the fingers were rotated on the screen compared to the last time this event was raised.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>TotalAngle</td>
+                <td>The angle the fingers were rotated on the screen compared to the start of the gesture.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Cancelled</td>
+                <td>Android and iOS sometimes cancel a touch gesture. In this case a *ed event is raised with <code>Cancelled</code> set to <code>true</code>.</td>
+            </tr>
+            <tr>
+                <td>bool</td>
+                <td>Handled</td>
+                <td>This flag is meant to be used for event bubbling, but it does not work yet.</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>NumberOfTouches</td>
+                <td>The number of fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>IGestureAwareControl</td>
+                <td>Sender</td>
+                <td>The element which raised this event.</td>
+            </tr>
+            <tr>
+                <td>Point[]</td>
+                <td>Touches</td>
+                <td>Returns the position of the fingers on the screen.</td>
+            </tr>
+            <tr>
+                <td>Rectangle</td>
+                <td>ViewPosition</td>
+                <td>The absolute position and size of the <code>Sender</code> on the screen (window on desktop).</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
