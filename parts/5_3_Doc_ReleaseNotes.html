@@ -10,6 +10,15 @@
         </thead>
         <tbody>
             <tr>
+                <td>2.1.0</td>
+                <td>
+                    added a <code>FlexLayout</code><br />
+                    added <code>DeltaScaleX</code>, <code>TotalScaleX</code>, <code>DeltaScaleY</code> and <code>TotalScaleY</code> to the <code>PinchEventArgs</code><br />
+                    fix changing event handlers does not raise <code>PropertyChanged</code> and thus does not start to handle those events<br />
+                    [Androis, iOS, WPF] fix for <code>DeltaDistance</code>, <code>TotalDistance</code> and <code>Velocity</code> have been 0/0 when <code>Panning</code> was raised the first time.<br />
+                </td>
+            </tr>
+            <tr>
                 <td>2.0.0</td>
                 <td>
                     <b>support for WPF</b><br />

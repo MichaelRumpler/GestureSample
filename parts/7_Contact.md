@@ -7,9 +7,10 @@ If you have any questions, suggestions, you find bugs or whatever, then please r
 
 If you still can't find anything, then you can contact me in various ways:
 
-*   post to the [Xamarin Forum](https://forums.xamarin.com/discussion/32956/mr-gestures-handles-all-touch-gestures#latest)
+*   open an issue in [GestureSample/Issues](https://github.com/MichaelRumpler/GestureSample/issues). I use that for both the GestureSample itself and MR.Gestures.
 *   send an email to [mrgestures@mrumpler.at](mailto:mrgestures@mrumpler.at)
 *   or a tweet [@MRGestures](https://twitter.com/MRGestures).
+*   post to the [Xamarin Forum](https://forums.xamarin.com/discussion/32956/mr-gestures-handles-all-touch-gestures#latest)
 
 ##### Imprint
 
