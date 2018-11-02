@@ -19,10 +19,7 @@ namespace GestureSample.ViewModels
 		public string Text
 		{
 			get { return text; }
-			set
-			{
-				SetProperty(ref text, value);
-			}
+			set { SetProperty(ref text, value); }
 		}
 
 		public ICommand DownCommand { get; protected set; }

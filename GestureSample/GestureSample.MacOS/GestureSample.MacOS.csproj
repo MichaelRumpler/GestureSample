@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard2.0\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard2.0\Xamarin.Forms.props')" />
+  <Import Project="..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -56,23 +56,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MR.Gestures, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.2.0.0\lib\xamarinmac20\MR.Gestures.dll</HintPath>
+      <HintPath>..\..\packages\MR.Gestures.2.1.0\lib\xamarinmac20\MR.Gestures.dll</HintPath>
+    </Reference>
+    <Reference Include="MR.Gestures.MacOS, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.2.1.0\lib\xamarinmac20\MR.Gestures.MacOS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.3.3.0.967583\lib\Xamarin.Mac\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.3.3.0.967583\lib\Xamarin.Mac\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.macOS, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.3.3.0.967583\lib\Xamarin.Mac\Xamarin.Forms.Platform.macOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.3.3.0.967583\lib\Xamarin.Mac\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Mac" />
-    <Reference Include="Xamarin.Forms.Core">
-      <HintPath>..\..\packages\Xamarin.Forms.3.0.0.482510\lib\Xamarin.Mac\Xamarin.Forms.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform">
-      <HintPath>..\..\packages\Xamarin.Forms.3.0.0.482510\lib\Xamarin.Mac\Xamarin.Forms.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform.macOS">
-      <HintPath>..\..\packages\Xamarin.Forms.3.0.0.482510\lib\Xamarin.Mac\Xamarin.Forms.Platform.macOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\..\packages\Xamarin.Forms.3.0.0.482510\lib\Xamarin.Mac\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -157,5 +160,12 @@
     <BundleResource Include="Resources\images\X.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
-  <Import Project="..\..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.3.0.0.482510\build\netstandard2.0\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.3.3.0.967583\build\Xamarin.Forms.targets')" />
 </Project>

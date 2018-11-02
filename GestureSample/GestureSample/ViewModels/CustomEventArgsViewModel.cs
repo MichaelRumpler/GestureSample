@@ -171,10 +171,14 @@ namespace GestureSample.ViewModels
 		{
 			StringBuilder sb = new StringBuilder(eventName);
 
-			sb.Append($" {GetElementName(e)} with {e.NumberOfTouches} fingers");
-			sb.Append($", DeltaScale = {e.DeltaScale:F}");
-			sb.Append($", TotalScale = {e.TotalScale:F}");
-			sb.Append($", Center =  {e.Center.X:F}/{e.Center.Y:F}");
+			sb.Append($" {GetElementName(e)} with {e.NumberOfTouches} fingers\n");
+			sb.Append($"  DeltaScale = {e.DeltaScale:F}");
+			sb.Append($", DeltaScaleX = {e.DeltaScaleX:F}");
+			sb.Append($", DeltaScaleY = {e.DeltaScaleY:F}\n");
+			sb.Append($"  TotalScale = {e.TotalScale:F}");
+			sb.Append($", TotalScaleX = {e.TotalScaleX:F}");
+			sb.Append($", TotalScaleY = {e.TotalScaleY:F}\n");
+			sb.Append($"  Center =  {e.Center.X:F}/{e.Center.Y:F}");
 			AddTouches(sb, e);
 			if (e.Cancelled)
 				sb.Append(", Cancelled=true");

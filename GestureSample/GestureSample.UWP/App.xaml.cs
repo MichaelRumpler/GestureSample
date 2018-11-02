@@ -56,7 +56,6 @@ namespace GestureSample.UWP
 
 				var otherAssemblies = new[] {
 					typeof(MR.Gestures.ContentPage).Assembly,
-					typeof(MR.Gestures.UWP.Renderers.PageRenderer).Assembly,
 				};
 				Xamarin.Forms.Forms.Init(e, otherAssemblies);
 

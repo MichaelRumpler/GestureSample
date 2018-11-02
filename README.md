@@ -2,16 +2,23 @@
 
 This is the sample project for **MR.Gestures**. It shows all the touch gesture handling possible with that library and Xamarin.Forms.
 
-To find out more about MR.Gestures visit [http://www.mrgestures.com](http://www.mrgestures.com).
+To find out more about MR.Gestures visit [https://www.mrgestures.com](https://www.mrgestures.com).
 
 ## The App ##
 
-The navigation looks similar as the [Xamarin.Forms Control Gallery](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/controls/). There are separate pages for every supported control. I.e. the ContentPage, all Layouts, Views and Cells.
+The navigation looks similar as the [Xamarin.Forms Control Gallery](https://developer.xamarin.com/samples/xamarin-forms/FormsGallery/). There are separate pages for every supported control. I.e. the ContentPage, all Layouts, Views and Cells.
 
 All pages have one or more elements at the top and a logging section at the bottom. At the top you can use any gestures on the element and in the logging section you see which events have been raised and which parameters were passed to the handlers.
 
-Be aware that some of Xamarins renderers need gesture handling too. Depending on the way how they implemented it, the gesture events are sometimes not forwarded to MR.Gestures. On other elements if you try to handle a gesture which the element needs to observe, the element does not work anymore. This depends on how Xamarin implemented their renderers and thus also on the platform.
-Luckily this applies mainly to the views which are too small that gesture handling on them would make sense anyway. But also the ScrollView (Pan must not be observed on iOS) and the WebView (all events are contained within it) are affected.
+Be aware that some of Xamarins renderers and the underlying native controls need gesture handling too.
+Depending on the way how these work, the gesture events are sometimes consumed and not forwarded to MR.Gestures.
+On other elements if you try to handle a gesture which the element needs to observe,
+the element does not work anymore.
+This depends on how Xamarin implemented their renderers and thus also on the platform.
+
+Luckily this applies mainly to the views which are too small that gesture handling on them would make sense anyway.
+But also the `ScrollView` (`Pan` must not be observed on iOS)
+and the `WebView` (all events are consumed by it) are affected.
  
 ## The Code ##
 
@@ -29,4 +36,10 @@ The platform dependent projects have been created by the standard "Blank App (Xa
 
 ## Contact ##
 
-If you have any questions, suggestions, you find bugs or whatever, you can send an email to mrgestures@mrumpler.at or a tweet [#MRGestures](https://twitter.com/MRGestures).
+If you have any questions, then please read through the whole page [https://www.mrgestures.com](https://www.mrgestures.com).
+There is a lot of information there. Especially in the [FAQ](https://www.mrgestures.com/#FAQs) and
+[Documentation](https://www.mrgestures.com/#Documentation) sections.
+
+If you still have any issues, then you can file them [here](https://github.com/MichaelRumpler/GestureSample/issues),
+send an email to mrgestures@mrumpler.at or a tweet [#MRGestures](https://twitter.com/MRGestures).
+I also have a dedicated post in the [Xamarin.Forms forum](https://forums.xamarin.com/discussion/32956/mr-gestures-handles-all-touch-gestures), but that got too big and it's not easy to find anything there.

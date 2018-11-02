@@ -39,6 +39,20 @@ namespace GestureSample.ViewModels
 			set { SetProperty(ref scale, value); }
 		}
 
+		protected double scaleX = 1;
+		public double ScaleX
+		{
+			get { return scaleX; }
+			set { SetProperty(ref scaleX, value); }
+		}
+
+		protected double scaleY = 1;
+		public double ScaleY
+		{
+			get { return scaleY; }
+			set { SetProperty(ref scaleY, value); }
+		}
+
 		protected double translationX = 0;
 		public double TranslationX
 		{
@@ -74,6 +88,10 @@ namespace GestureSample.ViewModels
 			SetAnchor(e.Center);
 			var newScale = Scale * e.DeltaScale;
 			Scale = Math.Min(5, Math.Max(0.1, newScale));
+			var newScaleX = ScaleX * e.DeltaScaleX;
+			ScaleX = Math.Min(5, Math.Max(0.1, newScaleX));
+			var newScaleY = ScaleY * e.DeltaScaleY;
+			ScaleY = Math.Min(5, Math.Max(0.1, newScaleY));
 		}
 
 		protected override void OnRotating(MR.Gestures.RotateEventArgs e)
