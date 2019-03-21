@@ -59,7 +59,7 @@ If you configured your activity manually in the Properties / AndroidManifest.xml
 
 ##### iOS
 
-In Visual Studio open the iOS project properties and go to the "iOS Application" tab. There you'll find the "Application name". If you don't have a "iOS application" tab, then open the info.plist. The app name is in the CFBundleDisplayName or CFBundleName setting.
+In Visual Studio open the iOS project properties and go to the "iOS Application" tab. There you'll find the "Application name". If you don't have a "iOS application" tab, then open the info.plist. The app name is in the CFBundleDisplayName or CFBundleName setting (should be the same if both are present).
 
 In Xamarin Studio the "Application name" is the very first textbox when you open the info.plist file.
 
