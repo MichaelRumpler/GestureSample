@@ -1,5 +1,26 @@
 <html>
+    <head>
+        <title>Test Login Page - does nothing</title>
+        <script>
+            window.onload=function(){
+                const urlParams = new URLSearchParams(window.location.search);
+                const oldUsername = urlParams.get('username');
+                const oldPassword = urlParams.get('password');
+
+                if(oldUsername !== null || oldPassword !== null)
+                {
+                    document.getElementById("submittedParams").style.display="block";
+                    document.getElementById("oldUsername").innerText=oldUsername;
+                    document.getElementById("oldPassword").innerText=oldPassword;
+                }
+            }
+        </script>
+    </head>
     <body>
+        <div id="submittedParams" style="display: none; color: #FF0000;">
+            Username: <span id="oldUsername"></span><br />
+            Password: <span id="oldPassword"></span><br />
+        </div>
         <form style="margin: 200px">
             Username: <input name="username" /><br />
             Password: <input name="password" /><br />
