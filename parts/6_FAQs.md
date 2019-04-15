@@ -142,6 +142,17 @@ you should write
     </mr:ContentView>
 ~~~~
 
+### Event Propagation (aka Event Bubbling)
+{: #EventPropagation }
+
+If multiple elements are nested within each other and they all handle the same events, this is called event propagation. Ideally you should be able to tell, which element should handle the event.
+When I wrote MR.Gestures, I also wanted to implement this. This is why I added the `Handled` flag to the `EventArgs`.
+
+Unfortunately I couldn't get it working reliably on all platforms. Especially with some of the elements natively handling (and consuming) the events, this proved impossible to implement in a generic way.
+
+Therefore I decided to strive for a solution where all MR.Gestures elements raise the respective events. This way you can decide yourself, which element should handle it.
+The easiest way is to start a `Timer` in one handler and do your work unless another handler will be called within a given timeframe.
+
 ### The gestures do not work on cells on Windows.
 {: #WPCells }
 
