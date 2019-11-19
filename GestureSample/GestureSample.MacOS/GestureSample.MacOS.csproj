@@ -55,11 +55,8 @@
     </XamMacArch>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MR.Gestures, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.2.1.0\lib\xamarinmac20\MR.Gestures.dll</HintPath>
-    </Reference>
-    <Reference Include="MR.Gestures.MacOS, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\MR.Gestures.2.1.0\lib\xamarinmac20\MR.Gestures.MacOS.dll</HintPath>
+    <Reference Include="MR.Gestures, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MR.Gestures.2.1.1\lib\xamarinmac20\MR.Gestures.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

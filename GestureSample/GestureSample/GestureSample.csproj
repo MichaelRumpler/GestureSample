@@ -1,43 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="MR.Gestures" Version="2.1.0" />
-    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.5.4" />
+    <PackageReference Include="MR.Gestures" Version="2.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="Views\Legacy\LegacyPickerXaml.xaml.cs">
-      <DependentUpon>LegacyPickerXaml.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Legacy\LegacySwitchXaml.xaml.cs">
-      <DependentUpon>LegacySwitchXaml.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Legacy\LegacyFrameXaml.xaml.cs">
-      <DependentUpon>LegacyFrameXaml.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Legacy\LegacyButtonXaml.xaml.cs">
-      <DependentUpon>LegacyButtonXaml.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\TabbedPageXaml.xaml.cs">
-      <DependentUpon>TabbedPageXaml.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\Tests\BottomTabbedPageXaml.xaml.cs">
-      <DependentUpon>BottomTabbedPageXaml.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Views\Tests\DeleteBoundItems.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
 </Project>
