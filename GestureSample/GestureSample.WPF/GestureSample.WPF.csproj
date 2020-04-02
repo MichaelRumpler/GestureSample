@@ -134,13 +134,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MR.Gestures">
-      <Version>2.1.1</Version>
+      <Version>2.1.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>3.3.0.967583</Version>
+      <Version>4.5.0.530</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms.Platform.WPF">
-      <Version>3.2.0.839982</Version>
+      <Version>4.5.0.530</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
