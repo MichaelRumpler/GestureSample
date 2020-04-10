@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+	mc:Ignorable="d"
+	x:Class="GestureSample.Views.Tests.DraggableItemsOnTabbedPage"
+	Title="Tabbed page with draggable items">
+
+	<TabbedPage.Children>
+		<mr:ContentPage
+			Title="Rectangles"
+			PanningCommand="{Binding PagePanningCommand}">
+			<StackLayout Orientation="Vertical" Padding="20" Spacing="30">
+				<mr:BoxView
+					BackgroundColor="Red"
+					WidthRequest="100"
+					HeightRequest="100"
+					HorizontalOptions="Start"
+					TranslationX="{Binding Object1X}"
+					TranslationY="{Binding Object1Y}"
+					DownCommand="{Binding Object1DownCommand}"
+					UpCommand="{Binding Object1UpCommand}" />
+				<mr:BoxView
+					BackgroundColor="Green"
+					WidthRequest="100"
+					HeightRequest="100"
+					HorizontalOptions="Start"
+					TranslationX="{Binding Object2X}"
+					TranslationY="{Binding Object2Y}"
+					DownCommand="{Binding Object2DownCommand}"
+					UpCommand="{Binding Object2UpCommand}" />
+				<mr:BoxView
+					BackgroundColor="Blue"
+					WidthRequest="100"
+					HeightRequest="100"
+					HorizontalOptions="Start"
+					TranslationX="{Binding Object3X}"
+					TranslationY="{Binding Object3Y}"
+					DownCommand="{Binding Object3DownCommand}"
+					UpCommand="{Binding Object3UpCommand}" />
+			</StackLayout>
+		</mr:ContentPage>
+
+		<mr:ContentPage
+			Title="Circles"
+			PanningCommand="{Binding PagePanningCommand}">
+			<StackLayout Orientation="Vertical" Padding="20" Spacing="30">
+				<mr:BoxView
+					BackgroundColor="Cyan"
+					WidthRequest="100"
+					HeightRequest="100"
+					CornerRadius="50"
+					HorizontalOptions="Start"
+					TranslationX="{Binding Object1X}"
+					TranslationY="{Binding Object1Y}"
+					DownCommand="{Binding Object1DownCommand}"
+					UpCommand="{Binding Object1UpCommand}" />
+				<mr:BoxView
+					BackgroundColor="Magenta"
+					WidthRequest="100"
+					HeightRequest="100"
+					CornerRadius="50"
+					HorizontalOptions="Start"
+					TranslationX="{Binding Object2X}"
+					TranslationY="{Binding Object2Y}"
+					DownCommand="{Binding Object2DownCommand}"
+					UpCommand="{Binding Object2UpCommand}" />
+				<mr:BoxView
+					BackgroundColor="Yellow"
+					WidthRequest="100"
+					HeightRequest="100"
+					CornerRadius="50"
+					HorizontalOptions="Start"
+					TranslationX="{Binding Object3X}"
+					TranslationY="{Binding Object3Y}"
+					DownCommand="{Binding Object3DownCommand}"
+					UpCommand="{Binding Object3UpCommand}" />
+			</StackLayout>
+		</mr:ContentPage>
+		
+	</TabbedPage.Children>
+
+</TabbedPage>
