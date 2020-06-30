@@ -37,6 +37,18 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Animation.abc_slide_out_top = global::GestureSample.Droid.Resource.Animation.abc_slide_out_top;
 			global::MR.Gestures.Resource.Animation.abc_tooltip_enter = global::GestureSample.Droid.Resource.Animation.abc_tooltip_enter;
 			global::MR.Gestures.Resource.Animation.abc_tooltip_exit = global::GestureSample.Droid.Resource.Animation.abc_tooltip_exit;
+			global::MR.Gestures.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::MR.Gestures.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::MR.Gestures.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::MR.Gestures.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::MR.Gestures.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::MR.Gestures.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::MR.Gestures.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::MR.Gestures.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::MR.Gestures.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::MR.Gestures.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::MR.Gestures.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::MR.Gestures.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::MR.Gestures.Resource.Animation.design_bottom_sheet_slide_in = global::GestureSample.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::MR.Gestures.Resource.Animation.design_bottom_sheet_slide_out = global::GestureSample.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::MR.Gestures.Resource.Animation.design_snackbar_in = global::GestureSample.Droid.Resource.Animation.design_snackbar_in;
@@ -136,6 +148,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.buttonBarNeutralButtonStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::MR.Gestures.Resource.Attribute.buttonBarPositiveButtonStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::MR.Gestures.Resource.Attribute.buttonBarStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarStyle;
+			global::MR.Gestures.Resource.Attribute.buttonCompat = global::GestureSample.Droid.Resource.Attribute.buttonCompat;
 			global::MR.Gestures.Resource.Attribute.buttonGravity = global::GestureSample.Droid.Resource.Attribute.buttonGravity;
 			global::MR.Gestures.Resource.Attribute.buttonIconDimen = global::GestureSample.Droid.Resource.Attribute.buttonIconDimen;
 			global::MR.Gestures.Resource.Attribute.buttonPanelSideLayout = global::GestureSample.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -229,7 +242,15 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.dividerHorizontal = global::GestureSample.Droid.Resource.Attribute.dividerHorizontal;
 			global::MR.Gestures.Resource.Attribute.dividerPadding = global::GestureSample.Droid.Resource.Attribute.dividerPadding;
 			global::MR.Gestures.Resource.Attribute.dividerVertical = global::GestureSample.Droid.Resource.Attribute.dividerVertical;
+			global::MR.Gestures.Resource.Attribute.drawableBottomCompat = global::GestureSample.Droid.Resource.Attribute.drawableBottomCompat;
+			global::MR.Gestures.Resource.Attribute.drawableEndCompat = global::GestureSample.Droid.Resource.Attribute.drawableEndCompat;
+			global::MR.Gestures.Resource.Attribute.drawableLeftCompat = global::GestureSample.Droid.Resource.Attribute.drawableLeftCompat;
+			global::MR.Gestures.Resource.Attribute.drawableRightCompat = global::GestureSample.Droid.Resource.Attribute.drawableRightCompat;
 			global::MR.Gestures.Resource.Attribute.drawableSize = global::GestureSample.Droid.Resource.Attribute.drawableSize;
+			global::MR.Gestures.Resource.Attribute.drawableStartCompat = global::GestureSample.Droid.Resource.Attribute.drawableStartCompat;
+			global::MR.Gestures.Resource.Attribute.drawableTint = global::GestureSample.Droid.Resource.Attribute.drawableTint;
+			global::MR.Gestures.Resource.Attribute.drawableTintMode = global::GestureSample.Droid.Resource.Attribute.drawableTintMode;
+			global::MR.Gestures.Resource.Attribute.drawableTopCompat = global::GestureSample.Droid.Resource.Attribute.drawableTopCompat;
 			global::MR.Gestures.Resource.Attribute.drawerArrowStyle = global::GestureSample.Droid.Resource.Attribute.drawerArrowStyle;
 			global::MR.Gestures.Resource.Attribute.dropdownListPreferredItemHeight = global::GestureSample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::MR.Gestures.Resource.Attribute.dropDownListViewStyle = global::GestureSample.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -250,7 +271,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.expandedTitleMarginStart = global::GestureSample.Droid.Resource.Attribute.expandedTitleMarginStart;
 			global::MR.Gestures.Resource.Attribute.expandedTitleMarginTop = global::GestureSample.Droid.Resource.Attribute.expandedTitleMarginTop;
 			global::MR.Gestures.Resource.Attribute.expandedTitleTextAppearance = global::GestureSample.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::MR.Gestures.Resource.Attribute.externalRouteEnabledDrawable = global::GestureSample.Droid.Resource.Attribute.externalRouteEnabledDrawable;
 			global::MR.Gestures.Resource.Attribute.fabAlignmentMode = global::GestureSample.Droid.Resource.Attribute.fabAlignmentMode;
 			global::MR.Gestures.Resource.Attribute.fabCradleMargin = global::GestureSample.Droid.Resource.Attribute.fabCradleMargin;
 			global::MR.Gestures.Resource.Attribute.fabCradleRoundedCornerRadius = global::GestureSample.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
@@ -337,6 +357,8 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.lineHeight = global::GestureSample.Droid.Resource.Attribute.lineHeight;
 			global::MR.Gestures.Resource.Attribute.lineSpacing = global::GestureSample.Droid.Resource.Attribute.lineSpacing;
 			global::MR.Gestures.Resource.Attribute.listChoiceBackgroundIndicator = global::GestureSample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::MR.Gestures.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::GestureSample.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::MR.Gestures.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::GestureSample.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::MR.Gestures.Resource.Attribute.listDividerAlertDialog = global::GestureSample.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::MR.Gestures.Resource.Attribute.listItemLayout = global::GestureSample.Droid.Resource.Attribute.listItemLayout;
 			global::MR.Gestures.Resource.Attribute.listLayout = global::GestureSample.Droid.Resource.Attribute.listLayout;
@@ -345,8 +367,10 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.listPreferredItemHeight = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::MR.Gestures.Resource.Attribute.listPreferredItemHeightLarge = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::MR.Gestures.Resource.Attribute.listPreferredItemHeightSmall = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::MR.Gestures.Resource.Attribute.listPreferredItemPaddingEnd = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::MR.Gestures.Resource.Attribute.listPreferredItemPaddingLeft = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::MR.Gestures.Resource.Attribute.listPreferredItemPaddingRight = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::MR.Gestures.Resource.Attribute.listPreferredItemPaddingStart = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::MR.Gestures.Resource.Attribute.logo = global::GestureSample.Droid.Resource.Attribute.logo;
 			global::MR.Gestures.Resource.Attribute.logoDescription = global::GestureSample.Droid.Resource.Attribute.logoDescription;
 			global::MR.Gestures.Resource.Attribute.materialButtonStyle = global::GestureSample.Droid.Resource.Attribute.materialButtonStyle;
@@ -355,19 +379,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.maxButtonHeight = global::GestureSample.Droid.Resource.Attribute.maxButtonHeight;
 			global::MR.Gestures.Resource.Attribute.maxImageSize = global::GestureSample.Droid.Resource.Attribute.maxImageSize;
 			global::MR.Gestures.Resource.Attribute.measureWithLargestChild = global::GestureSample.Droid.Resource.Attribute.measureWithLargestChild;
-			global::MR.Gestures.Resource.Attribute.mediaRouteAudioTrackDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRouteButtonStyle = global::GestureSample.Droid.Resource.Attribute.mediaRouteButtonStyle;
-			global::MR.Gestures.Resource.Attribute.mediaRouteButtonTint = global::GestureSample.Droid.Resource.Attribute.mediaRouteButtonTint;
-			global::MR.Gestures.Resource.Attribute.mediaRouteCloseDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteCloseDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::GestureSample.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
-			global::MR.Gestures.Resource.Attribute.mediaRouteDefaultIconDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRoutePauseDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRoutePauseDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRoutePlayDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRoutePlayDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRouteStopDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteStopDrawable;
-			global::MR.Gestures.Resource.Attribute.mediaRouteTheme = global::GestureSample.Droid.Resource.Attribute.mediaRouteTheme;
-			global::MR.Gestures.Resource.Attribute.mediaRouteTvIconDrawable = global::GestureSample.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
 			global::MR.Gestures.Resource.Attribute.menu = global::GestureSample.Droid.Resource.Attribute.menu;
 			global::MR.Gestures.Resource.Attribute.multiChoiceItemLayout = global::GestureSample.Droid.Resource.Attribute.multiChoiceItemLayout;
 			global::MR.Gestures.Resource.Attribute.navigationContentDescription = global::GestureSample.Droid.Resource.Attribute.navigationContentDescription;
@@ -401,6 +412,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.ratingBarStyle = global::GestureSample.Droid.Resource.Attribute.ratingBarStyle;
 			global::MR.Gestures.Resource.Attribute.ratingBarStyleIndicator = global::GestureSample.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::MR.Gestures.Resource.Attribute.ratingBarStyleSmall = global::GestureSample.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::MR.Gestures.Resource.Attribute.recyclerViewStyle = global::GestureSample.Droid.Resource.Attribute.recyclerViewStyle;
 			global::MR.Gestures.Resource.Attribute.reverseLayout = global::GestureSample.Droid.Resource.Attribute.reverseLayout;
 			global::MR.Gestures.Resource.Attribute.rippleColor = global::GestureSample.Droid.Resource.Attribute.rippleColor;
 			global::MR.Gestures.Resource.Attribute.scrimAnimationDuration = global::GestureSample.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -501,6 +513,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Attribute.textColorSearchUrl = global::GestureSample.Droid.Resource.Attribute.textColorSearchUrl;
 			global::MR.Gestures.Resource.Attribute.textEndPadding = global::GestureSample.Droid.Resource.Attribute.textEndPadding;
 			global::MR.Gestures.Resource.Attribute.textInputStyle = global::GestureSample.Droid.Resource.Attribute.textInputStyle;
+			global::MR.Gestures.Resource.Attribute.textLocale = global::GestureSample.Droid.Resource.Attribute.textLocale;
 			global::MR.Gestures.Resource.Attribute.textStartPadding = global::GestureSample.Droid.Resource.Attribute.textStartPadding;
 			global::MR.Gestures.Resource.Attribute.theme = global::GestureSample.Droid.Resource.Attribute.theme;
 			global::MR.Gestures.Resource.Attribute.thickness = global::GestureSample.Droid.Resource.Attribute.thickness;
@@ -730,6 +743,9 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::GestureSample.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::MR.Gestures.Resource.Dimension.abc_edit_text_inset_top_material = global::GestureSample.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::MR.Gestures.Resource.Dimension.abc_floating_window_z = global::GestureSample.Droid.Resource.Dimension.abc_floating_window_z;
+			global::MR.Gestures.Resource.Dimension.abc_list_item_height_large_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::MR.Gestures.Resource.Dimension.abc_list_item_height_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::MR.Gestures.Resource.Dimension.abc_list_item_height_small_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::MR.Gestures.Resource.Dimension.abc_list_item_padding_horizontal_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::MR.Gestures.Resource.Dimension.abc_panel_menu_list_width = global::GestureSample.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::MR.Gestures.Resource.Dimension.abc_progress_bar_height_material = global::GestureSample.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -828,12 +844,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::GestureSample.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
 			global::MR.Gestures.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::GestureSample.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
 			global::MR.Gestures.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::GestureSample.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::MR.Gestures.Resource.Dimension.mr_controller_volume_group_list_item_height = global::GestureSample.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
-			global::MR.Gestures.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::GestureSample.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
-			global::MR.Gestures.Resource.Dimension.mr_controller_volume_group_list_max_height = global::GestureSample.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
-			global::MR.Gestures.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::GestureSample.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
-			global::MR.Gestures.Resource.Dimension.mr_dialog_fixed_width_major = global::GestureSample.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
-			global::MR.Gestures.Resource.Dimension.mr_dialog_fixed_width_minor = global::GestureSample.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
 			global::MR.Gestures.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::GestureSample.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
 			global::MR.Gestures.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::GestureSample.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
 			global::MR.Gestures.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::GestureSample.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
@@ -913,11 +923,13 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Drawable.abc_action_bar_item_background_material = global::GestureSample.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::MR.Gestures.Resource.Drawable.abc_btn_borderless_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::MR.Gestures.Resource.Drawable.abc_btn_check_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_material;
+			global::MR.Gestures.Resource.Drawable.abc_btn_check_material_anim = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::MR.Gestures.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::MR.Gestures.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::MR.Gestures.Resource.Drawable.abc_btn_colored_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::MR.Gestures.Resource.Drawable.abc_btn_default_mtrl_shape = global::GestureSample.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::MR.Gestures.Resource.Drawable.abc_btn_radio_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::MR.Gestures.Resource.Drawable.abc_btn_radio_material_anim = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::MR.Gestures.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::MR.Gestures.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::MR.Gestures.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::GestureSample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -995,212 +1007,23 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Drawable.abc_vector_test = global::GestureSample.Droid.Resource.Drawable.abc_vector_test;
 			global::MR.Gestures.Resource.Drawable.avd_hide_password = global::GestureSample.Droid.Resource.Drawable.avd_hide_password;
 			global::MR.Gestures.Resource.Drawable.avd_show_password = global::GestureSample.Droid.Resource.Drawable.avd_show_password;
+			global::MR.Gestures.Resource.Drawable.btn_checkbox_checked_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::MR.Gestures.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::MR.Gestures.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::MR.Gestures.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::MR.Gestures.Resource.Drawable.btn_radio_off_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::MR.Gestures.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::MR.Gestures.Resource.Drawable.btn_radio_on_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::MR.Gestures.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::MR.Gestures.Resource.Drawable.design_bottom_navigation_item_background = global::GestureSample.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::MR.Gestures.Resource.Drawable.design_fab_background = global::GestureSample.Droid.Resource.Drawable.design_fab_background;
 			global::MR.Gestures.Resource.Drawable.design_ic_visibility = global::GestureSample.Droid.Resource.Drawable.design_ic_visibility;
 			global::MR.Gestures.Resource.Drawable.design_ic_visibility_off = global::GestureSample.Droid.Resource.Drawable.design_ic_visibility_off;
 			global::MR.Gestures.Resource.Drawable.design_password_eye = global::GestureSample.Droid.Resource.Drawable.design_password_eye;
 			global::MR.Gestures.Resource.Drawable.design_snackbar_background = global::GestureSample.Droid.Resource.Drawable.design_snackbar_background;
-			global::MR.Gestures.Resource.Drawable.ic_audiotrack_dark = global::GestureSample.Droid.Resource.Drawable.ic_audiotrack_dark;
-			global::MR.Gestures.Resource.Drawable.ic_audiotrack_light = global::GestureSample.Droid.Resource.Drawable.ic_audiotrack_light;
-			global::MR.Gestures.Resource.Drawable.ic_dialog_close_dark = global::GestureSample.Droid.Resource.Drawable.ic_dialog_close_dark;
-			global::MR.Gestures.Resource.Drawable.ic_dialog_close_light = global::GestureSample.Droid.Resource.Drawable.ic_dialog_close_light;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_00 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_00;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_01 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_01;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_02 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_02;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_03 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_03;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_04 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_04;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_05 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_05;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_06 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_06;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_07 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_07;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_08 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_08;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_09 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_09;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_10 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_10;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_11 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_11;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_12 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_12;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_13 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_13;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_14 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_14;
-			global::MR.Gestures.Resource.Drawable.ic_group_collapse_15 = global::GestureSample.Droid.Resource.Drawable.ic_group_collapse_15;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_00 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_00;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_01 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_01;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_02 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_02;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_03 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_03;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_04 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_04;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_05 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_05;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_06 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_06;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_07 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_07;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_08 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_08;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_09 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_09;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_10 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_10;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_11 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_11;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_12 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_12;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_13 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_13;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_14 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_14;
-			global::MR.Gestures.Resource.Drawable.ic_group_expand_15 = global::GestureSample.Droid.Resource.Drawable.ic_group_expand_15;
-			global::MR.Gestures.Resource.Drawable.ic_media_pause_dark = global::GestureSample.Droid.Resource.Drawable.ic_media_pause_dark;
-			global::MR.Gestures.Resource.Drawable.ic_media_pause_light = global::GestureSample.Droid.Resource.Drawable.ic_media_pause_light;
-			global::MR.Gestures.Resource.Drawable.ic_media_play_dark = global::GestureSample.Droid.Resource.Drawable.ic_media_play_dark;
-			global::MR.Gestures.Resource.Drawable.ic_media_play_light = global::GestureSample.Droid.Resource.Drawable.ic_media_play_light;
-			global::MR.Gestures.Resource.Drawable.ic_media_stop_dark = global::GestureSample.Droid.Resource.Drawable.ic_media_stop_dark;
-			global::MR.Gestures.Resource.Drawable.ic_media_stop_light = global::GestureSample.Droid.Resource.Drawable.ic_media_stop_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_00_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_00_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_01_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_01_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_02_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_02_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_03_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_03_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_04_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_04_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_05_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_05_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_06_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_06_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_07_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_07_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_08_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_08_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_09_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_09_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_10_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_10_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_11_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_11_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_12_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_12_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_13_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_13_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_14_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_14_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_15_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_15_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_16_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_16_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_17_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_17_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_18_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_18_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_19_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_19_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_20_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_20_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_21_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_21_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_22_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_22_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_23_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_23_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_23_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_23_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_24_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_24_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_24_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_24_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_25_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_25_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_25_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_25_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_26_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_26_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_26_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_26_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_27_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_27_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_27_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_27_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_28_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_28_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_28_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_28_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_29_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_29_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_29_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_29_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_30_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_30_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connected_30_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connected_30_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_00_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_00_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_01_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_01_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_02_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_02_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_03_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_03_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_04_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_04_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_05_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_05_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_06_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_06_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_07_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_07_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_08_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_08_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_09_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_09_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_10_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_10_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_11_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_11_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_12_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_12_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_13_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_13_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_14_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_14_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_15_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_15_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_16_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_16_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_17_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_17_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_18_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_18_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_19_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_19_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_20_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_20_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_21_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_21_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_22_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_22_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_23_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_23_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_23_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_23_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_24_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_24_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_24_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_24_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_25_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_25_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_25_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_25_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_26_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_26_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_26_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_26_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_27_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_27_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_27_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_27_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_28_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_28_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_28_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_28_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_29_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_29_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_29_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_29_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_30_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_30_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_connecting_30_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_connecting_30_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_disabled_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_disabled_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_disabled_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_disconnected_dark = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_disconnected_light = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
-			global::MR.Gestures.Resource.Drawable.ic_mr_button_grey = global::GestureSample.Droid.Resource.Drawable.ic_mr_button_grey;
 			global::MR.Gestures.Resource.Drawable.ic_mtrl_chip_checked_black = global::GestureSample.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
 			global::MR.Gestures.Resource.Drawable.ic_mtrl_chip_checked_circle = global::GestureSample.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
 			global::MR.Gestures.Resource.Drawable.ic_mtrl_chip_close_circle = global::GestureSample.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
-			global::MR.Gestures.Resource.Drawable.ic_vol_type_speaker_dark = global::GestureSample.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
-			global::MR.Gestures.Resource.Drawable.ic_vol_type_speaker_group_dark = global::GestureSample.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
-			global::MR.Gestures.Resource.Drawable.ic_vol_type_speaker_group_light = global::GestureSample.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
-			global::MR.Gestures.Resource.Drawable.ic_vol_type_speaker_light = global::GestureSample.Droid.Resource.Drawable.ic_vol_type_speaker_light;
-			global::MR.Gestures.Resource.Drawable.ic_vol_type_tv_dark = global::GestureSample.Droid.Resource.Drawable.ic_vol_type_tv_dark;
-			global::MR.Gestures.Resource.Drawable.ic_vol_type_tv_light = global::GestureSample.Droid.Resource.Drawable.ic_vol_type_tv_light;
-			global::MR.Gestures.Resource.Drawable.mr_button_connected_dark = global::GestureSample.Droid.Resource.Drawable.mr_button_connected_dark;
-			global::MR.Gestures.Resource.Drawable.mr_button_connected_light = global::GestureSample.Droid.Resource.Drawable.mr_button_connected_light;
-			global::MR.Gestures.Resource.Drawable.mr_button_connecting_dark = global::GestureSample.Droid.Resource.Drawable.mr_button_connecting_dark;
-			global::MR.Gestures.Resource.Drawable.mr_button_connecting_light = global::GestureSample.Droid.Resource.Drawable.mr_button_connecting_light;
-			global::MR.Gestures.Resource.Drawable.mr_button_dark = global::GestureSample.Droid.Resource.Drawable.mr_button_dark;
-			global::MR.Gestures.Resource.Drawable.mr_button_light = global::GestureSample.Droid.Resource.Drawable.mr_button_light;
-			global::MR.Gestures.Resource.Drawable.mr_dialog_close_dark = global::GestureSample.Droid.Resource.Drawable.mr_dialog_close_dark;
-			global::MR.Gestures.Resource.Drawable.mr_dialog_close_light = global::GestureSample.Droid.Resource.Drawable.mr_dialog_close_light;
-			global::MR.Gestures.Resource.Drawable.mr_dialog_material_background_dark = global::GestureSample.Droid.Resource.Drawable.mr_dialog_material_background_dark;
-			global::MR.Gestures.Resource.Drawable.mr_dialog_material_background_light = global::GestureSample.Droid.Resource.Drawable.mr_dialog_material_background_light;
-			global::MR.Gestures.Resource.Drawable.mr_group_collapse = global::GestureSample.Droid.Resource.Drawable.mr_group_collapse;
-			global::MR.Gestures.Resource.Drawable.mr_group_expand = global::GestureSample.Droid.Resource.Drawable.mr_group_expand;
-			global::MR.Gestures.Resource.Drawable.mr_media_pause_dark = global::GestureSample.Droid.Resource.Drawable.mr_media_pause_dark;
-			global::MR.Gestures.Resource.Drawable.mr_media_pause_light = global::GestureSample.Droid.Resource.Drawable.mr_media_pause_light;
-			global::MR.Gestures.Resource.Drawable.mr_media_play_dark = global::GestureSample.Droid.Resource.Drawable.mr_media_play_dark;
-			global::MR.Gestures.Resource.Drawable.mr_media_play_light = global::GestureSample.Droid.Resource.Drawable.mr_media_play_light;
-			global::MR.Gestures.Resource.Drawable.mr_media_stop_dark = global::GestureSample.Droid.Resource.Drawable.mr_media_stop_dark;
-			global::MR.Gestures.Resource.Drawable.mr_media_stop_light = global::GestureSample.Droid.Resource.Drawable.mr_media_stop_light;
-			global::MR.Gestures.Resource.Drawable.mr_vol_type_audiotrack_dark = global::GestureSample.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
-			global::MR.Gestures.Resource.Drawable.mr_vol_type_audiotrack_light = global::GestureSample.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
 			global::MR.Gestures.Resource.Drawable.mtrl_snackbar_background = global::GestureSample.Droid.Resource.Drawable.mtrl_snackbar_background;
 			global::MR.Gestures.Resource.Drawable.mtrl_tabs_default_indicator = global::GestureSample.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
 			global::MR.Gestures.Resource.Drawable.navigation_empty_icon = global::GestureSample.Droid.Resource.Drawable.navigation_empty_icon;
@@ -1218,6 +1041,39 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Drawable.notify_panel_notification_icon_bg = global::GestureSample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::MR.Gestures.Resource.Drawable.tooltip_frame_dark = global::GestureSample.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::MR.Gestures.Resource.Drawable.tooltip_frame_light = global::GestureSample.Droid.Resource.Drawable.tooltip_frame_light;
+			global::MR.Gestures.Resource.Id.accessibility_action_clickable_span = global::GestureSample.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_0 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_0;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_1 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_1;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_10 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_10;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_11 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_11;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_12 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_12;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_13 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_13;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_14 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_14;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_15 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_15;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_16 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_16;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_17 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_17;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_18 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_18;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_19 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_19;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_2 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_2;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_20 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_20;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_21 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_21;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_22 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_22;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_23 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_23;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_24 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_24;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_25 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_25;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_26 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_26;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_27 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_27;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_28 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_28;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_29 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_29;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_3 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_3;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_30 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_30;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_31 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_31;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_4 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_4;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_5 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_5;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_6 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_6;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_7 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_7;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_8 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_8;
+			global::MR.Gestures.Resource.Id.accessibility_custom_action_9 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_9;
 			global::MR.Gestures.Resource.Id.action0 = global::GestureSample.Droid.Resource.Id.action0;
 			global::MR.Gestures.Resource.Id.actions = global::GestureSample.Droid.Resource.Id.actions;
 			global::MR.Gestures.Resource.Id.action_bar = global::GestureSample.Droid.Resource.Id.action_bar;
@@ -1261,6 +1117,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.center_horizontal = global::GestureSample.Droid.Resource.Id.center_horizontal;
 			global::MR.Gestures.Resource.Id.center_vertical = global::GestureSample.Droid.Resource.Id.center_vertical;
 			global::MR.Gestures.Resource.Id.checkbox = global::GestureSample.Droid.Resource.Id.checkbox;
+			global::MR.Gestures.Resource.Id.@checked = global::GestureSample.Droid.Resource.Id.@checked;
 			global::MR.Gestures.Resource.Id.chronometer = global::GestureSample.Droid.Resource.Id.chronometer;
 			global::MR.Gestures.Resource.Id.clip_horizontal = global::GestureSample.Droid.Resource.Id.clip_horizontal;
 			global::MR.Gestures.Resource.Id.clip_vertical = global::GestureSample.Droid.Resource.Id.clip_vertical;
@@ -1279,6 +1136,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.design_menu_item_action_area_stub = global::GestureSample.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::MR.Gestures.Resource.Id.design_menu_item_text = global::GestureSample.Droid.Resource.Id.design_menu_item_text;
 			global::MR.Gestures.Resource.Id.design_navigation_view = global::GestureSample.Droid.Resource.Id.design_navigation_view;
+			global::MR.Gestures.Resource.Id.dialog_button = global::GestureSample.Droid.Resource.Id.dialog_button;
 			global::MR.Gestures.Resource.Id.disableHome = global::GestureSample.Droid.Resource.Id.disableHome;
 			global::MR.Gestures.Resource.Id.edit_query = global::GestureSample.Droid.Resource.Id.edit_query;
 			global::MR.Gestures.Resource.Id.end = global::GestureSample.Droid.Resource.Id.end;
@@ -1298,6 +1156,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.forever = global::GestureSample.Droid.Resource.Id.forever;
 			global::MR.Gestures.Resource.Id.FUNCTION = global::GestureSample.Droid.Resource.Id.FUNCTION;
 			global::MR.Gestures.Resource.Id.ghost_view = global::GestureSample.Droid.Resource.Id.ghost_view;
+			global::MR.Gestures.Resource.Id.ghost_view_holder = global::GestureSample.Droid.Resource.Id.ghost_view_holder;
 			global::MR.Gestures.Resource.Id.group_divider = global::GestureSample.Droid.Resource.Id.group_divider;
 			global::MR.Gestures.Resource.Id.home = global::GestureSample.Droid.Resource.Id.home;
 			global::MR.Gestures.Resource.Id.homeAsUp = global::GestureSample.Droid.Resource.Id.homeAsUp;
@@ -1318,55 +1177,13 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.main_appbar = global::GestureSample.Droid.Resource.Id.main_appbar;
 			global::MR.Gestures.Resource.Id.main_tablayout = global::GestureSample.Droid.Resource.Id.main_tablayout;
 			global::MR.Gestures.Resource.Id.main_toolbar = global::GestureSample.Droid.Resource.Id.main_toolbar;
+			global::MR.Gestures.Resource.Id.main_viewpager = global::GestureSample.Droid.Resource.Id.main_viewpager;
 			global::MR.Gestures.Resource.Id.masked = global::GestureSample.Droid.Resource.Id.masked;
 			global::MR.Gestures.Resource.Id.media_actions = global::GestureSample.Droid.Resource.Id.media_actions;
 			global::MR.Gestures.Resource.Id.message = global::GestureSample.Droid.Resource.Id.message;
 			global::MR.Gestures.Resource.Id.META = global::GestureSample.Droid.Resource.Id.META;
 			global::MR.Gestures.Resource.Id.middle = global::GestureSample.Droid.Resource.Id.middle;
 			global::MR.Gestures.Resource.Id.mini = global::GestureSample.Droid.Resource.Id.mini;
-			global::MR.Gestures.Resource.Id.mr_art = global::GestureSample.Droid.Resource.Id.mr_art;
-			global::MR.Gestures.Resource.Id.mr_cast_checkbox = global::GestureSample.Droid.Resource.Id.mr_cast_checkbox;
-			global::MR.Gestures.Resource.Id.mr_cast_close_button = global::GestureSample.Droid.Resource.Id.mr_cast_close_button;
-			global::MR.Gestures.Resource.Id.mr_cast_group_icon = global::GestureSample.Droid.Resource.Id.mr_cast_group_icon;
-			global::MR.Gestures.Resource.Id.mr_cast_group_name = global::GestureSample.Droid.Resource.Id.mr_cast_group_name;
-			global::MR.Gestures.Resource.Id.mr_cast_list = global::GestureSample.Droid.Resource.Id.mr_cast_list;
-			global::MR.Gestures.Resource.Id.mr_cast_meta_art = global::GestureSample.Droid.Resource.Id.mr_cast_meta_art;
-			global::MR.Gestures.Resource.Id.mr_cast_meta_subtitle = global::GestureSample.Droid.Resource.Id.mr_cast_meta_subtitle;
-			global::MR.Gestures.Resource.Id.mr_cast_meta_title = global::GestureSample.Droid.Resource.Id.mr_cast_meta_title;
-			global::MR.Gestures.Resource.Id.mr_cast_route_icon = global::GestureSample.Droid.Resource.Id.mr_cast_route_icon;
-			global::MR.Gestures.Resource.Id.mr_cast_route_name = global::GestureSample.Droid.Resource.Id.mr_cast_route_name;
-			global::MR.Gestures.Resource.Id.mr_cast_stop_button = global::GestureSample.Droid.Resource.Id.mr_cast_stop_button;
-			global::MR.Gestures.Resource.Id.mr_cast_volume_layout = global::GestureSample.Droid.Resource.Id.mr_cast_volume_layout;
-			global::MR.Gestures.Resource.Id.mr_cast_volume_slider = global::GestureSample.Droid.Resource.Id.mr_cast_volume_slider;
-			global::MR.Gestures.Resource.Id.mr_chooser_list = global::GestureSample.Droid.Resource.Id.mr_chooser_list;
-			global::MR.Gestures.Resource.Id.mr_chooser_route_desc = global::GestureSample.Droid.Resource.Id.mr_chooser_route_desc;
-			global::MR.Gestures.Resource.Id.mr_chooser_route_icon = global::GestureSample.Droid.Resource.Id.mr_chooser_route_icon;
-			global::MR.Gestures.Resource.Id.mr_chooser_route_name = global::GestureSample.Droid.Resource.Id.mr_chooser_route_name;
-			global::MR.Gestures.Resource.Id.mr_chooser_title = global::GestureSample.Droid.Resource.Id.mr_chooser_title;
-			global::MR.Gestures.Resource.Id.mr_close = global::GestureSample.Droid.Resource.Id.mr_close;
-			global::MR.Gestures.Resource.Id.mr_control_divider = global::GestureSample.Droid.Resource.Id.mr_control_divider;
-			global::MR.Gestures.Resource.Id.mr_control_playback_ctrl = global::GestureSample.Droid.Resource.Id.mr_control_playback_ctrl;
-			global::MR.Gestures.Resource.Id.mr_control_subtitle = global::GestureSample.Droid.Resource.Id.mr_control_subtitle;
-			global::MR.Gestures.Resource.Id.mr_control_title = global::GestureSample.Droid.Resource.Id.mr_control_title;
-			global::MR.Gestures.Resource.Id.mr_control_title_container = global::GestureSample.Droid.Resource.Id.mr_control_title_container;
-			global::MR.Gestures.Resource.Id.mr_custom_control = global::GestureSample.Droid.Resource.Id.mr_custom_control;
-			global::MR.Gestures.Resource.Id.mr_default_control = global::GestureSample.Droid.Resource.Id.mr_default_control;
-			global::MR.Gestures.Resource.Id.mr_dialog_area = global::GestureSample.Droid.Resource.Id.mr_dialog_area;
-			global::MR.Gestures.Resource.Id.mr_expandable_area = global::GestureSample.Droid.Resource.Id.mr_expandable_area;
-			global::MR.Gestures.Resource.Id.mr_group_expand_collapse = global::GestureSample.Droid.Resource.Id.mr_group_expand_collapse;
-			global::MR.Gestures.Resource.Id.mr_group_volume_route_name = global::GestureSample.Droid.Resource.Id.mr_group_volume_route_name;
-			global::MR.Gestures.Resource.Id.mr_media_main_control = global::GestureSample.Droid.Resource.Id.mr_media_main_control;
-			global::MR.Gestures.Resource.Id.mr_name = global::GestureSample.Droid.Resource.Id.mr_name;
-			global::MR.Gestures.Resource.Id.mr_picker_close_button = global::GestureSample.Droid.Resource.Id.mr_picker_close_button;
-			global::MR.Gestures.Resource.Id.mr_picker_list = global::GestureSample.Droid.Resource.Id.mr_picker_list;
-			global::MR.Gestures.Resource.Id.mr_picker_route_icon = global::GestureSample.Droid.Resource.Id.mr_picker_route_icon;
-			global::MR.Gestures.Resource.Id.mr_picker_route_name = global::GestureSample.Droid.Resource.Id.mr_picker_route_name;
-			global::MR.Gestures.Resource.Id.mr_playback_control = global::GestureSample.Droid.Resource.Id.mr_playback_control;
-			global::MR.Gestures.Resource.Id.mr_title_bar = global::GestureSample.Droid.Resource.Id.mr_title_bar;
-			global::MR.Gestures.Resource.Id.mr_volume_control = global::GestureSample.Droid.Resource.Id.mr_volume_control;
-			global::MR.Gestures.Resource.Id.mr_volume_group_list = global::GestureSample.Droid.Resource.Id.mr_volume_group_list;
-			global::MR.Gestures.Resource.Id.mr_volume_item_icon = global::GestureSample.Droid.Resource.Id.mr_volume_item_icon;
-			global::MR.Gestures.Resource.Id.mr_volume_slider = global::GestureSample.Droid.Resource.Id.mr_volume_slider;
 			global::MR.Gestures.Resource.Id.mtrl_child_content_container = global::GestureSample.Droid.Resource.Id.mtrl_child_content_container;
 			global::MR.Gestures.Resource.Id.mtrl_internal_children_alpha_tag = global::GestureSample.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
 			global::MR.Gestures.Resource.Id.multiply = global::GestureSample.Droid.Resource.Id.multiply;
@@ -1377,6 +1194,8 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.notification_background = global::GestureSample.Droid.Resource.Id.notification_background;
 			global::MR.Gestures.Resource.Id.notification_main_column = global::GestureSample.Droid.Resource.Id.notification_main_column;
 			global::MR.Gestures.Resource.Id.notification_main_column_container = global::GestureSample.Droid.Resource.Id.notification_main_column_container;
+			global::MR.Gestures.Resource.Id.off = global::GestureSample.Droid.Resource.Id.off;
+			global::MR.Gestures.Resource.Id.on = global::GestureSample.Droid.Resource.Id.on;
 			global::MR.Gestures.Resource.Id.outline = global::GestureSample.Droid.Resource.Id.outline;
 			global::MR.Gestures.Resource.Id.parallax = global::GestureSample.Droid.Resource.Id.parallax;
 			global::MR.Gestures.Resource.Id.parentPanel = global::GestureSample.Droid.Resource.Id.parentPanel;
@@ -1389,6 +1208,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.right_icon = global::GestureSample.Droid.Resource.Id.right_icon;
 			global::MR.Gestures.Resource.Id.right_side = global::GestureSample.Droid.Resource.Id.right_side;
 			global::MR.Gestures.Resource.Id.save_non_transition_alpha = global::GestureSample.Droid.Resource.Id.save_non_transition_alpha;
+			global::MR.Gestures.Resource.Id.save_overlay_view = global::GestureSample.Droid.Resource.Id.save_overlay_view;
 			global::MR.Gestures.Resource.Id.screen = global::GestureSample.Droid.Resource.Id.screen;
 			global::MR.Gestures.Resource.Id.scroll = global::GestureSample.Droid.Resource.Id.scroll;
 			global::MR.Gestures.Resource.Id.scrollable = global::GestureSample.Droid.Resource.Id.scrollable;
@@ -1414,6 +1234,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.showCustom = global::GestureSample.Droid.Resource.Id.showCustom;
 			global::MR.Gestures.Resource.Id.showHome = global::GestureSample.Droid.Resource.Id.showHome;
 			global::MR.Gestures.Resource.Id.showTitle = global::GestureSample.Droid.Resource.Id.showTitle;
+			global::MR.Gestures.Resource.Id.sliding_tabs = global::GestureSample.Droid.Resource.Id.sliding_tabs;
 			global::MR.Gestures.Resource.Id.smallLabel = global::GestureSample.Droid.Resource.Id.smallLabel;
 			global::MR.Gestures.Resource.Id.snackbar_action = global::GestureSample.Droid.Resource.Id.snackbar_action;
 			global::MR.Gestures.Resource.Id.snackbar_text = global::GestureSample.Droid.Resource.Id.snackbar_text;
@@ -1431,6 +1252,11 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.submit_area = global::GestureSample.Droid.Resource.Id.submit_area;
 			global::MR.Gestures.Resource.Id.SYM = global::GestureSample.Droid.Resource.Id.SYM;
 			global::MR.Gestures.Resource.Id.tabMode = global::GestureSample.Droid.Resource.Id.tabMode;
+			global::MR.Gestures.Resource.Id.tag_accessibility_actions = global::GestureSample.Droid.Resource.Id.tag_accessibility_actions;
+			global::MR.Gestures.Resource.Id.tag_accessibility_clickable_spans = global::GestureSample.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::MR.Gestures.Resource.Id.tag_accessibility_heading = global::GestureSample.Droid.Resource.Id.tag_accessibility_heading;
+			global::MR.Gestures.Resource.Id.tag_accessibility_pane_title = global::GestureSample.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::MR.Gestures.Resource.Id.tag_screen_reader_focusable = global::GestureSample.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::MR.Gestures.Resource.Id.tag_transition_group = global::GestureSample.Droid.Resource.Id.tag_transition_group;
 			global::MR.Gestures.Resource.Id.tag_unhandled_key_event_manager = global::GestureSample.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::MR.Gestures.Resource.Id.tag_unhandled_key_listeners = global::GestureSample.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -1447,6 +1273,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.title = global::GestureSample.Droid.Resource.Id.title;
 			global::MR.Gestures.Resource.Id.titleDividerNoCustom = global::GestureSample.Droid.Resource.Id.titleDividerNoCustom;
 			global::MR.Gestures.Resource.Id.title_template = global::GestureSample.Droid.Resource.Id.title_template;
+			global::MR.Gestures.Resource.Id.toolbar = global::GestureSample.Droid.Resource.Id.toolbar;
 			global::MR.Gestures.Resource.Id.top = global::GestureSample.Droid.Resource.Id.top;
 			global::MR.Gestures.Resource.Id.topPanel = global::GestureSample.Droid.Resource.Id.topPanel;
 			global::MR.Gestures.Resource.Id.touch_outside = global::GestureSample.Droid.Resource.Id.touch_outside;
@@ -1455,13 +1282,13 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Id.transition_position = global::GestureSample.Droid.Resource.Id.transition_position;
 			global::MR.Gestures.Resource.Id.transition_scene_layoutid_cache = global::GestureSample.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::MR.Gestures.Resource.Id.transition_transform = global::GestureSample.Droid.Resource.Id.transition_transform;
+			global::MR.Gestures.Resource.Id.@unchecked = global::GestureSample.Droid.Resource.Id.@unchecked;
 			global::MR.Gestures.Resource.Id.uniform = global::GestureSample.Droid.Resource.Id.uniform;
 			global::MR.Gestures.Resource.Id.unlabeled = global::GestureSample.Droid.Resource.Id.unlabeled;
 			global::MR.Gestures.Resource.Id.up = global::GestureSample.Droid.Resource.Id.up;
 			global::MR.Gestures.Resource.Id.useLogo = global::GestureSample.Droid.Resource.Id.useLogo;
 			global::MR.Gestures.Resource.Id.view_offset_helper = global::GestureSample.Droid.Resource.Id.view_offset_helper;
 			global::MR.Gestures.Resource.Id.visible = global::GestureSample.Droid.Resource.Id.visible;
-			global::MR.Gestures.Resource.Id.volume_item_container = global::GestureSample.Droid.Resource.Id.volume_item_container;
 			global::MR.Gestures.Resource.Id.withText = global::GestureSample.Droid.Resource.Id.withText;
 			global::MR.Gestures.Resource.Id.wrap_content = global::GestureSample.Droid.Resource.Id.wrap_content;
 			global::MR.Gestures.Resource.Integer.abc_config_activityDefaultDur = global::GestureSample.Droid.Resource.Integer.abc_config_activityDefaultDur;
@@ -1473,18 +1300,19 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Integer.design_snackbar_text_max_lines = global::GestureSample.Droid.Resource.Integer.design_snackbar_text_max_lines;
 			global::MR.Gestures.Resource.Integer.design_tab_indicator_anim_duration_ms = global::GestureSample.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
 			global::MR.Gestures.Resource.Integer.hide_password_duration = global::GestureSample.Droid.Resource.Integer.hide_password_duration;
-			global::MR.Gestures.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::GestureSample.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
-			global::MR.Gestures.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::GestureSample.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
-			global::MR.Gestures.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::GestureSample.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
-			global::MR.Gestures.Resource.Integer.mr_update_routes_delay_ms = global::GestureSample.Droid.Resource.Integer.mr_update_routes_delay_ms;
 			global::MR.Gestures.Resource.Integer.mtrl_btn_anim_delay_ms = global::GestureSample.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
 			global::MR.Gestures.Resource.Integer.mtrl_btn_anim_duration_ms = global::GestureSample.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
 			global::MR.Gestures.Resource.Integer.mtrl_chip_anim_duration = global::GestureSample.Droid.Resource.Integer.mtrl_chip_anim_duration;
 			global::MR.Gestures.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::GestureSample.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::MR.Gestures.Resource.Integer.show_password_duration = global::GestureSample.Droid.Resource.Integer.show_password_duration;
 			global::MR.Gestures.Resource.Integer.status_bar_notification_info_maxnum = global::GestureSample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::MR.Gestures.Resource.Interpolator.mr_fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.mr_fast_out_slow_in;
-			global::MR.Gestures.Resource.Interpolator.mr_linear_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::MR.Gestures.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::MR.Gestures.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::MR.Gestures.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::MR.Gestures.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::MR.Gestures.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::MR.Gestures.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::MR.Gestures.Resource.Interpolator.fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::MR.Gestures.Resource.Interpolator.mtrl_fast_out_linear_in = global::GestureSample.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::MR.Gestures.Resource.Interpolator.mtrl_fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::MR.Gestures.Resource.Interpolator.mtrl_linear = global::GestureSample.Droid.Resource.Interpolator.mtrl_linear;
@@ -1520,6 +1348,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Layout.BottomTabLayout = global::GestureSample.Droid.Resource.Layout.BottomTabLayout;
 			global::MR.Gestures.Resource.Layout.browser_actions_context_menu_page = global::GestureSample.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::MR.Gestures.Resource.Layout.browser_actions_context_menu_row = global::GestureSample.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::MR.Gestures.Resource.Layout.custom_dialog = global::GestureSample.Droid.Resource.Layout.custom_dialog;
 			global::MR.Gestures.Resource.Layout.design_bottom_navigation_item = global::GestureSample.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::MR.Gestures.Resource.Layout.design_bottom_sheet_dialog = global::GestureSample.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::MR.Gestures.Resource.Layout.design_layout_snackbar = global::GestureSample.Droid.Resource.Layout.design_layout_snackbar;
@@ -1534,20 +1363,9 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Layout.design_navigation_menu = global::GestureSample.Droid.Resource.Layout.design_navigation_menu;
 			global::MR.Gestures.Resource.Layout.design_navigation_menu_item = global::GestureSample.Droid.Resource.Layout.design_navigation_menu_item;
 			global::MR.Gestures.Resource.Layout.design_text_input_password_icon = global::GestureSample.Droid.Resource.Layout.design_text_input_password_icon;
+			global::MR.Gestures.Resource.Layout.FallbackTabbarDoNotUse = global::GestureSample.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::MR.Gestures.Resource.Layout.FallbackToolbarDoNotUse = global::GestureSample.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::MR.Gestures.Resource.Layout.FlyoutContent = global::GestureSample.Droid.Resource.Layout.FlyoutContent;
-			global::MR.Gestures.Resource.Layout.mr_cast_dialog = global::GestureSample.Droid.Resource.Layout.mr_cast_dialog;
-			global::MR.Gestures.Resource.Layout.mr_cast_group_item = global::GestureSample.Droid.Resource.Layout.mr_cast_group_item;
-			global::MR.Gestures.Resource.Layout.mr_cast_group_volume_item = global::GestureSample.Droid.Resource.Layout.mr_cast_group_volume_item;
-			global::MR.Gestures.Resource.Layout.mr_cast_media_metadata = global::GestureSample.Droid.Resource.Layout.mr_cast_media_metadata;
-			global::MR.Gestures.Resource.Layout.mr_cast_route_item = global::GestureSample.Droid.Resource.Layout.mr_cast_route_item;
-			global::MR.Gestures.Resource.Layout.mr_chooser_dialog = global::GestureSample.Droid.Resource.Layout.mr_chooser_dialog;
-			global::MR.Gestures.Resource.Layout.mr_chooser_list_item = global::GestureSample.Droid.Resource.Layout.mr_chooser_list_item;
-			global::MR.Gestures.Resource.Layout.mr_controller_material_dialog_b = global::GestureSample.Droid.Resource.Layout.mr_controller_material_dialog_b;
-			global::MR.Gestures.Resource.Layout.mr_controller_volume_item = global::GestureSample.Droid.Resource.Layout.mr_controller_volume_item;
-			global::MR.Gestures.Resource.Layout.mr_picker_dialog = global::GestureSample.Droid.Resource.Layout.mr_picker_dialog;
-			global::MR.Gestures.Resource.Layout.mr_picker_route_item = global::GestureSample.Droid.Resource.Layout.mr_picker_route_item;
-			global::MR.Gestures.Resource.Layout.mr_playback_control = global::GestureSample.Droid.Resource.Layout.mr_playback_control;
-			global::MR.Gestures.Resource.Layout.mr_volume_control = global::GestureSample.Droid.Resource.Layout.mr_volume_control;
 			global::MR.Gestures.Resource.Layout.mtrl_layout_snackbar = global::GestureSample.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::MR.Gestures.Resource.Layout.mtrl_layout_snackbar_include = global::GestureSample.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::MR.Gestures.Resource.Layout.notification_action = global::GestureSample.Droid.Resource.Layout.notification_action;
@@ -1571,6 +1389,8 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Layout.select_dialog_singlechoice_material = global::GestureSample.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::MR.Gestures.Resource.Layout.ShellContent = global::GestureSample.Droid.Resource.Layout.ShellContent;
 			global::MR.Gestures.Resource.Layout.support_simple_spinner_dropdown_item = global::GestureSample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::MR.Gestures.Resource.Layout.Tabbar = global::GestureSample.Droid.Resource.Layout.Tabbar;
+			global::MR.Gestures.Resource.Layout.Toolbar = global::GestureSample.Droid.Resource.Layout.Toolbar;
 			global::MR.Gestures.Resource.String.abc_action_bar_home_description = global::GestureSample.Droid.Resource.String.abc_action_bar_home_description;
 			global::MR.Gestures.Resource.String.abc_action_bar_up_description = global::GestureSample.Droid.Resource.String.abc_action_bar_up_description;
 			global::MR.Gestures.Resource.String.abc_action_menu_overflow_description = global::GestureSample.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -1605,28 +1425,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.String.fab_transformation_scrim_behavior = global::GestureSample.Droid.Resource.String.fab_transformation_scrim_behavior;
 			global::MR.Gestures.Resource.String.fab_transformation_sheet_behavior = global::GestureSample.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::MR.Gestures.Resource.String.hide_bottom_view_on_scroll_behavior = global::GestureSample.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
-			global::MR.Gestures.Resource.String.mr_button_content_description = global::GestureSample.Droid.Resource.String.mr_button_content_description;
-			global::MR.Gestures.Resource.String.mr_cast_button_connected = global::GestureSample.Droid.Resource.String.mr_cast_button_connected;
-			global::MR.Gestures.Resource.String.mr_cast_button_connecting = global::GestureSample.Droid.Resource.String.mr_cast_button_connecting;
-			global::MR.Gestures.Resource.String.mr_cast_button_disconnected = global::GestureSample.Droid.Resource.String.mr_cast_button_disconnected;
-			global::MR.Gestures.Resource.String.mr_cast_dialog_title_view_placeholder = global::GestureSample.Droid.Resource.String.mr_cast_dialog_title_view_placeholder;
-			global::MR.Gestures.Resource.String.mr_chooser_searching = global::GestureSample.Droid.Resource.String.mr_chooser_searching;
-			global::MR.Gestures.Resource.String.mr_chooser_title = global::GestureSample.Droid.Resource.String.mr_chooser_title;
-			global::MR.Gestures.Resource.String.mr_controller_album_art = global::GestureSample.Droid.Resource.String.mr_controller_album_art;
-			global::MR.Gestures.Resource.String.mr_controller_casting_screen = global::GestureSample.Droid.Resource.String.mr_controller_casting_screen;
-			global::MR.Gestures.Resource.String.mr_controller_close_description = global::GestureSample.Droid.Resource.String.mr_controller_close_description;
-			global::MR.Gestures.Resource.String.mr_controller_collapse_group = global::GestureSample.Droid.Resource.String.mr_controller_collapse_group;
-			global::MR.Gestures.Resource.String.mr_controller_disconnect = global::GestureSample.Droid.Resource.String.mr_controller_disconnect;
-			global::MR.Gestures.Resource.String.mr_controller_expand_group = global::GestureSample.Droid.Resource.String.mr_controller_expand_group;
-			global::MR.Gestures.Resource.String.mr_controller_no_info_available = global::GestureSample.Droid.Resource.String.mr_controller_no_info_available;
-			global::MR.Gestures.Resource.String.mr_controller_no_media_selected = global::GestureSample.Droid.Resource.String.mr_controller_no_media_selected;
-			global::MR.Gestures.Resource.String.mr_controller_pause = global::GestureSample.Droid.Resource.String.mr_controller_pause;
-			global::MR.Gestures.Resource.String.mr_controller_play = global::GestureSample.Droid.Resource.String.mr_controller_play;
-			global::MR.Gestures.Resource.String.mr_controller_stop = global::GestureSample.Droid.Resource.String.mr_controller_stop;
-			global::MR.Gestures.Resource.String.mr_controller_stop_casting = global::GestureSample.Droid.Resource.String.mr_controller_stop_casting;
-			global::MR.Gestures.Resource.String.mr_controller_volume_slider = global::GestureSample.Droid.Resource.String.mr_controller_volume_slider;
-			global::MR.Gestures.Resource.String.mr_system_route_name = global::GestureSample.Droid.Resource.String.mr_system_route_name;
-			global::MR.Gestures.Resource.String.mr_user_route_category_name = global::GestureSample.Droid.Resource.String.mr_user_route_category_name;
 			global::MR.Gestures.Resource.String.mtrl_chip_close_icon_content_description = global::GestureSample.Droid.Resource.String.mtrl_chip_close_icon_content_description;
 			global::MR.Gestures.Resource.String.password_toggle_content_description = global::GestureSample.Droid.Resource.String.password_toggle_content_description;
 			global::MR.Gestures.Resource.String.path_password_eye = global::GestureSample.Droid.Resource.String.path_password_eye;
@@ -1822,6 +1620,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_Spinner = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_TextView = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_Toolbar = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::MR.Gestures.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -1944,9 +1743,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::GestureSample.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
 			global::MR.Gestures.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::GestureSample.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
 			global::MR.Gestures.Resource.Style.TextAppearance_MaterialComponents_Tab = global::GestureSample.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
-			global::MR.Gestures.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::GestureSample.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
-			global::MR.Gestures.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::GestureSample.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
-			global::MR.Gestures.Resource.Style.TextAppearance_MediaRouter_Title = global::GestureSample.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
 			global::MR.Gestures.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::GestureSample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::MR.Gestures.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::GestureSample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::MR.Gestures.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::GestureSample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
@@ -1954,6 +1750,8 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_Dark = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_AppCompat_Light = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -1969,8 +1767,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::GestureSample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::GestureSample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
 			global::MR.Gestures.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::GestureSample.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
-			global::MR.Gestures.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::GestureSample.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
-			global::MR.Gestures.Resource.Style.ThemeOverlay_MediaRouter_Light = global::GestureSample.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
 			global::MR.Gestures.Resource.Style.Theme_AppCompat = global::GestureSample.Droid.Resource.Style.Theme_AppCompat;
 			global::MR.Gestures.Resource.Style.Theme_AppCompat_CompactMenu = global::GestureSample.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
 			global::MR.Gestures.Resource.Style.Theme_AppCompat_DayNight = global::GestureSample.Droid.Resource.Style.Theme_AppCompat_DayNight;
@@ -2019,10 +1815,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::GestureSample.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
 			global::MR.Gestures.Resource.Style.Theme_MaterialComponents_NoActionBar = global::GestureSample.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
 			global::MR.Gestures.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::GestureSample.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
-			global::MR.Gestures.Resource.Style.Theme_MediaRouter = global::GestureSample.Droid.Resource.Style.Theme_MediaRouter;
-			global::MR.Gestures.Resource.Style.Theme_MediaRouter_Light = global::GestureSample.Droid.Resource.Style.Theme_MediaRouter_Light;
-			global::MR.Gestures.Resource.Style.Theme_MediaRouter_LightControlPanel = global::GestureSample.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
-			global::MR.Gestures.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::GestureSample.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_ActionBar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_ActionBar;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
@@ -2092,6 +1884,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::MR.Gestures.Resource.Style.Widget_AppCompat_TextView = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_Toolbar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::MR.Gestures.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -2143,8 +1936,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::GestureSample.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
 			global::MR.Gestures.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::GestureSample.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
 			global::MR.Gestures.Resource.Style.Widget_MaterialComponents_Toolbar = global::GestureSample.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
-			global::MR.Gestures.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::GestureSample.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
-			global::MR.Gestures.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::GestureSample.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
 			global::MR.Gestures.Resource.Style.Widget_Support_CoordinatorLayout = global::GestureSample.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
 			global::MR.Gestures.Resource.Styleable.ActionBar = global::GestureSample.Droid.Resource.Styleable.ActionBar;
 			global::MR.Gestures.Resource.Styleable.ActionBarLayout = global::GestureSample.Droid.Resource.Styleable.ActionBarLayout;
@@ -2255,11 +2046,21 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableTint = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableTintMode = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_fontFamily = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_lineHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::MR.Gestures.Resource.Styleable.AppCompatTextView_textAllCaps = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::MR.Gestures.Resource.Styleable.AppCompatTextView_textLocale = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_actionBarDivider = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -2333,14 +2134,18 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::MR.Gestures.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_panelBackground = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::MR.Gestures.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -2489,6 +2294,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.ColorStateListItem_android_color = global::GestureSample.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::MR.Gestures.Resource.Styleable.CompoundButton = global::GestureSample.Droid.Resource.Styleable.CompoundButton;
 			global::MR.Gestures.Resource.Styleable.CompoundButton_android_button = global::GestureSample.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::MR.Gestures.Resource.Styleable.CompoundButton_buttonCompat = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::MR.Gestures.Resource.Styleable.CompoundButton_buttonTint = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::MR.Gestures.Resource.Styleable.CompoundButton_buttonTintMode = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::MR.Gestures.Resource.Styleable.CoordinatorLayout = global::GestureSample.Droid.Resource.Styleable.CoordinatorLayout;
@@ -2642,11 +2448,6 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::GestureSample.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
 			global::MR.Gestures.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::GestureSample.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
 			global::MR.Gestures.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::GestureSample.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
-			global::MR.Gestures.Resource.Styleable.MediaRouteButton = global::GestureSample.Droid.Resource.Styleable.MediaRouteButton;
-			global::MR.Gestures.Resource.Styleable.MediaRouteButton_android_minHeight = global::GestureSample.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
-			global::MR.Gestures.Resource.Styleable.MediaRouteButton_android_minWidth = global::GestureSample.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
-			global::MR.Gestures.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::GestureSample.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
-			global::MR.Gestures.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint = global::GestureSample.Droid.Resource.Styleable.MediaRouteButton_mediaRouteButtonTint;
 			global::MR.Gestures.Resource.Styleable.MenuGroup = global::GestureSample.Droid.Resource.Styleable.MenuGroup;
 			global::MR.Gestures.Resource.Styleable.MenuGroup_android_checkableBehavior = global::GestureSample.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
 			global::MR.Gestures.Resource.Styleable.MenuGroup_android_enabled = global::GestureSample.Droid.Resource.Styleable.MenuGroup_android_enabled;
@@ -2711,6 +2512,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::GestureSample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::MR.Gestures.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::GestureSample.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::MR.Gestures.Resource.Styleable.RecyclerView = global::GestureSample.Droid.Resource.Styleable.RecyclerView;
+			global::MR.Gestures.Resource.Styleable.RecyclerView_android_clipToPadding = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::MR.Gestures.Resource.Styleable.RecyclerView_android_descendantFocusability = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::MR.Gestures.Resource.Styleable.RecyclerView_android_orientation = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::MR.Gestures.Resource.Styleable.RecyclerView_fastScrollEnabled = global::GestureSample.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -2820,11 +2622,14 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.TextAppearance_android_textColor = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_android_textColorHint = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_android_textColorLink = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::MR.Gestures.Resource.Styleable.TextAppearance_android_textFontWeight = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_android_textSize = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_android_textStyle = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_android_typeface = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_fontFamily = global::GestureSample.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::MR.Gestures.Resource.Styleable.TextAppearance_fontVariationSettings = global::GestureSample.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::MR.Gestures.Resource.Styleable.TextAppearance_textAllCaps = global::GestureSample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::MR.Gestures.Resource.Styleable.TextAppearance_textLocale = global::GestureSample.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::MR.Gestures.Resource.Styleable.TextInputLayout = global::GestureSample.Droid.Resource.Styleable.TextInputLayout;
 			global::MR.Gestures.Resource.Styleable.TextInputLayout_android_hint = global::GestureSample.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::MR.Gestures.Resource.Styleable.TextInputLayout_android_textColorHint = global::GestureSample.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -2873,6 +2678,7 @@ namespace GestureSample.Droid
 			global::MR.Gestures.Resource.Styleable.Toolbar_logo = global::GestureSample.Droid.Resource.Styleable.Toolbar_logo;
 			global::MR.Gestures.Resource.Styleable.Toolbar_logoDescription = global::GestureSample.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::MR.Gestures.Resource.Styleable.Toolbar_maxButtonHeight = global::GestureSample.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::MR.Gestures.Resource.Styleable.Toolbar_menu = global::GestureSample.Droid.Resource.Styleable.Toolbar_menu;
 			global::MR.Gestures.Resource.Styleable.Toolbar_navigationContentDescription = global::GestureSample.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::MR.Gestures.Resource.Styleable.Toolbar_navigationIcon = global::GestureSample.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::MR.Gestures.Resource.Styleable.Toolbar_popupTheme = global::GestureSample.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -2914,6 +2720,18 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::GestureSample.Droid.Resource.Animation.abc_slide_out_top;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_tooltip_enter = global::GestureSample.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_tooltip_exit = global::GestureSample.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::GestureSample.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::GestureSample.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::GestureSample.Droid.Resource.Animation.design_snackbar_in;
@@ -3013,6 +2831,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonCompat = global::GestureSample.Droid.Resource.Attribute.buttonCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::GestureSample.Droid.Resource.Attribute.buttonGravity;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonIconDimen = global::GestureSample.Droid.Resource.Attribute.buttonIconDimen;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::GestureSample.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -3107,7 +2926,15 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::GestureSample.Droid.Resource.Attribute.dividerHorizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::GestureSample.Droid.Resource.Attribute.dividerPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::GestureSample.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableBottomCompat = global::GestureSample.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableEndCompat = global::GestureSample.Droid.Resource.Attribute.drawableEndCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableLeftCompat = global::GestureSample.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableRightCompat = global::GestureSample.Droid.Resource.Attribute.drawableRightCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::GestureSample.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableStartCompat = global::GestureSample.Droid.Resource.Attribute.drawableStartCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTint = global::GestureSample.Droid.Resource.Attribute.drawableTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTintMode = global::GestureSample.Droid.Resource.Attribute.drawableTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableTopCompat = global::GestureSample.Droid.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::GestureSample.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::GestureSample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::GestureSample.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -3214,6 +3041,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.lineHeight = global::GestureSample.Droid.Resource.Attribute.lineHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.lineSpacing = global::GestureSample.Droid.Resource.Attribute.lineSpacing;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::GestureSample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::GestureSample.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::GestureSample.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::GestureSample.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::GestureSample.Droid.Resource.Attribute.listItemLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::GestureSample.Droid.Resource.Attribute.listLayout;
@@ -3222,8 +3051,10 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingEnd = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingStart = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::GestureSample.Droid.Resource.Attribute.logo;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::GestureSample.Droid.Resource.Attribute.logoDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.materialButtonStyle = global::GestureSample.Droid.Resource.Attribute.materialButtonStyle;
@@ -3265,6 +3096,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::GestureSample.Droid.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::GestureSample.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::GestureSample.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.recyclerViewStyle = global::GestureSample.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::GestureSample.Droid.Resource.Attribute.reverseLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::GestureSample.Droid.Resource.Attribute.rippleColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::GestureSample.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -3365,6 +3197,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::GestureSample.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textEndPadding = global::GestureSample.Droid.Resource.Attribute.textEndPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textInputStyle = global::GestureSample.Droid.Resource.Attribute.textInputStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textLocale = global::GestureSample.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textStartPadding = global::GestureSample.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::GestureSample.Droid.Resource.Attribute.theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::GestureSample.Droid.Resource.Attribute.thickness;
@@ -3590,6 +3423,9 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::GestureSample.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::GestureSample.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::GestureSample.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_large_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_height_small_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::GestureSample.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::GestureSample.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -3765,11 +3601,13 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::GestureSample.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material_anim = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::GestureSample.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material_anim = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::GestureSample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -3847,6 +3685,14 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::GestureSample.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::GestureSample.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::GestureSample.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_checked_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_off_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_on_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::GestureSample.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::GestureSample.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::GestureSample.Droid.Resource.Drawable.design_ic_visibility;
@@ -3873,6 +3719,39 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::GestureSample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::GestureSample.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::GestureSample.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_action_clickable_span = global::GestureSample.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_0 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_1 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_10 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_11 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_12 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_13 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_14 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_15 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_16 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_17 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_18 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_19 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_2 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_20 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_21 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_22 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_23 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_24 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_25 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_26 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_27 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_28 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_29 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_3 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_30 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_31 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_4 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_5 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_6 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_7 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_8 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.accessibility_custom_action_9 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::GestureSample.Droid.Resource.Id.action0;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::GestureSample.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::GestureSample.Droid.Resource.Id.action_bar;
@@ -3911,6 +3790,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::GestureSample.Droid.Resource.Id.center_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::GestureSample.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::GestureSample.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@checked = global::GestureSample.Droid.Resource.Id.@checked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::GestureSample.Droid.Resource.Id.chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::GestureSample.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::GestureSample.Droid.Resource.Id.clip_vertical;
@@ -3929,6 +3809,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::GestureSample.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::GestureSample.Droid.Resource.Id.design_menu_item_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::GestureSample.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.dialog_button = global::GestureSample.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::GestureSample.Droid.Resource.Id.disableHome;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::GestureSample.Droid.Resource.Id.edit_query;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::GestureSample.Droid.Resource.Id.end;
@@ -3948,6 +3829,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::GestureSample.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::GestureSample.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::GestureSample.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view_holder = global::GestureSample.Droid.Resource.Id.ghost_view_holder;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.group_divider = global::GestureSample.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::GestureSample.Droid.Resource.Id.home;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::GestureSample.Droid.Resource.Id.homeAsUp;
@@ -3985,6 +3867,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::GestureSample.Droid.Resource.Id.notification_background;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::GestureSample.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::GestureSample.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.off = global::GestureSample.Droid.Resource.Id.off;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.on = global::GestureSample.Droid.Resource.Id.on;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.outline = global::GestureSample.Droid.Resource.Id.outline;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::GestureSample.Droid.Resource.Id.parallax;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::GestureSample.Droid.Resource.Id.parentPanel;
@@ -3997,6 +3881,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::GestureSample.Droid.Resource.Id.right_icon;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::GestureSample.Droid.Resource.Id.right_side;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::GestureSample.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_overlay_view = global::GestureSample.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::GestureSample.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::GestureSample.Droid.Resource.Id.scroll;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::GestureSample.Droid.Resource.Id.scrollable;
@@ -4022,6 +3907,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::GestureSample.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::GestureSample.Droid.Resource.Id.showHome;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::GestureSample.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.sliding_tabs = global::GestureSample.Droid.Resource.Id.sliding_tabs;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::GestureSample.Droid.Resource.Id.smallLabel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::GestureSample.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::GestureSample.Droid.Resource.Id.snackbar_text;
@@ -4039,6 +3925,11 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::GestureSample.Droid.Resource.Id.submit_area;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::GestureSample.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::GestureSample.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_actions = global::GestureSample.Droid.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_clickable_spans = global::GestureSample.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_heading = global::GestureSample.Droid.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_accessibility_pane_title = global::GestureSample.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_screen_reader_focusable = global::GestureSample.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::GestureSample.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_event_manager = global::GestureSample.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_unhandled_key_listeners = global::GestureSample.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -4055,6 +3946,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::GestureSample.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::GestureSample.Droid.Resource.Id.titleDividerNoCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::GestureSample.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.toolbar = global::GestureSample.Droid.Resource.Id.toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::GestureSample.Droid.Resource.Id.top;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::GestureSample.Droid.Resource.Id.topPanel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::GestureSample.Droid.Resource.Id.touch_outside;
@@ -4063,6 +3955,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::GestureSample.Droid.Resource.Id.transition_position;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::GestureSample.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::GestureSample.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@unchecked = global::GestureSample.Droid.Resource.Id.@unchecked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::GestureSample.Droid.Resource.Id.uniform;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.unlabeled = global::GestureSample.Droid.Resource.Id.unlabeled;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::GestureSample.Droid.Resource.Id.up;
@@ -4086,6 +3979,13 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::GestureSample.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::GestureSample.Droid.Resource.Integer.show_password_duration;
 			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::GestureSample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_fast_out_linear_in = global::GestureSample.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Interpolator.mtrl_linear = global::GestureSample.Droid.Resource.Interpolator.mtrl_linear;
@@ -4119,6 +4019,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::GestureSample.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_tooltip = global::GestureSample.Droid.Resource.Layout.abc_tooltip;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::GestureSample.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.custom_dialog = global::GestureSample.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::GestureSample.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::GestureSample.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::GestureSample.Droid.Resource.Layout.design_layout_snackbar;
@@ -4133,6 +4034,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::GestureSample.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::GestureSample.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::GestureSample.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackTabbarDoNotUse = global::GestureSample.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FallbackToolbarDoNotUse = global::GestureSample.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::GestureSample.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar = global::GestureSample.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar_include = global::GestureSample.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -4157,6 +4060,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::GestureSample.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::GestureSample.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::GestureSample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.Tabbar = global::GestureSample.Droid.Resource.Layout.Tabbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.Toolbar = global::GestureSample.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::GestureSample.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::GestureSample.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::GestureSample.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -4387,6 +4292,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -4520,6 +4426,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -4652,6 +4560,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -4813,11 +4722,21 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTint = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTintMode = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_lineHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textLocale = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -4891,14 +4810,18 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -5047,6 +4970,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::GestureSample.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::GestureSample.Droid.Resource.Styleable.CompoundButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::GestureSample.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonCompat = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::GestureSample.Droid.Resource.Styleable.CoordinatorLayout;
@@ -5266,6 +5190,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::GestureSample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::GestureSample.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::GestureSample.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_clipToPadding = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::GestureSample.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -5375,11 +5300,14 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textFontWeight = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::GestureSample.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontVariationSettings = global::GestureSample.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::GestureSample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textLocale = global::GestureSample.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::GestureSample.Droid.Resource.Styleable.TextInputLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::GestureSample.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::GestureSample.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -5428,6 +5356,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::GestureSample.Droid.Resource.Styleable.Toolbar_logo;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::GestureSample.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::GestureSample.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_menu = global::GestureSample.Droid.Resource.Styleable.Toolbar_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::GestureSample.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::GestureSample.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::GestureSample.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -5469,6 +5398,18 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_slide_out_top = global::GestureSample.Droid.Resource.Animation.abc_slide_out_top;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_tooltip_enter = global::GestureSample.Droid.Resource.Animation.abc_tooltip_enter;
 			global::Xamarin.Forms.Platform.Resource.Animation.abc_tooltip_exit = global::GestureSample.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::GestureSample.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.Platform.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::GestureSample.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_in = global::GestureSample.Droid.Resource.Animation.design_bottom_sheet_slide_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_out = global::GestureSample.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::GestureSample.Droid.Resource.Animation.design_snackbar_in;
@@ -5568,6 +5509,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarNeutralButtonStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarPositiveButtonStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonBarStyle = global::GestureSample.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Resource.Attribute.buttonCompat = global::GestureSample.Droid.Resource.Attribute.buttonCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonGravity = global::GestureSample.Droid.Resource.Attribute.buttonGravity;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonIconDimen = global::GestureSample.Droid.Resource.Attribute.buttonIconDimen;
 			global::Xamarin.Forms.Platform.Resource.Attribute.buttonPanelSideLayout = global::GestureSample.Droid.Resource.Attribute.buttonPanelSideLayout;
@@ -5662,7 +5604,15 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerHorizontal = global::GestureSample.Droid.Resource.Attribute.dividerHorizontal;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerPadding = global::GestureSample.Droid.Resource.Attribute.dividerPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dividerVertical = global::GestureSample.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableBottomCompat = global::GestureSample.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableEndCompat = global::GestureSample.Droid.Resource.Attribute.drawableEndCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableLeftCompat = global::GestureSample.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableRightCompat = global::GestureSample.Droid.Resource.Attribute.drawableRightCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.drawableSize = global::GestureSample.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableStartCompat = global::GestureSample.Droid.Resource.Attribute.drawableStartCompat;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTint = global::GestureSample.Droid.Resource.Attribute.drawableTint;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTintMode = global::GestureSample.Droid.Resource.Attribute.drawableTintMode;
+			global::Xamarin.Forms.Platform.Resource.Attribute.drawableTopCompat = global::GestureSample.Droid.Resource.Attribute.drawableTopCompat;
 			global::Xamarin.Forms.Platform.Resource.Attribute.drawerArrowStyle = global::GestureSample.Droid.Resource.Attribute.drawerArrowStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dropdownListPreferredItemHeight = global::GestureSample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.dropDownListViewStyle = global::GestureSample.Droid.Resource.Attribute.dropDownListViewStyle;
@@ -5769,6 +5719,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.lineHeight = global::GestureSample.Droid.Resource.Attribute.lineHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.lineSpacing = global::GestureSample.Droid.Resource.Attribute.lineSpacing;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceBackgroundIndicator = global::GestureSample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::GestureSample.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::GestureSample.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listDividerAlertDialog = global::GestureSample.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listItemLayout = global::GestureSample.Droid.Resource.Attribute.listItemLayout;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listLayout = global::GestureSample.Droid.Resource.Attribute.listLayout;
@@ -5777,8 +5729,10 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeight = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightLarge = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemHeightSmall = global::GestureSample.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingEnd = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingLeft = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingRight = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Resource.Attribute.listPreferredItemPaddingStart = global::GestureSample.Droid.Resource.Attribute.listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Resource.Attribute.logo = global::GestureSample.Droid.Resource.Attribute.logo;
 			global::Xamarin.Forms.Platform.Resource.Attribute.logoDescription = global::GestureSample.Droid.Resource.Attribute.logoDescription;
 			global::Xamarin.Forms.Platform.Resource.Attribute.materialButtonStyle = global::GestureSample.Droid.Resource.Attribute.materialButtonStyle;
@@ -5820,6 +5774,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyle = global::GestureSample.Droid.Resource.Attribute.ratingBarStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyleIndicator = global::GestureSample.Droid.Resource.Attribute.ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Resource.Attribute.ratingBarStyleSmall = global::GestureSample.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Resource.Attribute.recyclerViewStyle = global::GestureSample.Droid.Resource.Attribute.recyclerViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.reverseLayout = global::GestureSample.Droid.Resource.Attribute.reverseLayout;
 			global::Xamarin.Forms.Platform.Resource.Attribute.rippleColor = global::GestureSample.Droid.Resource.Attribute.rippleColor;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimAnimationDuration = global::GestureSample.Droid.Resource.Attribute.scrimAnimationDuration;
@@ -5920,6 +5875,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.textColorSearchUrl = global::GestureSample.Droid.Resource.Attribute.textColorSearchUrl;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textEndPadding = global::GestureSample.Droid.Resource.Attribute.textEndPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textInputStyle = global::GestureSample.Droid.Resource.Attribute.textInputStyle;
+			global::Xamarin.Forms.Platform.Resource.Attribute.textLocale = global::GestureSample.Droid.Resource.Attribute.textLocale;
 			global::Xamarin.Forms.Platform.Resource.Attribute.textStartPadding = global::GestureSample.Droid.Resource.Attribute.textStartPadding;
 			global::Xamarin.Forms.Platform.Resource.Attribute.theme = global::GestureSample.Droid.Resource.Attribute.theme;
 			global::Xamarin.Forms.Platform.Resource.Attribute.thickness = global::GestureSample.Droid.Resource.Attribute.thickness;
@@ -6145,6 +6101,9 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::GestureSample.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_edit_text_inset_top_material = global::GestureSample.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_floating_window_z = global::GestureSample.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_large_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_height_small_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_height_small_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_list_item_padding_horizontal_material = global::GestureSample.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_panel_menu_list_width = global::GestureSample.Droid.Resource.Dimension.abc_panel_menu_list_width;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_progress_bar_height_material = global::GestureSample.Droid.Resource.Dimension.abc_progress_bar_height_material;
@@ -6320,11 +6279,13 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_action_bar_item_background_material = global::GestureSample.Droid.Resource.Drawable.abc_action_bar_item_background_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_borderless_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_borderless_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_material_anim = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_material_anim;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::GestureSample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_colored_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_colored_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_default_mtrl_shape = global::GestureSample.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_material_anim = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_material_anim;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::GestureSample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::GestureSample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
@@ -6402,6 +6363,14 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_vector_test = global::GestureSample.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Platform.Resource.Drawable.avd_hide_password = global::GestureSample.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Platform.Resource.Drawable.avd_show_password = global::GestureSample.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_checked_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_off_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_on_mtrl = global::GestureSample.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Xamarin.Forms.Platform.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::GestureSample.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_bottom_navigation_item_background = global::GestureSample.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_fab_background = global::GestureSample.Droid.Resource.Drawable.design_fab_background;
 			global::Xamarin.Forms.Platform.Resource.Drawable.design_ic_visibility = global::GestureSample.Droid.Resource.Drawable.design_ic_visibility;
@@ -6428,6 +6397,39 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.notify_panel_notification_icon_bg = global::GestureSample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Platform.Resource.Drawable.tooltip_frame_dark = global::GestureSample.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Platform.Resource.Drawable.tooltip_frame_light = global::GestureSample.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_action_clickable_span = global::GestureSample.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_0 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_1 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_10 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_11 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_12 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_13 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_14 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_15 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_16 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_17 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_18 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_19 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_2 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_20 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_21 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_22 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_23 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_24 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_25 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_26 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_27 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_28 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_29 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_3 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_30 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_31 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_4 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_5 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_6 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_7 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_8 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Forms.Platform.Resource.Id.accessibility_custom_action_9 = global::GestureSample.Droid.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Forms.Platform.Resource.Id.action0 = global::GestureSample.Droid.Resource.Id.action0;
 			global::Xamarin.Forms.Platform.Resource.Id.actions = global::GestureSample.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Platform.Resource.Id.action_bar = global::GestureSample.Droid.Resource.Id.action_bar;
@@ -6466,6 +6468,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.center_horizontal = global::GestureSample.Droid.Resource.Id.center_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.center_vertical = global::GestureSample.Droid.Resource.Id.center_vertical;
 			global::Xamarin.Forms.Platform.Resource.Id.checkbox = global::GestureSample.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Resource.Id.@checked = global::GestureSample.Droid.Resource.Id.@checked;
 			global::Xamarin.Forms.Platform.Resource.Id.chronometer = global::GestureSample.Droid.Resource.Id.chronometer;
 			global::Xamarin.Forms.Platform.Resource.Id.clip_horizontal = global::GestureSample.Droid.Resource.Id.clip_horizontal;
 			global::Xamarin.Forms.Platform.Resource.Id.clip_vertical = global::GestureSample.Droid.Resource.Id.clip_vertical;
@@ -6484,6 +6487,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.design_menu_item_action_area_stub = global::GestureSample.Droid.Resource.Id.design_menu_item_action_area_stub;
 			global::Xamarin.Forms.Platform.Resource.Id.design_menu_item_text = global::GestureSample.Droid.Resource.Id.design_menu_item_text;
 			global::Xamarin.Forms.Platform.Resource.Id.design_navigation_view = global::GestureSample.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Resource.Id.dialog_button = global::GestureSample.Droid.Resource.Id.dialog_button;
 			global::Xamarin.Forms.Platform.Resource.Id.disableHome = global::GestureSample.Droid.Resource.Id.disableHome;
 			global::Xamarin.Forms.Platform.Resource.Id.edit_query = global::GestureSample.Droid.Resource.Id.edit_query;
 			global::Xamarin.Forms.Platform.Resource.Id.end = global::GestureSample.Droid.Resource.Id.end;
@@ -6503,6 +6507,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.forever = global::GestureSample.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Resource.Id.FUNCTION = global::GestureSample.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Platform.Resource.Id.ghost_view = global::GestureSample.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Resource.Id.ghost_view_holder = global::GestureSample.Droid.Resource.Id.ghost_view_holder;
 			global::Xamarin.Forms.Platform.Resource.Id.group_divider = global::GestureSample.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Platform.Resource.Id.home = global::GestureSample.Droid.Resource.Id.home;
 			global::Xamarin.Forms.Platform.Resource.Id.homeAsUp = global::GestureSample.Droid.Resource.Id.homeAsUp;
@@ -6540,6 +6545,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.notification_background = global::GestureSample.Droid.Resource.Id.notification_background;
 			global::Xamarin.Forms.Platform.Resource.Id.notification_main_column = global::GestureSample.Droid.Resource.Id.notification_main_column;
 			global::Xamarin.Forms.Platform.Resource.Id.notification_main_column_container = global::GestureSample.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Resource.Id.off = global::GestureSample.Droid.Resource.Id.off;
+			global::Xamarin.Forms.Platform.Resource.Id.on = global::GestureSample.Droid.Resource.Id.on;
 			global::Xamarin.Forms.Platform.Resource.Id.outline = global::GestureSample.Droid.Resource.Id.outline;
 			global::Xamarin.Forms.Platform.Resource.Id.parallax = global::GestureSample.Droid.Resource.Id.parallax;
 			global::Xamarin.Forms.Platform.Resource.Id.parentPanel = global::GestureSample.Droid.Resource.Id.parentPanel;
@@ -6552,6 +6559,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.right_icon = global::GestureSample.Droid.Resource.Id.right_icon;
 			global::Xamarin.Forms.Platform.Resource.Id.right_side = global::GestureSample.Droid.Resource.Id.right_side;
 			global::Xamarin.Forms.Platform.Resource.Id.save_non_transition_alpha = global::GestureSample.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Resource.Id.save_overlay_view = global::GestureSample.Droid.Resource.Id.save_overlay_view;
 			global::Xamarin.Forms.Platform.Resource.Id.screen = global::GestureSample.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Platform.Resource.Id.scroll = global::GestureSample.Droid.Resource.Id.scroll;
 			global::Xamarin.Forms.Platform.Resource.Id.scrollable = global::GestureSample.Droid.Resource.Id.scrollable;
@@ -6577,6 +6585,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.showCustom = global::GestureSample.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Resource.Id.showHome = global::GestureSample.Droid.Resource.Id.showHome;
 			global::Xamarin.Forms.Platform.Resource.Id.showTitle = global::GestureSample.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Resource.Id.sliding_tabs = global::GestureSample.Droid.Resource.Id.sliding_tabs;
 			global::Xamarin.Forms.Platform.Resource.Id.smallLabel = global::GestureSample.Droid.Resource.Id.smallLabel;
 			global::Xamarin.Forms.Platform.Resource.Id.snackbar_action = global::GestureSample.Droid.Resource.Id.snackbar_action;
 			global::Xamarin.Forms.Platform.Resource.Id.snackbar_text = global::GestureSample.Droid.Resource.Id.snackbar_text;
@@ -6594,6 +6603,11 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.submit_area = global::GestureSample.Droid.Resource.Id.submit_area;
 			global::Xamarin.Forms.Platform.Resource.Id.SYM = global::GestureSample.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Platform.Resource.Id.tabMode = global::GestureSample.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_actions = global::GestureSample.Droid.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_clickable_spans = global::GestureSample.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_heading = global::GestureSample.Droid.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_accessibility_pane_title = global::GestureSample.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Forms.Platform.Resource.Id.tag_screen_reader_focusable = global::GestureSample.Droid.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_transition_group = global::GestureSample.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_unhandled_key_event_manager = global::GestureSample.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Platform.Resource.Id.tag_unhandled_key_listeners = global::GestureSample.Droid.Resource.Id.tag_unhandled_key_listeners;
@@ -6610,6 +6624,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.title = global::GestureSample.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Platform.Resource.Id.titleDividerNoCustom = global::GestureSample.Droid.Resource.Id.titleDividerNoCustom;
 			global::Xamarin.Forms.Platform.Resource.Id.title_template = global::GestureSample.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Resource.Id.toolbar = global::GestureSample.Droid.Resource.Id.toolbar;
 			global::Xamarin.Forms.Platform.Resource.Id.top = global::GestureSample.Droid.Resource.Id.top;
 			global::Xamarin.Forms.Platform.Resource.Id.topPanel = global::GestureSample.Droid.Resource.Id.topPanel;
 			global::Xamarin.Forms.Platform.Resource.Id.touch_outside = global::GestureSample.Droid.Resource.Id.touch_outside;
@@ -6618,6 +6633,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Id.transition_position = global::GestureSample.Droid.Resource.Id.transition_position;
 			global::Xamarin.Forms.Platform.Resource.Id.transition_scene_layoutid_cache = global::GestureSample.Droid.Resource.Id.transition_scene_layoutid_cache;
 			global::Xamarin.Forms.Platform.Resource.Id.transition_transform = global::GestureSample.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Resource.Id.@unchecked = global::GestureSample.Droid.Resource.Id.@unchecked;
 			global::Xamarin.Forms.Platform.Resource.Id.uniform = global::GestureSample.Droid.Resource.Id.uniform;
 			global::Xamarin.Forms.Platform.Resource.Id.unlabeled = global::GestureSample.Droid.Resource.Id.unlabeled;
 			global::Xamarin.Forms.Platform.Resource.Id.up = global::GestureSample.Droid.Resource.Id.up;
@@ -6641,6 +6657,13 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::GestureSample.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
 			global::Xamarin.Forms.Platform.Resource.Integer.show_password_duration = global::GestureSample.Droid.Resource.Integer.show_password_duration;
 			global::Xamarin.Forms.Platform.Resource.Integer.status_bar_notification_info_maxnum = global::GestureSample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::GestureSample.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::GestureSample.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.Platform.Resource.Interpolator.fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_fast_out_linear_in = global::GestureSample.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_fast_out_slow_in = global::GestureSample.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
 			global::Xamarin.Forms.Platform.Resource.Interpolator.mtrl_linear = global::GestureSample.Droid.Resource.Interpolator.mtrl_linear;
@@ -6674,6 +6697,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::GestureSample.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_tooltip = global::GestureSample.Droid.Resource.Layout.abc_tooltip;
 			global::Xamarin.Forms.Platform.Resource.Layout.BottomTabLayout = global::GestureSample.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Resource.Layout.custom_dialog = global::GestureSample.Droid.Resource.Layout.custom_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_navigation_item = global::GestureSample.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_sheet_dialog = global::GestureSample.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar = global::GestureSample.Droid.Resource.Layout.design_layout_snackbar;
@@ -6688,6 +6712,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu = global::GestureSample.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu_item = global::GestureSample.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_text_input_password_icon = global::GestureSample.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Resource.Layout.FallbackTabbarDoNotUse = global::GestureSample.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Xamarin.Forms.Platform.Resource.Layout.FallbackToolbarDoNotUse = global::GestureSample.Droid.Resource.Layout.FallbackToolbarDoNotUse;
 			global::Xamarin.Forms.Platform.Resource.Layout.FlyoutContent = global::GestureSample.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar = global::GestureSample.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar_include = global::GestureSample.Droid.Resource.Layout.mtrl_layout_snackbar_include;
@@ -6712,6 +6738,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::GestureSample.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.ShellContent = global::GestureSample.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::GestureSample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Resource.Layout.Tabbar = global::GestureSample.Droid.Resource.Layout.Tabbar;
+			global::Xamarin.Forms.Platform.Resource.Layout.Toolbar = global::GestureSample.Droid.Resource.Layout.Toolbar;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::GestureSample.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::GestureSample.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_menu_overflow_description = global::GestureSample.Droid.Resource.String.abc_action_menu_overflow_description;
@@ -6942,6 +6970,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::GestureSample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
@@ -7075,6 +7104,8 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
 			global::Xamarin.Forms.Platform.Resource.Style.ThemeOverlay_AppCompat_Light = global::GestureSample.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
@@ -7207,6 +7238,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_TextView;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::GestureSample.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
@@ -7368,11 +7400,21 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTint = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTintMode = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_fontFamily = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_lineHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textAllCaps = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextView_textLocale = global::GestureSample.Droid.Resource.Styleable.AppCompatTextView_textLocale;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_actionBarDivider = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
@@ -7446,14 +7488,18 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelBackground = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::GestureSample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
@@ -7602,6 +7648,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ColorStateListItem_android_color = global::GestureSample.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton = global::GestureSample.Droid.Resource.Styleable.CompoundButton;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_android_button = global::GestureSample.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonCompat = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTint = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CompoundButton_buttonTintMode = global::GestureSample.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Platform.Resource.Styleable.CoordinatorLayout = global::GestureSample.Droid.Resource.Styleable.CoordinatorLayout;
@@ -7821,6 +7868,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::GestureSample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::GestureSample.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView = global::GestureSample.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_clipToPadding = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_descendantFocusability = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_android_orientation = global::GestureSample.Droid.Resource.Styleable.RecyclerView_android_orientation;
 			global::Xamarin.Forms.Platform.Resource.Styleable.RecyclerView_fastScrollEnabled = global::GestureSample.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
@@ -7930,11 +7978,14 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColor = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColor;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColorHint = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textColorLink = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textFontWeight = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textSize = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textSize;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_textStyle = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_textStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_android_typeface = global::GestureSample.Droid.Resource.Styleable.TextAppearance_android_typeface;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_fontFamily = global::GestureSample.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_fontVariationSettings = global::GestureSample.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textAllCaps = global::GestureSample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Resource.Styleable.TextAppearance_textLocale = global::GestureSample.Droid.Resource.Styleable.TextAppearance_textLocale;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout = global::GestureSample.Droid.Resource.Styleable.TextInputLayout;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_hint = global::GestureSample.Droid.Resource.Styleable.TextInputLayout_android_hint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.TextInputLayout_android_textColorHint = global::GestureSample.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
@@ -7983,6 +8034,7 @@ namespace GestureSample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logo = global::GestureSample.Droid.Resource.Styleable.Toolbar_logo;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_logoDescription = global::GestureSample.Droid.Resource.Styleable.Toolbar_logoDescription;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_maxButtonHeight = global::GestureSample.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_menu = global::GestureSample.Droid.Resource.Styleable.Toolbar_menu;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationContentDescription = global::GestureSample.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_navigationIcon = global::GestureSample.Droid.Resource.Styleable.Toolbar_navigationIcon;
 			global::Xamarin.Forms.Platform.Resource.Styleable.Toolbar_popupTheme = global::GestureSample.Droid.Resource.Styleable.Toolbar_popupTheme;
@@ -13233,127 +13285,133 @@ namespace GestureSample.Droid
 			public const int design_text_input_password_icon = 2131427373;
 			
 			// aapt resource value: 0x7F0B002E
-			public const int FlyoutContent = 2131427374;
+			public const int FallbackTabbarDoNotUse = 2131427374;
 			
 			// aapt resource value: 0x7F0B002F
-			public const int mr_cast_dialog = 2131427375;
+			public const int FallbackToolbarDoNotUse = 2131427375;
 			
 			// aapt resource value: 0x7F0B0030
-			public const int mr_cast_group_item = 2131427376;
+			public const int FlyoutContent = 2131427376;
 			
 			// aapt resource value: 0x7F0B0031
-			public const int mr_cast_group_volume_item = 2131427377;
+			public const int mr_cast_dialog = 2131427377;
 			
 			// aapt resource value: 0x7F0B0032
-			public const int mr_cast_header_item = 2131427378;
+			public const int mr_cast_group_item = 2131427378;
 			
 			// aapt resource value: 0x7F0B0033
-			public const int mr_cast_media_metadata = 2131427379;
+			public const int mr_cast_group_volume_item = 2131427379;
 			
 			// aapt resource value: 0x7F0B0034
-			public const int mr_cast_route_item = 2131427380;
+			public const int mr_cast_header_item = 2131427380;
 			
 			// aapt resource value: 0x7F0B0035
-			public const int mr_chooser_dialog = 2131427381;
+			public const int mr_cast_media_metadata = 2131427381;
 			
 			// aapt resource value: 0x7F0B0036
-			public const int mr_chooser_list_item = 2131427382;
+			public const int mr_cast_route_item = 2131427382;
 			
 			// aapt resource value: 0x7F0B0037
-			public const int mr_controller_material_dialog_b = 2131427383;
+			public const int mr_chooser_dialog = 2131427383;
 			
 			// aapt resource value: 0x7F0B0038
-			public const int mr_controller_volume_item = 2131427384;
+			public const int mr_chooser_list_item = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int mr_picker_dialog = 2131427385;
+			public const int mr_controller_material_dialog_b = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
-			public const int mr_picker_header_item = 2131427386;
+			public const int mr_controller_volume_item = 2131427386;
 			
 			// aapt resource value: 0x7F0B003B
-			public const int mr_picker_route_item = 2131427387;
+			public const int mr_picker_dialog = 2131427387;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int mr_playback_control = 2131427388;
+			public const int mr_picker_header_item = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int mr_volume_control = 2131427389;
+			public const int mr_picker_route_item = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int mtrl_layout_snackbar = 2131427390;
+			public const int mr_playback_control = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int mtrl_layout_snackbar_include = 2131427391;
+			public const int mr_volume_control = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int notification_action = 2131427392;
+			public const int mtrl_layout_snackbar = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int notification_action_tombstone = 2131427393;
+			public const int mtrl_layout_snackbar_include = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int notification_media_action = 2131427394;
+			public const int notification_action = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int notification_media_cancel_action = 2131427395;
+			public const int notification_action_tombstone = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
-			public const int notification_template_big_media = 2131427396;
+			public const int notification_media_action = 2131427396;
 			
 			// aapt resource value: 0x7F0B0045
-			public const int notification_template_big_media_custom = 2131427397;
+			public const int notification_media_cancel_action = 2131427397;
 			
 			// aapt resource value: 0x7F0B0046
-			public const int notification_template_big_media_narrow = 2131427398;
+			public const int notification_template_big_media = 2131427398;
 			
 			// aapt resource value: 0x7F0B0047
-			public const int notification_template_big_media_narrow_custom = 2131427399;
+			public const int notification_template_big_media_custom = 2131427399;
 			
 			// aapt resource value: 0x7F0B0048
-			public const int notification_template_custom_big = 2131427400;
+			public const int notification_template_big_media_narrow = 2131427400;
 			
 			// aapt resource value: 0x7F0B0049
-			public const int notification_template_icon_group = 2131427401;
+			public const int notification_template_big_media_narrow_custom = 2131427401;
 			
 			// aapt resource value: 0x7F0B004A
-			public const int notification_template_lines_media = 2131427402;
+			public const int notification_template_custom_big = 2131427402;
 			
 			// aapt resource value: 0x7F0B004B
-			public const int notification_template_media = 2131427403;
+			public const int notification_template_icon_group = 2131427403;
 			
 			// aapt resource value: 0x7F0B004C
-			public const int notification_template_media_custom = 2131427404;
+			public const int notification_template_lines_media = 2131427404;
 			
 			// aapt resource value: 0x7F0B004D
-			public const int notification_template_part_chronometer = 2131427405;
+			public const int notification_template_media = 2131427405;
 			
 			// aapt resource value: 0x7F0B004E
-			public const int notification_template_part_time = 2131427406;
+			public const int notification_template_media_custom = 2131427406;
 			
 			// aapt resource value: 0x7F0B004F
-			public const int RootLayout = 2131427407;
+			public const int notification_template_part_chronometer = 2131427407;
 			
 			// aapt resource value: 0x7F0B0050
-			public const int select_dialog_item_material = 2131427408;
+			public const int notification_template_part_time = 2131427408;
 			
 			// aapt resource value: 0x7F0B0051
-			public const int select_dialog_multichoice_material = 2131427409;
+			public const int RootLayout = 2131427409;
 			
 			// aapt resource value: 0x7F0B0052
-			public const int select_dialog_singlechoice_material = 2131427410;
+			public const int select_dialog_item_material = 2131427410;
 			
 			// aapt resource value: 0x7F0B0053
-			public const int ShellContent = 2131427411;
+			public const int select_dialog_multichoice_material = 2131427411;
 			
 			// aapt resource value: 0x7F0B0054
-			public const int support_simple_spinner_dropdown_item = 2131427412;
+			public const int select_dialog_singlechoice_material = 2131427412;
 			
 			// aapt resource value: 0x7F0B0055
-			public const int Tabbar = 2131427413;
+			public const int ShellContent = 2131427413;
 			
 			// aapt resource value: 0x7F0B0056
-			public const int Toolbar = 2131427414;
+			public const int support_simple_spinner_dropdown_item = 2131427414;
+			
+			// aapt resource value: 0x7F0B0057
+			public const int Tabbar = 2131427415;
+			
+			// aapt resource value: 0x7F0B0058
+			public const int Toolbar = 2131427416;
 			
 			static Layout()
 			{
