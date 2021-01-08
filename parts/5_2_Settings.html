@@ -1,0 +1,159 @@
+<h3 id="Settings">Settings</h3>
+
+<p>
+    You can configure the behavior of MR.Gestures with different static Settings classes.<br/>
+    Some of those settings are the same for all platforms. These can be found in MR.Gestures.Settings.
+    Platform dependant settings are in MR.Gestures.<i>platform</i>.Settings.
+</p>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <tr>
+            <th colspan="3"><h4>MR.Gestures.Settings</h4></th>
+        </tr>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>MsUntilTapped</td>
+            <td>250</td>
+            <td>
+                Milliseconds after a Tapping event that will be waited until Tapped is raised. If a second Tapping comes within this timeframe, then DoubleTapped will be raised instead.<br />
+                If more than two taps come with less then this timeframe between them, neither Tapped nor DoubleTapped will be raised.
+                It will only be indicated in TapEventArgs.NumberOfTaps in the Tapping event.
+            </td>
+        </tr>
+        <tr>
+            <td>MinimumDeltaDistance</td>
+            <td>2</td>
+            <td>
+                The minimum distance a finger has to be moved before a Panning event is raised. <br/>
+                Set it to a higher value to get fewer events or a lower value to be more accurate.
+            </td>
+        </tr>
+        <tr>
+            <td>MinimumDeltaScale</td>
+            <td>0.01</td>
+            <td>
+                The minimum change in Scale before a Pinching event is raised.<br />
+                The default value 0.01 means that it has to change by at least 1%. Set it to a higher value to get fewer events or a lower value to be more accurate.
+            </td>
+        </tr>
+        <tr>
+            <td>MinimumDeltaAngle</td>
+            <td>0.5</td>
+            <td>
+                The minimum DeltaAngle before a Rotating event is raised.<br />
+                Set it to a higher value to get fewer events or a lower value to be more accurate.
+            </td>
+        </tr>
+        <tr>
+            <td>MinimumDistanceForScale</td>
+            <td>10.0</td>
+            <td>
+                The minimum distance which two coordinates must be apart in order to calculate a DeltaScale*.<br />
+                If DistanceX/Y is lower than this, then DeltaScaleX/Y will be 1.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3"><h4>MR.Gestures.Android.Settings</h4></th>
+        </tr>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>SwipeVelocityThreshold</td>
+            <td>0.1</td>
+            <td>
+                The velocity of a lifted finger relative to the ScaledMaximumFlingVelocity must be at least this value to count as Swipe.<br />
+                Set it to a higher value if you want the user to move faster.<br />
+                The value must be between 0.0 and 1.0.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3"><h4>MR.Gestures.iOS.Settings</h4></th>
+        </tr>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>SwipeVelocityThreshold</td>
+            <td>800 / 800</td>
+            <td>
+                The velocity (UIPanGestureRecognizer.VelocityInView) of a lifted finger in X or Y direction must be at least this value to count as Swipe. <br />
+                Set it to a higher value if you want the user to move faster.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3"><h4>MR.Gestures.UWP.Settings</h4></th>
+        </tr>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>SwipeVelocityThreshold</td>
+            <td>1</td>
+            <td>
+                The velocity of a lifted finger must be at least this value to count as Swipe.<br />
+                The velocity comes from ManipulationCompletedRoutedEventArgs.Velocities.Linear and is in device-independent pixel per millisecond.<br />
+                Set it to a higher value if you want the user to move faster.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3"><h4>MR.Gestures.WPF.Settings</h4></th>
+        </tr>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>SwipeVelocityThreshold</td>
+            <td>100</td>
+            <td>
+                The velocity of a lifted finger must be at least this value to count as Swipe.<br />
+                Set it to a higher value if you want the user to move faster.
+            </td>
+        </tr>
+        <tr>
+            <td>LongPressDuration</td>
+            <td>1000</td>
+            <td>
+                The number of milliseconds that a finger is on the display / button pressed and not moved until it counts as long press.
+            </td>
+        </tr>
+        <tr>
+            <th colspan="3"><h4>MR.Gestures.MacOS.Settings</h4></th>
+        </tr>
+        <tr>
+            <th>Property</th>
+            <th>Default</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>SwipeVelocityThreshold</td>
+            <td>200 / 200</td>
+            <td>
+                The velocity (NSPanGestureRecognizer.VelocityInView) of a lifted finger in X or Y direction must be at least this value to count as Swipe.<br />
+                Set it to a higher value if you want the user to move faster.
+            </td>
+        </tr>
+        <tr>
+            <td>TrackpadCoordinateRatio</td>
+            <td>5 / 5</td>
+            <td>
+                The Touches coordinates are usually only in the range 0 to device size. These values are quite small if you want to pan something around the whole screen.<br />
+                With TrackpadCoordinateRatio you can get bigger values for the Touches coordinates.<br />
+                Set it to a higher value to get bigger values for Touches.
+            </td>
+        </tr>
+    </table>
+</div>
