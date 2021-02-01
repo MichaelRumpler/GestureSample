@@ -29,13 +29,20 @@ In UWP you add the code to the `OnLaunched` method in `App.xaml.cs`.
 For the .NET Native compilation you also have to tell Xamarin.Forms which assemblies it should scan for custom controls and renderers. Therefore you also have to change the call to `Forms.Init` slightly:
 
 ~~~~ cs
-    var otherAssemblies = new[] {
-        typeof(MR.Gestures.ContentPage).GetTypeInfo().Assembly,
-        typeof(MR.Gestures.UWP.Renderers.PageRenderer).GetTypeInfo().Assembly,      // only for MR.Gestures 1.*
-    };
-    Xamarin.Forms.Forms.Init(e, otherAssemblies);
+    Xamarin.Forms.Forms.Init(e, new[] { typeof(MR.Gestures.ContentPage).Assembly });
 
     MR.Gestures.UWP.Settings.LicenseKey = "<your license key>";
+~~~~
+
+##### WPF
+
+Here the call to `Forms.Init` is in the `MainWindow` constructor in `MainWindow.xaml.cs`.  
+Again you should pass the MR.Gestures assembly to `Forms.Init`:
+
+~~~~ cs
+    Xamarin.Forms.Forms.Init(e, new[] { typeof(MR.Gestures.ContentPage).Assembly });
+
+    MR.Gestures.WPF.Settings.LicenseKey = "<your license key>";
 ~~~~
 
 ##### MacOS
@@ -66,6 +73,14 @@ In Xamarin Studio the "Application name" is the very first textbox when you open
 ##### Universal Windows Platform
 
 Here you need to open the Package.appxmanifest file in your platform project. On the "Application" tab change the "Display Name" and on the "Packaging" tab the "Package display name".
+
+##### WPF
+
+The app name is configured in the Properties / AssemblyInfo.cs file. You can use either the `AssemblyTitle` or `AssemblyProduct` attribute. If the former is set, the latter will be ignored.
+
+~~~~ cs
+[assembly: AssemblyTitle("<your app name>")]
+~~~~
 
 ##### MacOS
 
