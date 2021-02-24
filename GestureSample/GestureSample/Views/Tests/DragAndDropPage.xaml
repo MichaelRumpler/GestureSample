@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			 x:Class="GestureSample.Views.Tests.DragAndDropPage"
+			 Title="Drag &amp; Drop">
+
+	<mr:Grid
+		x:Name="theGrid"
+		RowDefinitions="3*,*"
+		Panning="Grid_Panning"
+		Panned="Grid_Panned">
+
+		<FlexLayout x:Name="theFlexLayout" BindableLayout.ItemsSource="{Binding Items}" Wrap="Wrap" AlignItems="Start" AlignContent="Start">
+			<BindableLayout.ItemTemplate>
+				<DataTemplate>
+					<mr:Frame
+						TappedCommand="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.TappedCommand}"
+						TappedCommandParameter="{Binding}"
+						Down="Frame_Down"
+						
+						BackgroundColor="{Binding Color}"
+						CornerRadius="10"
+						BorderColor="Transparent">
+
+						<Label Text="{Binding Text}" HorizontalOptions="Center" />
+					</mr:Frame>
+				</DataTemplate>
+			</BindableLayout.ItemTemplate>
+		</FlexLayout>
+
+		<ScrollView Grid.Row="1">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</mr:Grid>
+</ContentPage>
