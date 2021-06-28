@@ -66,9 +66,13 @@ If you configured your activity manually in the Properties / AndroidManifest.xml
 
 ##### iOS
 
-In Visual Studio open the iOS project properties and go to the "iOS Application" tab. There you'll find the "Application name". If you don't have a "iOS application" tab, then open the info.plist. The app name is in the CFBundleDisplayName or CFBundleName setting (should be the same if both are present).
+Microsoft likes to change where to find the app name for iOS. They move it every couple of versions. So the safest way is to edit the info.plist directly.
 
-In Xamarin Studio the "Application name" is the very first textbox when you open the info.plist file.
+In the very beginning of XF (2014) they used to write it to `CFBundleDisplayName`. By the end of 2015 they changed it to `CFBundleName`.
+I tried to keep up by reading both values, using `CFBundleName` if it is configured, otherwise `CFBundleDisplayName`.
+But in 2021 they suddenly return the Assembly name when no `CFBundleName` is configured, so this stopped working.
+
+So please write the app name to both `CFBundleName` AND `CFBundleDisplayName` in the info.plist.
 
 ##### Universal Windows Platform
 
