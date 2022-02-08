@@ -7,6 +7,7 @@
 	xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     x:Class="GestureSample.Views.Tests.BottomTabbedPageXaml"
 	Title="TabbedPage with Bottom Tabbar"
+	android:TabbedPage.ToolbarPlacement="Bottom"
 
 	DownCommand="{Binding DownCommand}"
 	UpCommand="{Binding UpCommand}"
@@ -23,7 +24,6 @@
 	RotatingCommand="{Binding RotatingCommand}"
 	RotatedCommand="{Binding RotatedCommand}"
 	>
-	<!--		android:TabbedPage.ToolbarPlacement="Bottom"		available in XF 3.1		-->
 
 	<mr:TabbedPage.Children>
 

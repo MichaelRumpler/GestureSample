@@ -48,6 +48,10 @@
 					PinchedCommand="{Binding PinchedCommand}"
 					RotatingCommand="{Binding RotatingCommand}"
 					RotatedCommand="{Binding RotatedCommand}"
+					MouseEnteredCommand="{Binding MouseEnteredCommand}"
+					MouseMovedCommand="{Binding MouseMovedCommand}"
+					MouseExitedCommand="{Binding MouseExitedCommand}"
+					ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 				/>
 			<!--<Label Text="{Binding Value1}" Grid.Row="0" Grid.Column="2" />-->
 
@@ -70,6 +74,10 @@
 					PinchedCommand="{Binding PinchedCommand}"
 					RotatingCommand="{Binding RotatingCommand}"
 					RotatedCommand="{Binding RotatedCommand}"
+					MouseEnteredCommand="{Binding MouseEnteredCommand}"
+					MouseMovedCommand="{Binding MouseMovedCommand}"
+					MouseExitedCommand="{Binding MouseExitedCommand}"
+					ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 				/>
 			<!--<Label Text="{Binding Value2}" Grid.Row="1" Grid.Column="2" />-->
 			
@@ -92,6 +100,10 @@
 					PinchedCommand="{Binding PinchedCommand}"
 					RotatingCommand="{Binding RotatingCommand}"
 					RotatedCommand="{Binding RotatedCommand}"
+					MouseEnteredCommand="{Binding MouseEnteredCommand}"
+					MouseMovedCommand="{Binding MouseMovedCommand}"
+					MouseExitedCommand="{Binding MouseExitedCommand}"
+					ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 				/>
 			<!--<Label Text="{Binding Value3}" Grid.Row="2" Grid.Column="2" />-->
 		</Grid>

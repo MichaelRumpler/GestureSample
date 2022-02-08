@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+using System.Diagnostics;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
+
 using Xamarin.Forms;
 
 namespace GestureSample.ViewModels
 {
-	public class TextOnlyViewModel : ObservableObject
+    public class TextOnlyViewModel : ObservableObject
 	{
 		protected static readonly string ImagePath =
 			(Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.macOS) ? "images/" :
@@ -36,6 +34,10 @@ namespace GestureSample.ViewModels
 		public ICommand SwipedCommand { get; protected set; }
 		public ICommand RotatingCommand { get; protected set; }
 		public ICommand RotatedCommand { get; protected set; }
+		public ICommand MouseEnteredCommand { get; protected set; }
+		public ICommand MouseMovedCommand { get; protected set; }
+		public ICommand MouseExitedCommand { get; protected set; }
+		public ICommand ScrollWheelChangedCommand { get; protected set; }
 
 		public TextOnlyViewModel()
 		{
@@ -53,18 +55,26 @@ namespace GestureSample.ViewModels
 			SwipedCommand = new Command<string>(s => AddText(s + " was swiped"));
 			RotatingCommand = new Command<string>(s => AddText("Rotating " + s));
 			RotatedCommand = new Command<string>(s => AddText(s + " was rotated"));
+			MouseEnteredCommand = new Command<string>(s => AddText($"Mouse entered {s}"));
+			MouseMovedCommand = new Command<string>(s => AddText($"Mouse moved over {s}"));
+			MouseExitedCommand = new Command<string>(s => AddText($"Mouse exited {s}"));
+			ScrollWheelChangedCommand = new Command<string>(s => AddText($"Scroll wheel changed over {s}"));
 		}
 
 		public virtual void AddText(string text)
 		{
 			var sb = new StringBuilder(text).Append("\n").Append(Text);
 			Text = sb.ToString(0, Math.Min(sb.Length, 2000));
+
+			Debug.WriteLine(text);
 		}
 
 		public virtual void AddText(string format, params object[] args)
 		{
 			var sb = new StringBuilder().AppendFormat(format, args).Append("\n").Append(Text);
 			Text = sb.ToString(0, Math.Min(sb.Length, 2000));
+
+			Debug.WriteLine(text);
 		}
 	}
 }

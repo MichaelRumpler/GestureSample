@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-					   xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
-					   x:Class="GestureSample.Views.ImageXaml"
-			 Title="Image Sample">
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+	x:Class="GestureSample.Views.ImageXaml"
+	Title="Image Sample">
 
-	<RelativeLayout>
+	<Grid RowSpacing="5">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="2*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
 		<mr:Image Source="{Binding ImageSource}"
-
-			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
 
 			DownCommand="{Binding DownCommand}"
 			UpCommand="{Binding UpCommand}"
@@ -27,14 +28,14 @@
 			PinchedCommand="{Binding PinchedCommand}"
 			RotatingCommand="{Binding RotatingCommand}"
 			RotatedCommand="{Binding RotatedCommand}"
+			MouseEnteredCommand="{Binding MouseEnteredCommand}"
+			MouseMovedCommand="{Binding MouseMovedCommand}"
+			MouseExitedCommand="{Binding MouseExitedCommand}"
+			ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 						/>
 
-		<ScrollView
-				RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
-				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65}"
-				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.35}">
+		<ScrollView Grid.Row="1">
 			<Label Text="{Binding Text}" />
 		</ScrollView>
-	</RelativeLayout>
+	</Grid>
 </ContentPage>

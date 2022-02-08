@@ -32,6 +32,10 @@
 						Pinched="Cell_Pinched"
 						Rotating="Cell_Rotating"
 						Rotated="Cell_Rotated"
+						MouseEntered="Cell_MouseEntered"
+						MouseMoved="Cell_MouseMoved"
+						MouseExited="Cell_MouseExited"
+						ScrollWheelChanged="Cell_ScrollWheelChanged"
 								  />
 					<!--TappedCommand="{x:Reference page.BindingContext.TappedCommand}" TappedCommandParameter="{Binding Text}"
 					LongPressedCommand="{x:Reference page.BindingContext.LongPressedCommand}" LongPressedCommandParameter="{Binding Text}"

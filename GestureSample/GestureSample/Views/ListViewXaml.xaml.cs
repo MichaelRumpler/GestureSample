@@ -95,5 +95,25 @@ namespace GestureSample.Views
 		{
 			((TextOnlyViewModel)BindingContext).AddText("Cell_Rotated method called");
 		}
+
+		void Cell_MouseEntered(object sender, MouseEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText("Cell_MouseEntered method called");
+		}
+
+		void Cell_MouseMoved(object sender, MouseEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText("Cell_MouseMoved method called");
+		}
+
+		void Cell_MouseExited(object sender, MouseEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText("Cell_MouseExited method called");
+		}
+
+		void Cell_ScrollWheelChanged(object sender, ScrollWheelEventArgs e)
+		{
+			((TextOnlyViewModel)BindingContext).AddText("Cell_ScrollWheelChanged method called");
+		}
 	}
 }

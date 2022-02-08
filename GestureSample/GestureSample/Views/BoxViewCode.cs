@@ -30,6 +30,10 @@ namespace GestureSample.Views
 			box1.Swiped			+= (s, e) => { AddText("CodePage: Red Swiped"); };
 			box1.Rotating += (s, e) => { AddText("CodePage: Red Rotating"); };
 			box1.Rotated += (s, e) => { AddText("CodePage: Red Rotated"); };
+			box1.MouseEntered += (s, e) => { AddText("CodePage: Red MouseEntered"); };
+			box1.MouseMoved += (s, e) => { AddText("CodePage: Red MouseMoved"); };
+			box1.MouseExited += (s, e) => { AddText("CodePage: Red MouseExited"); };
+			box1.ScrollWheelChanged += (s, e) => { AddText("CodePage: Red ScrollWheelChanged"); };
 
 			var box2 = new MR.Gestures.BoxView { Color = Color.Green };
 			box2.SetBinding(MR.Gestures.BoxView.DownCommandProperty, "DownCommand");
@@ -60,6 +64,14 @@ namespace GestureSample.Views
 			box2.RotatingCommandParameter = "Green";
 			box2.SetBinding(MR.Gestures.BoxView.RotatedCommandProperty, "RotatedCommand");
 			box2.RotatedCommandParameter = "Green";
+			box2.SetBinding(MR.Gestures.BoxView.MouseEnteredCommandProperty, "MouseEnteredCommand");
+			box2.MouseEnteredCommandParameter = "Green";
+			box2.SetBinding(MR.Gestures.BoxView.MouseMovedCommandProperty, "MouseMovedCommand");
+			box2.MouseMovedCommandParameter = "Green";
+			box2.SetBinding(MR.Gestures.BoxView.MouseExitedCommandProperty, "MouseExitedCommand");
+			box2.MouseExitedCommandParameter = "Green";
+			box2.SetBinding(MR.Gestures.BoxView.ScrollWheelChangedCommandProperty, "ScrollWheelChangedCommand");
+			box2.ScrollWheelChangedCommandParameter = "Green";
 
 			var label = new Label();
 			label.SetBinding(Label.TextProperty, "Text");

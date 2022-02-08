@@ -37,6 +37,10 @@ namespace GestureSample.Views
 				cell.Pinched += (s, e) => { AddText(s, "Pinched"); };
 				cell.Rotating += (s, e) => { AddText(s, "Rotating"); };
 				cell.Rotated += (s, e) => { AddText(s, "Rotated"); };
+				cell.MouseEntered += (s, e) => { AddText(s, "MouseEntered"); };
+				cell.MouseMoved += (s, e) => { AddText(s, "MouseMoved"); };
+				cell.MouseExited += (s, e) => { AddText(s, "MouseExited"); };
+				cell.ScrollWheelChanged += (s, e) => { AddText(s, "ScrollWheelChanged"); };
 
 				return cell;
 			});

@@ -25,6 +25,10 @@
 			Swiped="Red_Swiped"
 			Rotating="Red_Rotating"
 			Rotated="Red_Rotated"
+            MouseEntered="Red_MouseEntered"
+            MouseMoved="Red_MouseMoved"
+            MouseExited="Red_MouseExited"
+            ScrollWheelChanged="Red_ScrollWheelChanged"
 						/>
 
 		<mr:BoxView Color="Green"
@@ -46,6 +50,10 @@
 			SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Green"
 			RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Green"
 			RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Green"
+			MouseEnteredCommand="{Binding MouseEnteredCommand}" MouseEnteredCommandParameter="Green"
+			MouseMovedCommand="{Binding MouseMovedCommand}" MouseMovedCommandParameter="Green"
+			MouseExitedCommand="{Binding MouseExitedCommand}" MouseExitedCommandParameter="Green"
+			ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}" ScrollWheelChangedCommandParameter="Green"
 						/>
 
 		<ScrollView

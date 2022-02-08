@@ -30,7 +30,7 @@
 
 			<StackLayout Grid.Row="0" Grid.Column="0">
 				<Label Text="Button 1" />
-				<Label Text="(without Down/Up)" />
+				<Label Text="(no Down/Up/Mouse)" />
 			</StackLayout>
 			<mr:Button Text="Button 1"
 					Grid.Row="0" Grid.Column="1"
@@ -55,7 +55,7 @@
 
 			<StackLayout Grid.Row="1" Grid.Column="0">
 				<Label Text="Button 2" />
-				<Label Text="(without Down/Up)" />
+				<Label Text="(no Down/Up)" />
 			</StackLayout>
 			<mr:Button Text="Button 2"
 					Grid.Row="1" Grid.Column="1"
@@ -76,11 +76,15 @@
 					PinchedCommand="{Binding PinchedCommand}"
 					RotatingCommand="{Binding RotatingCommand}"
 					RotatedCommand="{Binding RotatedCommand}"
+					MouseEnteredCommand="{Binding MouseEnteredCommand}"
+					MouseMovedCommand="{Binding MouseMovedCommand}"
+					MouseExitedCommand="{Binding MouseExitedCommand}"
+					ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 				/>
 
 			<StackLayout Grid.Row="2" Grid.Column="0">
 				<Label Text="Button 3" />
-				<Label Text="(with Down/Up)" />
+				<Label Text="(all events)" />
 			</StackLayout>
 			<mr:Button Text="Button 3"
 					Grid.Row="2" Grid.Column="1"
@@ -103,6 +107,10 @@
 					PinchedCommand="{Binding PinchedCommand}"
 					RotatingCommand="{Binding RotatingCommand}"
 					RotatedCommand="{Binding RotatedCommand}"
+					MouseEnteredCommand="{Binding MouseEnteredCommand}"
+					MouseMovedCommand="{Binding MouseMovedCommand}"
+					MouseExitedCommand="{Binding MouseExitedCommand}"
+					ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 				/>
 		</Grid>
 

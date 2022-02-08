@@ -30,6 +30,10 @@
 			PinchedCommand="{Binding PinchedCommand}"
 			RotatingCommand="{Binding RotatingCommand}"
 			RotatedCommand="{Binding RotatedCommand}"
+			MouseEnteredCommand="{Binding MouseEnteredCommand}"
+			MouseMovedCommand="{Binding MouseMovedCommand}"
+			MouseExitedCommand="{Binding MouseExitedCommand}"
+			ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 			>
 
 			<Image

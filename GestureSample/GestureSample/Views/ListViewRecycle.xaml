@@ -31,6 +31,10 @@
 			Pinched="Cell_Pinched"
 			Rotating="Cell_Rotating"
 			Rotated="Cell_Rotated"
+			MouseEntered="Cell_MouseEntered"
+			MouseMoved="Cell_MouseMoved"
+			MouseExited="Cell_MouseExited"
+			ScrollWheelChanged="Cell_ScrollWheelChanged"
 			>
 			<x:Arguments>
 				<ListViewCachingStrategy>RecycleElement</ListViewCachingStrategy>

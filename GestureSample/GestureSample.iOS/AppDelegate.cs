@@ -22,7 +22,7 @@ namespace GestureSample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+			global::Xamarin.Forms.Forms.Init();
 
 			MR.Gestures.iOS.Settings.LicenseKey = "ALZ9-BPVU-XQ35-CEBG-5ZRR-URJQ-ED5U-TSY8-6THP-3GVU-JW8Z-RZGE-CQW6";			// key for GestureSample
 			

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
+
 using Xamarin.Forms;
 
 namespace GestureSample.ViewModels
@@ -26,14 +22,14 @@ namespace GestureSample.ViewModels
 		{
 			base.OnDown(e);
 
-			((Button)e.Sender).BackgroundColor = Color.Yellow;
+			((VisualElement)e.Sender).BackgroundColor = Color.Yellow;
 		}
 
 		protected override void OnUp(MR.Gestures.DownUpEventArgs e)
 		{
 			base.OnUp(e);
 
-			((Button)e.Sender).BackgroundColor = Color.FromHex("808080");
+			((VisualElement)e.Sender).BackgroundColor = Color.FromHex("808080");
 		}
 	}
 }

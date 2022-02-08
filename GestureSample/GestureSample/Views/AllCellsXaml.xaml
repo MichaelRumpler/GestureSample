@@ -30,6 +30,10 @@
 							PinchedCommand="{Binding PinchedCommand}"
 							RotatingCommand="{Binding RotatingCommand}"
 							RotatedCommand="{Binding RotatedCommand}"
+							MouseEnteredCommand="{Binding MouseEnteredCommand}"
+							MouseMovedCommand="{Binding MouseMovedCommand}"
+							MouseExitedCommand="{Binding MouseExitedCommand}"
+							ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 							/>
 						<mr:ImageCell Text="ImageCell" ImageSource="{Binding Icon1}"
 							DownCommand="{Binding DownCommand}"
@@ -46,6 +50,10 @@
 							PinchedCommand="{Binding PinchedCommand}"
 							RotatingCommand="{Binding RotatingCommand}"
 							RotatedCommand="{Binding RotatedCommand}"
+							MouseEnteredCommand="{Binding MouseEnteredCommand}"
+							MouseMovedCommand="{Binding MouseMovedCommand}"
+							MouseExitedCommand="{Binding MouseExitedCommand}"
+							ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 							/>
 					</TableSection>
 					<TableSection Title="Cells for Input">
@@ -64,6 +72,10 @@
 							PinchedCommand="{Binding PinchedCommand}"
 							RotatingCommand="{Binding RotatingCommand}"
 							RotatedCommand="{Binding RotatedCommand}"
+							MouseEnteredCommand="{Binding MouseEnteredCommand}"
+							MouseMovedCommand="{Binding MouseMovedCommand}"
+							MouseExitedCommand="{Binding MouseExitedCommand}"
+							ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 									  />
 						<mr:SwitchCell Text="SwitchCell" On="{Binding SwitchValue}"
 							DownCommand="{Binding DownCommand}"
@@ -80,6 +92,10 @@
 							PinchedCommand="{Binding PinchedCommand}"
 							RotatingCommand="{Binding RotatingCommand}"
 							RotatedCommand="{Binding RotatedCommand}"
+							MouseEnteredCommand="{Binding MouseEnteredCommand}"
+							MouseMovedCommand="{Binding MouseMovedCommand}"
+							MouseExitedCommand="{Binding MouseExitedCommand}"
+							ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 									   />
 					</TableSection>
 					<TableSection Title="Custom Cells">
@@ -98,6 +114,10 @@
 							PinchedCommand="{Binding PinchedCommand}"
 							RotatingCommand="{Binding RotatingCommand}"
 							RotatedCommand="{Binding RotatedCommand}"
+							MouseEnteredCommand="{Binding MouseEnteredCommand}"
+							MouseMovedCommand="{Binding MouseMovedCommand}"
+							MouseExitedCommand="{Binding MouseExitedCommand}"
+							ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}"
 							>
 							<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="5,0,0,0">
 								<Image Source="{Binding Icon1}" />

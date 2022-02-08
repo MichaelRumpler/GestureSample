@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+             x:Class="GestureSample.Views.Tests.InvisibleButtonPage"
+			 Title="Invisible Button">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<StackLayout Grid.Column="0" Orientation="Horizontal">
+			<Label Text="Container visible" />
+			<Switch IsToggled="True" Toggled="ContainerVisibility_Toggled" />
+		</StackLayout>
+		<StackLayout Grid.Column="1" Orientation="Horizontal">
+			<Label Text="Button visible" />
+			<Switch IsToggled="True" Toggled="ButtonVisibility_Toggled" />
+		</StackLayout>
+
+		<Frame x:Name="Container" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Aqua">
+			<mr:Button
+				x:Name="theButton" HorizontalOptions="Center" VerticalOptions="Center"
+				Text="The Button"
+				
+				Down="TheButton_Down"
+				Up="TheButton_Up"
+				LongPressing="TheButton_LongPressing"
+				LongPressed="TheButton_LongPressed"
+				Clicked="TheButton_Clicked"
+				/>
+		</Frame>
+
+		<ScrollView Grid.Row="2" Grid.ColumnSpan="2">
+			<Label x:Name="Log" />
+		</ScrollView>
+	</Grid>
+</ContentPage>
