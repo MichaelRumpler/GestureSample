@@ -1,26 +1,15 @@
 <h3 id="Compatibility">Compatibility</h3>
 
 <p>
-    Some elements need to listen to some touch gestures themselves to work properly. Depending on the exact implementation by Xamarin and the native platforms, these events may be consumed.<br>
+    Some elements need to listen to some gestures themselves to work properly. Depending on the exact implementation by Xamarin and the native platforms, these events may be consumed.<br>
     Some of the views are simply too small to be touched. Therefore the gestures are also not forwarded to us.
-</p>
-<p>
-    <b>WPF:</b><br />
-    When I tested the GestureSample with WPF the same happened again as on macOS; I found a bunch of very serious bugs.
-    I filed them, they were acknowledged, but only one has been fixed yet.<br />
-
-    The bug which you see at once in the GestureSample is <a href="https://github.com/xamarin/Xamarin.Forms/issues/3271">#3271</a>.
-    The transformations from TranslationX/Y, Scale and Rotation are applied in the wrong order.
-    So when you rotate an element by 90° and change TranslationX, then the element is moved vertically instead of horizontaly.
-    Also when you set Scale to 2 and TranslationX to 100, it will be moved by 200.
-    This bug has been fixed, but the fix has not been released yet. I don't know, which Xamarin.Forms version will include it.
 </p>
 <p>
     <b>MacOS:</b><br />
     Apple still has no multi touch displays for macOS, so I made the touch gestures on the Mac to work as I would expect them to.
     If you think anything is awkward or doesn't behave as you would expect, please let me know.<br />
 
-    Down, Up, Tapping, Tapped, DoubleTapped, LongPressing, LongPressed, Panning, Panned and Swiped can be triggered with the mouse.
+    Down, Up, Tapping, Tapped, DoubleTapped, LongPressing, LongPressed, Panning, Panned, Swiped, MouseEntered, MouseMoved, MouseExited and ScrollWheelChanged can be triggered with the mouse.
     For Pinching, Pinched, Rotating and Rotated you need a Trackpad and two or more fingers.
     Panning, Panned and Swiped can also be triggered with the Trackpad with two or more fingers.<br />
 
@@ -35,12 +24,12 @@
     So keep this in mind when you work with the view, touch or other coordinates.
     Most likely you'll have to do some different logic on the Mac than on the other platforms.
     Fortunately this is consistent with <code>Xamarin.Forms.VisualElement.TranslationY</code> and other Y coordinates.<br />
-    This also means that angles are counter clock wise instead of clock wise on every other platform.<br />
+    This also means that angles are counter clock wise instead of clock wise on the other platforms.<br />
 
-    There's also a bug in Xamarin.Forms.MacOS. Their PageRenderer and ScrollViewRenderer don't have virtual methods
-    OnElementChanged and OnElementPropertyChanged to override. Therefore I cannot hook into those elements' touch handlers.
+    There's also a bug in Xamarin.Forms.MacOS. Their ScrollViewRenderer doesn't have a virtual method
+    OnElementChanged to override. Therefore I cannot hook into that elements' touch handlers.
     I submitted a <a href="https://github.com/xamarin/Xamarin.Forms/pull/1187" target="_blank">PR</a> to Xamarin in October 2017
-    and they merged it into master, but almost 10 months later it is still not included in XF 3.1.
+    and they merged it, but somehow it got removed again.
 </p>
 
 <p>
@@ -86,6 +75,14 @@
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
+                <td>FlexLayout</td>
+                <td><img src="assets/images/Supported_Green.png" /></td>
+                <td><img src="assets/images/Supported_Green.png" /></td>
+                <td title="Multitouch events don't work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td><img src="assets/images/Supported_Green.png" /></td>
+                <td><img src="assets/images/Supported_Green.png" /></td>
+            </tr>
+            <tr>
                 <td>Frame</td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
@@ -98,7 +95,7 @@
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="To be tested"><img src="assets/images/NotSupported_Red.png" /></td>
+                <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
@@ -113,8 +110,8 @@
                 <td>ScrollView</td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Everything works with the mouse. With fingers the ScrollView consumes Pan, Swipe, Pinch and Rotate."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Gestures with the left mouse button are consumed. Left and middle buttons and touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="The ScrollView consumes Pan, Swipe, Pinch and Rotate with fingers and ScrollWheelChanged."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Gestures with the left mouse button and ScrollWheelChanged are consumed. Right and middle buttons and touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Xamarins ScrollViewRenderer still doesn't have a virtual OnElementChanged method I can hook into."><img src="assets/images/NotSupported_Red.png" /></td>
             </tr>
             <tr>
@@ -127,7 +124,7 @@
             </tr>
             <tr>
                 <td>TabbedPage</td>
-                <td title="Switching between pages is not possible, tap, long press and pan gestures stop working after tapping the current page."><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="Disabled as it would break the TabbedPage."><img src="assets/images/NotSupported_Red.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="Everything works with the mouse. With fingers the TabbedPage consumes Pan, Swipe, Pinch and Rotate."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
@@ -152,33 +149,33 @@
             <tr>
                 <td>Button</td>
                 <td title="Xamarins Clicked event does not work. Tapping and Tapped only work once, DoubleTapped doesn't work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Only Clicked and MouseExited works."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Gestures with the left mouse button and Down/Up with touch are consumed. The rest works."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Gestures with the left mouse button are consumed. The rest works."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="The Xamarin Clicked event does not work anymore."><img src="assets/images/Supported_Yellow.png" /></td>
             </tr>
             <tr>
                 <td>DatePicker</td>
                 <td title="Tapping, Tapped and DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Only MouseExited works."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Elements beneath an open DatePicker also raise the gestures."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Mouse clicks on the DatePicker are consumed. Clicks beside it and touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
                 <td>Editor</td>
                 <td title="Tapping, Tapped and DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Tap only works with touch, but not with the mouse."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="MouseEntered and MouseMoved don't work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Tap only works with touch, but not with the mouse. MouseMoved does not work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
                 <td>Entry</td>
                 <td title="Tapping, Tapped and DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Tap only works with touch, but not with the mouse."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Tap only works with touch, but not with the mouse. MouseMoved does not work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
@@ -193,8 +190,8 @@
                 <td>ImageButton</td>
                 <td title="Xamarins Clicked event does not work. Tapping and Tapped only work once, DoubleTapped doesn't work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Gestures with the left mouse button and Down/Up with touch are consumed. The rest works."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Tap only works with touch, but not with the mouse."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Gestures with the left mouse button are consumed. The rest works."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Xamarin.Forms does not support the ImageButton yet (no ImageButtonRenderer for MacOS)."><img src="assets/images/NotSupported_Red.png" /></td>
             </tr>
             <tr>
@@ -209,16 +206,16 @@
                 <td>ListView</td>
                 <td title="RetainElement: Xamarins ItemTapped/ItemSelected don't work. RecycleElement: Tapping/Tapped/DoubleTapped don't work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Pan and Swipe are only raised with the mouse. With a finger, these gestures are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Pan and Swipe are only raised with the mouse. With a finger, these gestures are consumed. Same as ScrollWheelChanged."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks and ScrollWheelChanged are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
                 <td>Picker</td>
                 <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Elements beneath an open Picker also raise the gestures."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Elements beneath an open Picker also raise the gestures. ScrollWheelChanged is consumed."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks and ScrollWheelChanged are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="The gesture functionality would disable the Picker functionality."><img src="assets/images/NotSupported_Red.png" /></td>
             </tr>
             <tr>
@@ -233,24 +230,24 @@
                 <td>SearchBar</td>
                 <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Tap does not work with the mouse."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Tap only works with touch, but not with the mouse. MouseMoved does not work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
                 <td>Slider</td>
-                <td title="Touch gestures work, but the Slider doesn't."><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="Disabled as it would break the Slider."><img src="assets/images/NotSupported_Red.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="Tap does not work with the mouse."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events directly on the Slider are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks directly on the Slider are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="The gesture functionality would disable the Slider functionality."><img src="assets/images/NotSupported_Red.png" /></td>
             </tr>
             <tr>
                 <td>Stepper</td>
-                <td title="Touch gestures work, but the Stepper doesn't."><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="Disabled as it would break the Stepper."><img src="assets/images/NotSupported_Red.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="Tap does not work with the mouse on the Stepper, it does work on its padding."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events on enabled elements are consumed, disabled elements and touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks on enabled elements are consumed, disabled elements and touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="The gesture functionality would disable the Stepper functionality."><img src="assets/images/NotSupported_Red.png" /></td>
             </tr>
             <tr>
@@ -258,23 +255,23 @@
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="Tap does not work with the mouse on the Switch, it does work on its padding."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Touch gestures work, but the Switch doesn't."><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="Mouse clicks are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="The gesture functionality would disable the Switch functionality."><img src="assets/images/NotSupported_Red.png" /></td>
             </tr>
             <tr>
                 <td>TableView</td>
                 <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="Pan and Swipe are only raised with the mouse. With a finger, these gestures are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events on contained elements are consumed, everything else works."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td title="Mouse clicks on contained elements are consumed, everything else works."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
                 <td>TimePicker</td>
                 <td title="Tapping/Tapped/DoubleTapped are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="Elements beneath an open TimePicker also raise the gestures."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="Mouse events are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
+                <td><img src="assets/images/Supported_Green.png" /></td>
+                <td title="Mouse clicks are consumed, touches work."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
             </tr>
             <tr>
@@ -290,7 +287,7 @@
                 <td title="Tapping/Tapped/DoubleTapped on the Entry part of the cell are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="A mouse click is consumed and not raised as Tap."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="To be tested"><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="LongPress, Pan, Pinch and Rotate with touch are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Multitouch gestures don't work, single touch only around the text. Entry doesn't work."><img src="assets/images/Supported_Yellow.png" /></td>
             </tr>
             <tr>
@@ -298,7 +295,7 @@
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="To be tested"><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="LongPress, Pan, Pinch and Rotate with touch are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Multitouch gestures don't work."><img src="assets/images/Supported_Yellow.png" /></td>
             </tr>
             <tr>
@@ -306,7 +303,7 @@
                 <td title="Tapping/Tapped/DoubleTapped on the Switch part of the cell are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td title="A mouse click is consumed by the Switch, it is raised on the rest of the Cell or when tapping."><img src="assets/images/Supported_Yellow.png" /></td>
-                <td title="To be tested"><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="LongPress, Pan, Pinch and Rotate with touch are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Multitouch gestures don't work, single touch only around the text. Switch only works when not within a MR.TableView."><img src="assets/images/Supported_Yellow.png" /></td>
             </tr>
             <tr>
@@ -314,7 +311,7 @@
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="To be tested"><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="LongPress, Pan, Pinch and Rotate with touch are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Multitouch gestures don't work, single touch only around the text."><img src="assets/images/Supported_Yellow.png" /></td>
             </tr>
             <tr>
@@ -322,7 +319,7 @@
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
                 <td><img src="assets/images/Supported_Green.png" /></td>
-                <td title="To be tested"><img src="assets/images/NotSupported_Red.png" /></td>
+                <td title="LongPress, Pan, Pinch and Rotate with touch are consumed."><img src="assets/images/Supported_Yellow.png" /></td>
                 <td title="Multitouch gestures don't work."><img src="assets/images/Supported_Yellow.png" /></td>
             </tr>
         </tbody>

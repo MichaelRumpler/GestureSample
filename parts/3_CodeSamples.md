@@ -17,7 +17,7 @@ To add the event handler in XAML you have to:
 
 ![Sample XAML](../assets/images/xaml.png)
 
-Here on `LongPressed` the method `Red_LongPressed` should be called. The method must be defined in the code behind file like this
+Here on `LongPressed` the method `Red_LongPressed` will be called. The method must be defined in the code behind file like this
 
 ~~~~ cs
     void Red_LongPressed(object sender, MR.Gestures.LongPressEventArgs e)
@@ -45,8 +45,8 @@ or by assigning the method as a handler.
 ### Commands in XAML
 {: #CommandsXAML }
 
-But IMHO if you really want to separate the view from any code, then the view should be in XAML.
-So instead of the event handlers you can also use commands in your view model and bind them to the respective properties.
+If you use MVVM then you probably have most of your logic in your ViewModels and you don't want to use event handlers in your views.
+Of course this is also possible. There are commands for every event and you can bind them to the respective properties in the VM.
 
 ~~~~ xml
     <mr:BoxView Color="Green"
@@ -68,7 +68,5 @@ You can bind the commands in code too.
     box2.SetBinding(MR.Gestures.BoxView.LongPressedCommandProperty, "LongPressedCommand");
     box2.LongPressedCommandParameter = "Green";
 ~~~~
-
-* * *
 
 The syntax for binding in code is a bit complicated, therefore my favorite is using commands in XAML. You will also see this, when you look through the code in the GestureSample. Although there are samples in all these categories, most of them are written in XAML and bound to commands.

@@ -109,6 +109,11 @@ If you want to try it in your own app or the final name of your app has not been
 
 You did not set the `LicenseKey` properly or it does not match your app name. Please check if you set the correct `LicenseKey` in all platform specific projects and that your app name matches the key.
 
+### The mouse events don't work on my iPhone
+{: #MouseiPhone }
+
+The iPhone doesn't support mice. You need an iPad with iPadOS 13.0 or later. I use [UIHoverGestureRecognizer](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer) internally and that was only added in iOS 13.0.
+
 ### The `Tapped` and `DoubleTapped` events are not raised
 {: #NotRaised }
 
