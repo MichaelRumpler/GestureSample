@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MR.Gestures" Version="2.2.0" />
+    <PackageReference Include="MR.Gestures" Version="2.2.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
   </ItemGroup>
 
