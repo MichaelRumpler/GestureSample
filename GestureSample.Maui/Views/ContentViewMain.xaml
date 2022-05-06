@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+				xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+				xmlns:local="clr-namespace:GestureSample.Views;assembly=GestureSample"
+				x:Class="GestureSample.Views.ContentViewMain"
+
+				Title="ContentView Sample"
+		>
+
+    <Grid RowDefinitions="2*,*">
+        <local:ContentViewXaml />
+
+		<ScrollView Grid.Row="1">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</Grid>
+</ContentPage>

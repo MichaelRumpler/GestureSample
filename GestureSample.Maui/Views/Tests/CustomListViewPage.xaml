@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    			   xmlns:local="clr-namespace:GestureSample.Views.Tests;assembly=GestureSample"
+             x:Class="GestureSample.Views.Tests.CustomListViewPage"
+             Title="Custom ListView">
+
+    <Grid ColumnDefinitions="*,*">
+        <local:CustomListView
+            ItemsSource="{Binding Strings}"
+
+			Down="Cell_Down"
+			Up="Cell_Up"
+			Tapping="Cell_Tapping"
+			Tapped="Cell_Tapped"
+			DoubleTapped="Cell_DoubleTapped"
+			LongPressing="Cell_LongPressing"
+			LongPressed="Cell_LongPressed"
+			Panning="Cell_Panning"
+			Panned="Cell_Panned"
+			Swiped="Cell_Swiped"
+			Pinching="Cell_Pinching"
+			Pinched="Cell_Pinched"
+			Rotating="Cell_Rotating"
+			Rotated="Cell_Rotated"
+			>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </local:CustomListView>
+
+        <ScrollView Grid.Column="1">
+            <Label Text="{Binding Text}" />
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			 x:Class="GestureSample.Views.ListViewRecycle"
+			 Title="RecycleElement">
+
+    <Grid ColumnDefinitions="*,*">
+        <mr:ListView
+			ItemsSource="{Binding Strings}"
+
+			ItemTapped="ListView_ItemTapped"
+			ItemSelected="ListView_ItemSelected"
+			SelectedItem="{Binding SelectedItem}"
+
+			Down="Cell_Down"
+			Up="Cell_Up"
+			Tapping="Cell_Tapping"
+			Tapped="Cell_Tapped"
+			DoubleTapped="Cell_DoubleTapped"
+			LongPressing="Cell_LongPressing"
+			LongPressed="Cell_LongPressed"
+			Panning="Cell_Panning"
+			Panned="Cell_Panned"
+			Swiped="Cell_Swiped"
+			Pinching="Cell_Pinching"
+			Pinched="Cell_Pinched"
+			Rotating="Cell_Rotating"
+			Rotated="Cell_Rotated"
+			MouseEntered="Cell_MouseEntered"
+			MouseMoved="Cell_MouseMoved"
+			MouseExited="Cell_MouseExited"
+			ScrollWheelChanged="Cell_ScrollWheelChanged"
+			>
+			<x:Arguments>
+				<ListViewCachingStrategy>RecycleElement</ListViewCachingStrategy>
+			</x:Arguments>
+
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding}" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</mr:ListView>
+
+		<ScrollView Grid.Column="1">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</Grid>
+</ContentPage>

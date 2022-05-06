@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			 x:Class="GestureSample.Views.BoxViewXaml"
+			 Title="Xaml">
+
+	<Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+		<mr:BoxView
+            Color="Red"
+			
+            Down="Red_Down"
+			Up="Red_Up"
+			Tapping="Red_Tapping"
+			Tapped="Red_Tapped"
+			DoubleTapped="Red_DoubleTapped"
+			LongPressing="Red_LongPressing"
+			LongPressed="Red_LongPressed"
+			Pinching="Red_Pinching"
+			Pinched="Red_Pinched"
+			Panning="Red_Panning"
+			Panned="Red_Panned"
+			Swiped="Red_Swiped"
+			Rotating="Red_Rotating"
+			Rotated="Red_Rotated"
+            MouseEntered="Red_MouseEntered"
+            MouseMoved="Red_MouseMoved"
+            MouseExited="Red_MouseExited"
+            ScrollWheelChanged="Red_ScrollWheelChanged"
+						/>
+
+		<mr:BoxView
+            Color="Green"
+            Grid.Column="1"
+
+            DownCommand="{Binding DownCommand}" DownCommandParameter="Green"
+			UpCommand="{Binding UpCommand}" UpCommandParameter="Green"
+			TappingCommand="{Binding TappingCommand}" TappingCommandParameter="Green"
+			TappedCommand="{Binding TappedCommand}" TappedCommandParameter="Green"
+			DoubleTappedCommand="{Binding DoubleTappedCommand}" DoubleTappedCommandParameter="Green"
+			LongPressingCommand="{Binding LongPressingCommand}" LongPressingCommandParameter="Green"
+			LongPressedCommand="{Binding LongPressedCommand}" LongPressedCommandParameter="Green"
+			PinchingCommand="{Binding PinchingCommand}" PinchingCommandParameter="Green"
+			PinchedCommand="{Binding PinchedCommand}" PinchedCommandParameter="Green"
+			PanningCommand="{Binding PanningCommand}" PanningCommandParameter="Green"
+			PannedCommand="{Binding PannedCommand}" PannedCommandParameter="Green"
+			SwipedCommand="{Binding SwipedCommand}" SwipedCommandParameter="Green"
+			RotatingCommand="{Binding RotatingCommand}" RotatingCommandParameter="Green"
+			RotatedCommand="{Binding RotatedCommand}" RotatedCommandParameter="Green"
+			MouseEnteredCommand="{Binding MouseEnteredCommand}" MouseEnteredCommandParameter="Green"
+			MouseMovedCommand="{Binding MouseMovedCommand}" MouseMovedCommandParameter="Green"
+			MouseExitedCommand="{Binding MouseExitedCommand}" MouseExitedCommandParameter="Green"
+			ScrollWheelChangedCommand="{Binding ScrollWheelChangedCommand}" ScrollWheelChangedCommandParameter="Green"
+						/>
+
+		<ScrollView Grid.Row="1" Grid.ColumnSpan="2">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</Grid>
+</ContentPage>

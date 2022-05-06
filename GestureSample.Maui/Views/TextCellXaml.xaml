@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			 x:Class="GestureSample.Views.TextCellXaml"
+			 Title="Xaml"
+			 x:Name="page">
+
+	<Grid ColumnDefinitions="*,*">
+
+        <mr:ListView ItemsSource="{Binding Strings}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<mr:TextCell
+						Text="{Binding}"
+
+						Down="Cell_Down"
+						Up="Cell_Up"
+						Tapping="Cell_Tapping"
+						Tapped="Cell_Tapped"
+						DoubleTapped="Cell_DoubleTapped"
+						LongPressing="Cell_LongPressing"
+						LongPressed="Cell_LongPressed"
+						Panning="Cell_Panning"
+						Panned="Cell_Panned"
+						Swiped="Cell_Swiped"
+						Pinching="Cell_Pinching"
+						Pinched="Cell_Pinched"
+						Rotating="Cell_Rotating"
+						Rotated="Cell_Rotated"
+						MouseEntered="Cell_MouseEntered"
+						MouseMoved="Cell_MouseMoved"
+						MouseExited="Cell_MouseExited"
+						ScrollWheelChanged="Cell_ScrollWheelChanged"
+								  />
+						<!--TappedCommand="{x:Reference page.BindingContext.TappedCommand}" TappedCommandParameter="{Binding}"
+						LongPressedCommand="{x:Reference page.BindingContext.LongPressedCommand}" LongPressedCommandParameter="{Binding}"
+						PinchedCommand="{x:Reference page.BindingContext.PinchedCommand}" PinchedCommandParameter="{Binding}"
+						PannedCommand="{x:Reference page.BindingContext.PannedCommand}" PannedCommandParameter="{Binding}"
+						SwipedCommand="{x:Reference page.BindingContext.SwipedCommand}" SwipedCommandParameter="{Binding}"
+						RotatedCommand="{x:Reference page.BindingContext.RotatedCommand}" RotatedCommandParameter="{Binding}"-->
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</mr:ListView>
+
+		<ScrollView Grid.Column="1">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</Grid>
+</ContentPage>

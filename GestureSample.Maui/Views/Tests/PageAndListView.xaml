@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mr:ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			x:Class="GestureSample.Views.Tests.PageAndListView"
+			Title="Page and ListView"
+            Tapped="Page_Tapped">
+
+    <Grid ColumnDefinitions="*,*">
+        <ListView
+            ItemsSource="{Binding Strings}"
+
+		    ItemTapped="ListView_ItemTapped"
+		    ItemSelected="ListView_ItemSelected"
+		    SelectedItem="{Binding SelectedItem}"
+		    >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ScrollView Grid.Column="1">
+            <Label Text="{Binding Text}" />
+        </ScrollView>
+    </Grid>
+</mr:ContentPage>
