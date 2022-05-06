@@ -174,7 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MR.Gestures">
-      <Version>2.2.1</Version>
+      <Version>3.0.0-pre1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" />
