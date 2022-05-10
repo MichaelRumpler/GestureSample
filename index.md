@@ -1,7 +1,7 @@
 ---
 layout: default
-title: MR.Gestures - Handle all the touch gestures in your Xamarin.Forms mobile apps
-description: MR.Gestures - Touch gesture handling for Xamarin.Forms mobile apps
+title: MR.Gestures - Touch gestures in MAUI and Xamarin.Forms apps
+description: MR.Gestures - Touch gesture handling for MAUI and Xamarin.Forms apps
 ---
 
 {% include_relative parts/1_Overview.md %}

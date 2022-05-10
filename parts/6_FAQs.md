@@ -4,7 +4,21 @@
 ### How do I configure my license key?
 {: #HowToConfigureTheLicenseKey }
 
-As your app name can be different on each platform, the license key must be configured in all platform specific projects.
+In .NET MAUI you add a call to `ConfigureMRGestures` in your MauiProgram.cs:
+
+~~~~ cs
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
+        builder
+            .UseMauiApp<App>()
+            .ConfigureMRGestures("your license key");
+
+        return builder.Build();
+    }
+~~~~
+
+In Xamarin.Forms you need to set the `LicenseKey` in all platform specific projects.
 The best place for it is in each project between the calls to `Xamarin.Forms.Forms.Init(...)` and `LoadApplication(new App())`.
 
 ##### Android
@@ -93,7 +107,9 @@ In Visual Studio for Mac open the MacOS project options and go to General / Main
 ### How do I install MR.Gestures?
 {: #InstallWithNuget }
 
-You can install it with NuGet. In Visual Studio for Windows the easiest way is to right click your solution and choose "Manage NuGet Packages for Solution...", then search for MR.Gestures and install it to all projects which use XF.
+You can install it with NuGet. The NuGet package **MR.Gestures** is for both .NET MAUI and Xamarin.Forms.
+
+In Visual Studio for Windows the easiest way is to right click your solution and choose "Manage NuGet Packages for Solution...", then search for **MR.Gestures** and install it to all projects which use MAUI / Xamarin.Forms.
 
 On the Mac you need to install the package for each project separately.
 
@@ -102,7 +118,7 @@ On the Mac you need to install the package for each project separately.
 
 I already released the GestureSample app with complete source code on [GitHub](https://github.com/MichaelRumpler/GestureSample). That app shows how to use MR.Gestures with each and every available element.
 
-If you want to try it in your own app or the final name of your app has not been decided yet, you can simply call your app _GestureSample_ and use the LicenseKey from that app.
+If you want to try it in your own app or the final name of your app has not been decided yet, you can simply call your app _GestureSample_ and use the `LicenseKey` from that app.
 
 ### My event handler is called, but some event arg properties are not set.
 {: #EmptyEventArgs }

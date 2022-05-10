@@ -3,9 +3,10 @@
 
 MR.Gestures is licensed per app name.
 
-If your app has the same name on all platforms, you only need one license key.
-If you have hundreds of developers working on the same app, you only need one license key.
-If you have different versions of your app with different names (e.g. different languages, customized for different clients or free and pro), then you need a separate key for each version.
+* If your app has the same name on all platforms, you only need one license key.
+* If you have hundreds of developers working on the same app, you only need one license key.
+* If you have different versions of your app with different names (e.g. different languages, customized for different clients or free and pro), then you need a separate key for each version.
+* If you migrate your app from Xamarin.Forms to .NET MAUI and the app name stays the same, you can reuse your old license key.
 
 The license will be valid forever. You don't need to refresh it every year.
 

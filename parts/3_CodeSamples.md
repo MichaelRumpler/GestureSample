@@ -1,10 +1,10 @@
 ## Code Samples
 {: #CodeSamples }
 
-All the elements which are usually in the `Xamarin.Forms` namespace can also be found in `MR.Gestures`.
+All the elements which are usually in the `Microsoft.Maui.Controls` or `Xamarin.Forms` namespace can also be found in `MR.Gestures`.
 But those have additional event handlers and command properties.
 
-Adding the event handlers works the same way as in standard Xamarin Forms or WPF controls in both XAML and code.
+Adding the event handlers works the same way as in standard MAUI or Xamarin.Forms controls in both XAML and code.
 
 ### Event Handlers in XAML
 {: #EventsXAML }
@@ -12,7 +12,7 @@ Adding the event handlers works the same way as in standard Xamarin Forms or WPF
 To add the event handler in XAML you have to:
 
 1.  Add the namespace MR.Gestures from the dll
-2.  Use the element from that namespace instead of Xamarin.Forms
+2.  Use the element from that namespace instead of MAUI/Xamarin.Forms
 3.  Add the handlers for the gestures you want to listen to
 
 ![Sample XAML](../assets/images/xaml.png)

@@ -1,7 +1,11 @@
 <h3 id="Compatibility">Compatibility</h3>
 
 <p>
-    Some elements need to listen to some gestures themselves to work properly. Depending on the exact implementation by Xamarin and the native platforms, these events may be consumed.<br>
+    I did not test all controls in .NET MAUI yet. This is still in preview. So the following information is about Xamarin.Forms.
+</p>
+
+<p>
+    Some elements need to listen to some gestures themselves to work properly. Depending on the exact implementation by Microsoft and the native platforms, these events may be consumed.<br>
     Some of the views are simply too small to be touched. Therefore the gestures are also not forwarded to us.
 </p>
 <p>
@@ -19,11 +23,10 @@
     So I added <code>MR.Gestures.MacOS.Settings.TrackpadCoordinateRatio</code> and multiply all coordinates by that setting.
     The default is 5/5, but you can change it however you want to get bigger or smaller values for the Touches.<br />
 
-    Apple also doesn't use the same coordinate system in MacOS as every other computer on earth.
-    They have the 0/0 point at the LOWER left.
+    Apple also doesn't use the usual coordinate system in MacOS. They have 0/0 at the LOWER left.
     So keep this in mind when you work with the view, touch or other coordinates.
     Most likely you'll have to do some different logic on the Mac than on the other platforms.
-    Fortunately this is consistent with <code>Xamarin.Forms.VisualElement.TranslationY</code> and other Y coordinates.<br />
+    Fortunately this is consistent with <code>VisualElement.TranslationY</code> and other Y coordinates.<br />
     This also means that angles are counter clock wise instead of clock wise on the other platforms.<br />
 
     There's also a bug in Xamarin.Forms.MacOS. Their ScrollViewRenderer doesn't have a virtual method
