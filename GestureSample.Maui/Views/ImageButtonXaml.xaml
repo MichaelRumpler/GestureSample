@@ -24,6 +24,7 @@
 
 		<mr:ImageButton Source="{Binding Pic1}"
 				Grid.Row="0" Grid.Column="1"
+				BackgroundColor="#808080"
 
 				Command="{Binding ClickedCommand}"
 				CommandParameter="ImageButton 1"

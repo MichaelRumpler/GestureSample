@@ -90,20 +90,27 @@ namespace GestureSample.Views
 		{
 			var item = (PageConfig)e.Item;
 
-			if(item.PageConstructor != null)
+			try
 			{
-				// a sample page
-				var page = item.PageConstructor.Invoke();
-				await App.MainNavigation.PushAsync(page);
+				if (item.PageConstructor != null)
+				{
+					// a sample page
+					var page = item.PageConstructor.Invoke();
+					await App.MainNavigation.PushAsync(page);
+				}
+				else
+				{
+					// a menu page
+					var subpage = item.Title;
+					var contents = AllPages.Where(pc => pc.Parent == subpage);
+					var page = new MainPage(subpage, contents);
+					await App.MainNavigation.PushAsync(page);
+				}
 			}
-			else
-			{
-				// a menu page
-				var subpage = item.Title;
-				var contents = AllPages.Where(pc => pc.Parent == subpage);
-				var page = new MainPage(subpage, contents);
-				await App.MainNavigation.PushAsync(page);
-			}
+			catch(Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+            }
 		}
 
 		#endregion

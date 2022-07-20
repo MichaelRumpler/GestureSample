@@ -399,6 +399,10 @@
         </Setter>
     </Style>
 
+    <Style TargetType="TextCell">
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
+    </Style>
+    
     <Style TargetType="TimePicker">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
