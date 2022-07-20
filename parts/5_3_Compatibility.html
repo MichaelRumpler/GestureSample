@@ -1,14 +1,19 @@
 <h3 id="Compatibility">Compatibility</h3>
 
-<p>
-    I did not test all controls in .NET MAUI yet. This is still in preview. So the following information is about Xamarin.Forms.
-</p>
-
+<h4 id="Compatibility-Maui">.NET MAUI</h3>
 <p>
     Some elements need to listen to some gestures themselves to work properly. Depending on the exact implementation by Microsoft and the native platforms, these events may be consumed.<br>
     Some of the views are simply too small to be touched. Therefore the gestures are also not forwarded to us.
 </p>
+
 <p>
+    .NET MAUI itself still has many bugs. I found some problems in the GestureSample, but I did not check for each one, if they are caused by me or MAUI.
+    All events are raised on all platforms, but I didn't check all the details like
+    if the <code>EventArgs</code> values are correct, all events are raised on all controls and if any functionality is missing.
+</p>
+
+<h4 id="Compatibility-XF">Xamarin.Forms</h3>
+    <p>
     <b>MacOS:</b><br />
     Apple still has no multi touch displays for macOS, so I made the touch gestures on the Mac to work as I would expect them to.
     If you think anything is awkward or doesn't behave as you would expect, please let me know.<br />
