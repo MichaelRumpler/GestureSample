@@ -18,6 +18,8 @@ In .NET MAUI you add a call to `ConfigureMRGestures` in your MauiProgram.cs:
     }
 ~~~~
 
+You can try MR.Gestures without license key. Then you just don't pass anything to the `ConfigureMRGestures` method. But you still need to call the method to initialize the handlers.
+
 In Xamarin.Forms you need to set the `LicenseKey` in all platform specific projects.
 The best place for it is in each project between the calls to `Xamarin.Forms.Forms.Init(...)` and `LoadApplication(new App())`.
 
