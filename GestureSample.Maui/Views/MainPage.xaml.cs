@@ -1,4 +1,5 @@
 ﻿using GestureSample.Maui;
+using GestureSample.Maui.Views.Tests;
 using GestureSample.Views.Tests;
 
 namespace GestureSample.Views
@@ -71,6 +72,7 @@ namespace GestureSample.Views
 			new PageConfig("Tests", "Invisible Button", () => new InvisibleButtonPage()),
 			new PageConfig("Tests", "Draggable Items on TabbedPage", () => new DraggableItemsOnTabbedPage { BindingContext = new ViewModels.Tests.DraggableItemsViewModel() }),
 			new PageConfig("Tests", "Drag&Drop Items in FlexLayout", () => new DragAndDropPage { BindingContext = new ViewModels.Tests.DragAndDropViewModel() }),
+			new PageConfig("Tests", "Observer Warning", () => new ObserverWarningPage()),
 		};
 
 
