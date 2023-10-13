@@ -61,18 +61,27 @@ namespace GestureSample.ViewModels
 
 		public virtual void AddText(string text)
 		{
-			var sb = new StringBuilder(text).Append("\n").Append(Text);
-			Text = sb.ToString(0, Math.Min(sb.Length, 2000));
+			text = $"{ThreadInfo} {text}";
+			var s = $"{text}\n{Text}";
+			if (s.Length > 2000)
+				s = s.Substring(0, 2000);
+			Text = s;
 
 			Debug.WriteLine(text);
 		}
 
 		public virtual void AddText(string format, params object[] args)
-		{
-			var sb = new StringBuilder().AppendFormat(format, args).Append("\n").Append(Text);
-			Text = sb.ToString(0, Math.Min(sb.Length, 2000));
+			=> AddText(string.Format(format, args));
 
-			Debug.WriteLine(text);
+		public static string ThreadInfo
+		{
+			get
+			{
+				var threadType = System.Threading.Thread.CurrentThread.IsBackground ? "BG" : "UI";
+				var threadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
+
+				return $"[T:{threadType}#{threadId}]";
+			}
 		}
 	}
 }
