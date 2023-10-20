@@ -1,6 +1,6 @@
 # GestureSample
 
-This is the sample project for **MR.Gestures**. It shows all the touch gesture handling possible with that library and Xamarin.Forms.
+This is the sample project for **MR.Gestures**. It shows all the touch gesture handling possible with that library and .NET MAUI or Xamarin.Forms.
 
 To find out more about MR.Gestures visit [https://www.mrgestures.com](https://www.mrgestures.com).
 
