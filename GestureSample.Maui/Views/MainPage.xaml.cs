@@ -53,6 +53,7 @@ namespace GestureSample.Views
 			new PageConfig("Cells", "All Cells", () => new AllCellsXaml { BindingContext = new ViewModels.AllCellsViewModel() }),
 
 			// Tests
+			new PageConfig("Tests", "BindableLayout With Template", () => new BindableLayoutWithTemplate()),
 			new PageConfig("Tests", "Clear in Handler", () => new DisposeInHandlerPage()),
 			new PageConfig("Tests", "Horizontal ScrollView", () => new HorizontalScrollViewXaml { BindingContext = new ViewModels.CustomEventArgsViewModel() }),
 			new PageConfig("Tests", "BigButton", () => new BigButtonPage()),
