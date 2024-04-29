@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tests:LifeCyclePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:tests="clr-namespace:GestureSample.Views.Tests"
+             x:Class="GestureSample.Views.Tests.BindableLayoutWithTemplateNoMRGestures"
+			 Title="BindableLayout With Template - No MR.Gestures">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+            <VerticalStackLayout
+                x:Name="ItemsContainer"
+                Padding="30,0"
+                BindableLayout.ItemsSource="{Binding}"
+                Spacing="25">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout
+                            Background="LightBlue">
+                            <Label Text="Click here" />
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+            <Button Text="this button existing breaks the up/down events" />
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</tests:LifeCyclePage>

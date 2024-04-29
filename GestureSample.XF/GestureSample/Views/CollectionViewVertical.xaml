@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+			 x:Class="GestureSample.Views.CollectionViewVertical"
+			 Title="Vertical">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <mr:CollectionView
+            ItemsSource="{Binding Objects}"
+			RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=0}"
+			RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5}"
+			RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+
+            SelectionMode="Single"
+			SelectedItem="{Binding Item}"
+            SelectionChanged="CollectionView_SelectionChanged"
+
+			Down="CollectionView_Down"
+			Up="CollectionView_Up"
+			Tapping="CollectionView_Tapping"
+			Tapped="CollectionView_Tapped"
+			DoubleTapped="CollectionView_DoubleTapped"
+			LongPressing="CollectionView_LongPressing"
+			LongPressed="CollectionView_LongPressed"
+			Panning="CollectionView_Panning"
+			Panned="CollectionView_Panned"
+			Swiped="CollectionView_Swiped"
+			Pinching="CollectionView_Pinching"
+			Pinched="CollectionView_Pinched"
+			Rotating="CollectionView_Rotating"
+			Rotated="CollectionView_Rotated"
+			>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="20" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+				<DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Image}" />
+                        <Label Grid.Column="1" Text="{Binding Text}" VerticalTextAlignment="Center" />
+                    </Grid>
+				</DataTemplate>
+			</CollectionView.ItemTemplate>
+		</mr:CollectionView>
+
+		<ScrollView Grid.Row="1">
+			<Label Text="{Binding Text}" />
+		</ScrollView>
+	</Grid>
+</ContentPage>

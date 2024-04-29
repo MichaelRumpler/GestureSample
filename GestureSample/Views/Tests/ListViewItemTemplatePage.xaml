@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+             x:Class="GestureSample.Views.Tests.ListViewItemTemplatePage"
+              Title="ListView.ItemTemplate with MR.Gestures element">
+
+    <mr:ListView ItemsSource="{Binding Strings}" Down="ListView_Down">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <mr:Label Text="{Binding}" Tapped="Label_Tapped" Tapping="Label_Tapping" Panning="Label_Panning" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </mr:ListView>
+
+</ContentPage>

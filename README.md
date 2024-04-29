@@ -14,6 +14,8 @@ Version 3.0.0 is for Xamarin.Forms and .NET MAUI with .NET6. This version contai
 
 Version 4.0.0 is only for .NET MAUI with .NET7 and .NET8.
 
+Version 5.0.0 is only for .NET MAUI with .NET8.
+
 Your IDE should automatically install the version which can be used by your solution. This uses the `TargetFramework` of your project.
 
 | TargetFramework  |  MR.Gestures version  |
@@ -27,8 +29,8 @@ MR.Gestures should work mostly for the newer MAUI versions too, but MAUI changed
 
 ## Structure in this repository
 
-The GestureSample.sln is the original Xamarin.Forms version with the code in the folder GestureSample.
-GestureSample.Maui.sln is the MAUI solution with the code in GestureSample.Maui.
+GestureSample.sln is the MAUI solution with the code in GestureSample.
+The GestureSample.XF.sln is the original Xamarin.Forms version with the code in the folder GestureSample.XF.
 
 ## Getting started with MR.Gestures for MAUI
 
@@ -46,14 +48,14 @@ In your MauiProgram.cs add a call to `ConfigureMRGestures`
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			})
-			.ConfigureMRGestures(licenseKey);
+			.ConfigureMRGestures();
 
 		return builder.Build();
 	}
 
-You can also omit the `licenseKey` to test MR.Gestures without a license. This should behave the same as MR.Gestures in Xamarin.Forms without setting `Settings.LicenseKey`. I.e. the properties of the `EventArgs` are empty. Some events which depend on changes in those `EventArgs` may not be raised.
+MR.Gestures version 5.0.0 is available for free. In the older versions you needed to pass a license key to `ConfigureMRGestures`.
 
-Everything else remains as it was in Xamarin.Forms. The docs are still on [mrgestures.com](https://www.mrgestures.com/).
+For more information how to use the library, please see [mrgestures.com](https://www.mrgestures.com/).
 
 ## The GestureSample App
 
@@ -65,7 +67,7 @@ Be aware that some of MAUI´s handlers and the underlying native controls need g
 
 Luckily this applies mainly to the views which are too small that gesture handling on them would make sense anyway.
 But also the `ScrollView` (`Pan` must not be observed on iOS)
-and the `WebView` (all events are consumed by it) are affected.
+and the `WebView` are affected.
  
 ## The Code
 
@@ -79,9 +81,11 @@ If you write your views in code, then you should have a look at `BoxViewCode`. T
 
 In `BoxViewXaml` the view is built in XAML but the event handlers for the red box are methods in the code behind in `BoxViewXaml.xaml.cs`. The green box binds to `Commands` in the view model again, this time shown how this is done in XAML.
 
-## Contact
+## Problems with MR.Gestures
 
-If you have any questions, then please read through the whole page [https://www.mrgestures.com](https://www.mrgestures.com).
+If you have any problems, then please read through the whole page [https://www.mrgestures.com](https://www.mrgestures.com).
 There is a lot of information there. Especially in the [FAQ](https://www.mrgestures.com/#FAQs) and [Documentation](https://www.mrgestures.com/#Documentation) sections.
 
-If you still have any issues, then you can file them [here](https://github.com/MichaelRumpler/GestureSample/issues), send an email to mrgestures@mrumpler.at or a tweet [@MRGestures](https://twitter.com/MRGestures).
+If you still have any issues, then you can find the source of MR.Gestures in [this repository](https://github.com/MichaelRumpler/MR.Gestures). If you run into any problems, then please use it as project reference and debug it. If you still cannot resolve it, then open an issue here or in the MR.Gestures repo.
+
+It would also help if you could add a test page to the GestureSample which reproduces the problem. The View goes in `GestureSample/Views/Tests`, if you need a ViewModel then place it in `GestureSample/ViewModels/Tests` and then add a line in `MainPage.xaml.cs` in the [PageConfig Tests section](https://github.com/MichaelRumpler/GestureSample/blob/master/GestureSample/Views/MainPage.xaml.cs#L71). This should show the new test page in the navigation.

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="GestureSample.Views.MainPage">
+
+    <Grid RowDefinitions="Auto,Auto">
+        
+	<ListView ItemsSource="{Binding}" ItemTapped="ListItem_Tapped">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+                <ViewCell>
+                    <Label Text="{Binding Title}" VerticalOptions="Center" Margin="16,0,0,0" />
+                </ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+
+        <Button Grid.Row="1" Text="GC.Collect" Clicked="GCCollect_Clicked" />
+    </Grid>
+
+</ContentPage>
