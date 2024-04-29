@@ -14,18 +14,16 @@ Version 3.0.0 is for Xamarin.Forms and .NET MAUI with .NET6. This version contai
 
 Version 4.0.0 is only for .NET MAUI with .NET7 and .NET8.
 
-Version 5.0.0 is only for .NET MAUI with .NET8.
+Version 5.0.0 is only for .NET MAUI with .NET8. This is the first version which works without license key.
 
 Your IDE should automatically install the version which can be used by your solution. This uses the `TargetFramework` of your project.
 
 | TargetFramework  |  MR.Gestures version  |
 | -------- | -------- |
-| net8* | 4.0.0 |
+| net8* | 5.0.0 |
 | net7* | 4.0.0 |
 | net6* | 3.0.0 for MAUI |
 | anything older | 3.0.0 for Xamarin.Forms |
-
-MR.Gestures should work mostly for the newer MAUI versions too, but MAUI changed in .NET8 rc1 how the lifecycle events work. Therefore the `Unloaded` event is raised too early which triggered my cleanup code. In version 4.0.0 I replaced that with the `HandlerChanging` event.
 
 ## Structure in this repository
 
