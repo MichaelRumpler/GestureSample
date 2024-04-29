@@ -1,6 +1,77 @@
 ## FAQ
 {: #FAQs }
 
+### About MR.Gestures
+{: #About }
+
+MR.Gestures 5.0 is free and open source. The older versions were proprietary and you needed to buy a license. I'll leave the old questions here for the time being and remove them in the future.
+
+I currently do not plan to use MAUI myself. In the past couple of months the effort for MR.Gestures support was more than the benefit. MAUI changed how the native controls are created and disposed and they did not document that process. It is quite difficult to always find workarounds for their bugs. So I decided to be done with it.
+
+If somebody sends a PR I'll consider merging it, but I will not do any further development on MR.Gestures myself.
+
+### I try to move/zoom/rotate an element, but it jumps on the screen.
+{: #Container }
+
+The `Touches` coordinates in the `EventArgs` are always relative to the `View` which handles the event. If you manipulate the `TranslationX`, `TranslationY`, `Scale` or `Rotation(X/Y)` properties during a gesture, then the `Touches` and `Delta*` values cannot be calculated anymore.
+
+So you always have to listen to the events of a container element and manipulate those properties of a child.
+
+So instead of
+
+~~~~ xml
+    <mr:Image
+        PanningCommand="{Binding PanningCommand}"
+        TranslationX="{Binding TranslationX}"
+        TranslationY="{Binding TranslationY}" />
+~~~~
+
+you should write
+
+~~~~ xml
+    <mr:ContentView PanningCommand="{Binding PanningCommand}">
+        <Image
+            TranslationX="{Binding TranslationX}"
+            TranslationY="{Binding TranslationY}" />
+    </mr:ContentView>
+~~~~
+
+### Event Propagation (aka Event Bubbling)
+{: #EventPropagation }
+
+If multiple elements are nested within each other and they all handle the same events, this is called event propagation. Ideally you should be able to tell, which element should handle the event.
+When I wrote MR.Gestures, I also wanted to implement this. This is why I added the `Handled` flag to the `EventArgs`.
+
+Unfortunately I couldn't get it working reliably on all platforms. Especially with some of the elements natively handling (and consuming) the events, this proved impossible to implement in a generic way.
+
+Therefore I decided to strive for a solution where all MR.Gestures elements raise the respective events. This way you can decide yourself, which element should handle it.
+The easiest way is to start a `Timer` in one handler and do your work unless another handler will be called within a given timeframe.
+
+### I want to swipe with two fingers. How can I handle that gesture?
+{: #MultiTouchGestures }
+
+The native standard gesture recognizers only work with the standard amount of fingers. I.e. two fingers for pinch and rotate and one for the others.
+
+I managed to get some gestures on some platforms running with more fingers, but this is not consistent over all platforms.
+
+In the future I may use a different API which is nearer to the wire. But this is a very big change so I'm not sure if I'll do that yet.
+
+### The mouse events don't work on my iPhone
+{: #MouseiPhone }
+
+The iPhone doesn't support mice. You need an iPad with iPadOS 13.0 or later. I use [UIHoverGestureRecognizer](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer) internally and that was only added in iOS 13.0.
+
+### The gestures do not work on cells on Windows.
+{: #WPCells }
+
+Xamarins Windows renderers (WinUI, UWP and WPF) for cells do not provide anything I can hook into to add my functionality. So I had to add that functionality to the renderers for `MR.Gestures.ListView` and `MR.Gestures.TableView`.
+
+So if you want to listen to touch gestures on cells, the containing `ListView` or `TableView` must also be used from `MR.Gestures` even if you don't add any gesture listeners on that element itself.
+
+---
+
+The following questions are related to the license in MR.Gestures versions older than 5.0.
+
 ### How do I configure my license key?
 {: #HowToConfigureTheLicenseKey }
 
@@ -127,18 +198,6 @@ If you want to try it in your own app or the final name of your app has not been
 
 You did not set the `LicenseKey` properly or it does not match your app name. Please check if you set the correct `LicenseKey` in all platform specific projects and that your app name matches the key.
 
-### The mouse events don't work on my iPhone
-{: #MouseiPhone }
-
-The iPhone doesn't support mice. You need an iPad with iPadOS 13.0 or later. I use [UIHoverGestureRecognizer](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer) internally and that was only added in iOS 13.0.
-
-### The `Tapped` and `DoubleTapped` events are not raised
-{: #NotRaised }
-
-In MR.Gestures 1.* the `LicenseKey` needed to be set properly for these events to be raised. Without `LicenseKey` the `NumberOfTaps` is always 0. `Tapped` was only raised if `NumberOfTaps` was 1 and `DoubleTapped` only if it was 2.
-
-With version 2.0 these events are also raised without `LicenseKey` (although `NumberOfTaps` is still 0).
-
 ### What's the license agreement of MR.Gestures?
 {: #License }
 
@@ -148,69 +207,6 @@ I do not grant the right to tamper with the library in any way, decompile or res
 MR.Gestures is licensed per app name. I.e. if your app has the same name on all platforms, you only need one license key. If you have different versions of your app with different names (e.g. different languages, customized for different clients/environments or free and pro), then you need a separate key for each version.
 
 You can use it for as many developers on as many computers for as long as you like.
-
-### I want to swipe with two fingers. How can I handle that gesture?
-{: #MultiTouchGestures }
-
-The native standard gesture recognizers only work with the standard amount of fingers. I.e. two fingers for pinch and rotate and one for the others.
-
-I managed to get some gestures on some platforms running with more fingers, but this is not consistent over all platforms.
-
-In the future I may use a different API which is nearer to the wire. But this is a very big change so I'm not sure if I'll do that yet.
-
-### I try to move/zoom/rotate an element, but it jumps on the screen.
-{: #Container }
-
-The `Touches` coordinates in the `EventArgs` are always relative to the `View` which handles the event. If you manipulate the `TranslationX`, `TranslationY`, `Scale` or `Rotation(X/Y)` properties during a gesture, then the `Touches` and `Delta*` values cannot be calculated anymore.
-
-So you always have to listen to the events of a container element and manipulate those properties of a child.
-
-So instead of
-
-~~~~ xml
-    <mr:Image
-        PanningCommand="{Binding PanningCommand}"
-        TranslationX="{Binding TranslationX}"
-        TranslationY="{Binding TranslationY}" />
-~~~~
-
-you should write
-
-~~~~ xml
-    <mr:ContentView PanningCommand="{Binding PanningCommand}">
-        <Image
-            TranslationX="{Binding TranslationX}"
-            TranslationY="{Binding TranslationY}" />
-    </mr:ContentView>
-~~~~
-
-### Event Propagation (aka Event Bubbling)
-{: #EventPropagation }
-
-If multiple elements are nested within each other and they all handle the same events, this is called event propagation. Ideally you should be able to tell, which element should handle the event.
-When I wrote MR.Gestures, I also wanted to implement this. This is why I added the `Handled` flag to the `EventArgs`.
-
-Unfortunately I couldn't get it working reliably on all platforms. Especially with some of the elements natively handling (and consuming) the events, this proved impossible to implement in a generic way.
-
-Therefore I decided to strive for a solution where all MR.Gestures elements raise the respective events. This way you can decide yourself, which element should handle it.
-The easiest way is to start a `Timer` in one handler and do your work unless another handler will be called within a given timeframe.
-
-### The gestures do not work on cells on Windows.
-{: #WPCells }
-
-Xamarins Windows renderers (UWP and WPF) for cells do not provide anything I can hook into to add my functionality. So I had to add that functionality to the renderers for `MR.Gestures.ListView` and `MR.Gestures.TableView`.
-
-So if you want to listen to touch gestures on cells, the containing `ListView` or `TableView` must also be used from `MR.Gestures` even if you don't add any gesture listeners on that element itself.
-
-### I get "Could not load file or assembly 'MR.Gestures'" or "Could not load type MR.Gestures...".
-{: #CouldNotLoad }
-
-Please check your references. With version 2.0 all projects need a reference to MR.Gestures.
-In version 1.* the standard/portable project needs to reference MR.Gestures and the platform specific projects need references to both MR.Gestures and MR.Gestures._platform_.
-
-Every Xamarin.Forms developer should be familiar with the procedure of closing Visual Studio, deleting all bin and obj folders manually and then trying again. I have a .bat file which does that. Cleaning the solution within VS or just recompiling fails to delete old files most of the time.
-
-Please also check, if you set your `Settings.LicenseKey` like it is described [above](#HowToConfigureTheLicenseKey). If this is not set, then the linker may strip it out of your executable.
 
 ### What data do you have from me and what do you do with it?
 {: #Data }

@@ -29,18 +29,6 @@ $('#sidebar').affix({
 	}
 })
 
-$("#buyBtn").click(function () {
-	var appName = $("#appName").val();
-	if (appName === "")
-	{
-		alert("Please enter the name of your app and then click 'Buy'.");
-		return;
-	}
-
-	var url = "https://secure.shareit.com/shareit/checkout.html?PRODUCT[300652529]=1&DELIVERY[300652529]=EML&backlink=http%3A%2F%2Fwww.mrgestures.com%2F#Buy&pc=90aex&HADD[300652529][ADDITIONAL1]=" + encodeURIComponent(appName);
-	window.open(url, "_blank");
-});
-
 $(window).load(function () {
 	$(".compatibility td").each(function () {
 		if (this.title)
